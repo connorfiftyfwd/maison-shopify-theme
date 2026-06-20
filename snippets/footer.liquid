@@ -1,0 +1,48 @@
+<div class="footer">
+  <div class="footer__newsletter">
+    <div class="footer-newslatter-wrapper">
+      <div class="klaviyo-form-WAVW7a"></div>
+    </div>
+  </div>
+
+  <ul class="footer__nav">
+    {% for link in linklists.footer.links %}
+      <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+    {% endfor %}
+  </ul>
+  <div class="footer__copyright">
+    © Maison d’Etto {{ 'now' | date: '%Y' }}. All rights reserved.
+  </div>
+</div>
+
+<style>
+  @media screen and (max-width: 1023px) {
+    .footer-newslatter-wrapper > div {
+      width: 100%;
+    }
+  }
+  .footer-newslatter-wrapper {
+    display: flex;
+  }
+  button.kl-private-reset-css-Xuajs1 {
+    width: fit-content;
+    margin-bottom: 0px;
+  }
+  @media screen and (min-width: 1024px) {
+    [data-testid="form-row"] {
+      min-width: 450px;
+    }
+  }
+  [data-testid="form-row"] {
+    border-bottom: 1px solid white;
+  }
+  input.kl-private-reset-css-Xuajs1 {
+    padding: 0 !important;
+  }
+  input.kl-private-reset-css-Xuajs1, input.kl-private-reset-css-Xuajs1::placeholder {
+    font-size: 14px !important;
+  }
+  [data-testid="form-component"] > div {
+    height: 100%;
+  }
+</style>

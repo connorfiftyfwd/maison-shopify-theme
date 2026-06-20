@@ -1,0 +1,47 @@
+{%- if list == blank -%}
+  <div class="products-slider js-scroll js-scroll--fade">
+    {% if title %}
+      <div class="products-slider__title">
+        {{ title }}
+      </div>
+    {% endif %}
+    <div class="js-slider js-mobileSlider slider" data-slider="products">
+      {%- for sliderProduct in collections.all.products -%}
+        {%- if sliderProduct != blank and sliderProduct.handle != product.handle and sliderProduct.template_suffix != 'catalog-product' -%}
+          <div class="products-slider__item slide js-slide">
+            {%- render 'slider-product', product: sliderProduct -%}
+          </div>
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
+    {% if handles.size > 1 %}
+      <div class="slider-bar">
+        <div class="slider-bar__inner js-sliderBar"></div>
+      </div>
+    {% endif %}
+  </div>
+{%- else -%}
+{%- assign handles = list | split: ',' -%}
+  <div class="products-slider js-scroll js-scroll--fade">
+    {% if title %}
+      <div class="products-slider__title">
+        {{ title }}
+      </div>
+    {% endif %}
+    <div class="js-slider js-mobileSlider slider" data-slider="products">
+      {%- for handle in handles -%}
+        {%- assign sliderProduct = all_products[handle] -%}
+        {%- if sliderProduct != blank and sliderProduct.template_suffix != 'catalog-product' -%}
+          <div class="products-slider__item slide js-slide">
+            {%- render 'slider-product', product: sliderProduct -%}
+          </div>
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
+    {% if handles.size > 1 %}
+      <div class="slider-bar">
+        <div class="slider-bar__inner js-sliderBar"></div>
+      </div>
+    {% endif %}
+  </div>
+{% endif %}

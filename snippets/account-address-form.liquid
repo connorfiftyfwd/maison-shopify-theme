@@ -1,0 +1,52 @@
+<div class="account-form">
+  <div class="account-form__cell">
+    <input id="first-name_{{ address.id }}" type="text" placeholder="First Name *" name="address[first_name]" value="{{ form.first_name }}" required>
+    <label class="account-form__label" for="first-name_{{ address.id }}">First Name</label>
+  </div>
+  <div class="account-form__cell">
+    <input id="last-name_{{ address.id }}" type="text" placeholder="Last Name *" name="address[last_name]" value="{{ form.last_name }}" required>
+    <label class="account-form__label" for="last-name_{{ address.id }}">Last Name</label>
+  </div>
+  <div class="account-form__cell">
+    <input id="company-name_{{ address.id }}" type="text" placeholder="Company" name="address[companyName]" value="{{ form.company }}">
+    <label class="account-form__label" for="company-name_{{ address.id }}">Company</label>
+  </div>
+  <div class="account-form__cell">
+    <input id="address-1_{{ address.id }}" type="text" placeholder="Address *" name="address[address1]" value="{{ form.address1 }}" required>
+    <label class="account-form__label" for="address-1_{{ address.id }}">Address</label>
+  </div>
+  <div class="account-form__cell">
+    <input id="address-2_{{ address.id }}" type="text" placeholder="Apt / Floor / Suite" name="address[address2]" value="{{ form.address2 }}">
+    <label class="account-form__label" for="address-2_{{ foraddress.idmId }}">Apt / Floor / Suite</label>
+  </div>
+  <div class="account-form__cell account-form__cell--half">
+    <input id="city_{{ address.id }}" type="text" placeholder="City *" name="address[city]" value="{{ form.city }}" required>
+    <label class="account-form__label" for="city_{{ address.id }}">City</label>
+  </div>
+  <div class="account-form__cell account-form__select account-form__cell--half">
+    {% render 'countrySelect', formId: address.id value: form.country %}
+    <label class="account-form__label" for="country_{{ address.id }}">Country</label>
+  </div>
+  <div class="account-form__cell account-form__cell--half">
+    <input id="zip-code_{{ address.id }}" type="text" placeholder="Zip *" name="address[zip]" value="{{ form.zip }}" required>
+    <label class="account-form__label" for="zip-code_{{ address.id }}">Zip</label>
+  </div>
+  <div class="account-form__cell account-form__cell--half">
+    <select name="address[province]" data-default="{{ form.province }}" required></select>
+    <input id="state_{{ address.id }}"  style="display: none;" type="text" name="address[province]" data-default="{{ form.province }}" placeholder="State *" disabled />
+    <label class="account-form__label" for="state_{{ address.id }}">Province</label>
+  </div>
+  <div class="account-form__cell">
+    <input id="phone_{{ address.id }}" type="text" placeholder="Phone *" name="address[phone]" value="{{ form.phone }}" required>
+    <label class="account-form__label" for="phone_{{ address.id }}">Phone Number</label>
+  </div>
+  <div class="account-form__cell account-form__checkbox">
+    <div class="checkbox checkbox--small">
+      <input type="checkbox" id="address_default_address_{{ address.id }}" name="address[default]" value="1" {% if address == customer.default_address %} checked="true" disabled{% endif %}>
+      <label for="address_default_address_{{ address.id }}">Use as default address</label>
+    </div>
+  </div>
+  <div class="account-form__cell account-form__button">
+    <button type="submit" class="button button--wide">{% if form.id == 'new' %}Add{% else %}Save{% endif %} address</button>
+  </div>
+</div>

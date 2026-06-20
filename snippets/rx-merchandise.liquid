@@ -1,0 +1,11 @@
+<script type="text/javascript">
+  window.dataLayer = window.dataLayer || [];
+
+  var rxTemplateName = '{{ template.name | escape }}';
+  var rxCollectionId = '{{ collection.id }}';
+  var rxCollectionTitle = '{{ collection.title | escape }}';
+  var rxShopName = '{{ shop.name | escape }}';
+  var rxGA4 = 'G-01L8NY2KWT';
+
+  function rxGTM(){dataLayer.push(arguments)}function rxTrackCollectionView(t){"collection"===rxTemplateName&&rxCollectionId&&rxGTM("event","view_item_list",{item_list_id:rxCollectionId,item_list_name:rxCollectionTitle,items:t,send_to: rxGA4})}function rxTrackProductClick(t){try{var e=t&&t.getAttribute("data-item_id"),i=t&&t.getAttribute("data-item_name"),r=t&&t.getAttribute("data-item_position"),a=t&&t.getAttribute("data-item_brand"),o=t&&t.getAttribute("data-item_category"),l=t&&t.getAttribute("data-item_variant"),n=t&&t.getAttribute("data-item_price");rxCollectionId&&e&&r&&rxGTM("event","select_item",{item_list_id:rxCollectionId,item_list_name:rxCollectionTitle,items:[{item_id:e,item_name:i,affiliation:rxShopName,coupon:"",discount:"",index:r,item_brand:a,item_category:o,item_variant:l,item_list_id:rxCollectionId,item_list_name:rxCollectionTitle,price:n,quantity:1}],send_to: rxGA4})}catch(t){console.error("RX product click handler error:",t)}}
+</script>

@@ -1,0 +1,31 @@
+<img
+  width="0"
+  height="0"
+  src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+  onload="
+    var products = [
+      {% for product in collection.products %}
+        {
+          item_id: `{{ product.id }}`,
+          item_name: `{{ product.title | escape }}`,
+          affiliation: rxShopName,
+          coupon: ``,
+          discount: ``,
+          index: {{ forloop.index }},
+          item_brand: `{{ product.vendor }}`,
+          item_category: `{{ product.type | escape }}`,
+          item_variant: `{{ product.selected_variant }}`,
+          item_list_id: rxCollectionId,
+          item_list_name: rxCollectionTitle,
+          price: `{{ product.price | money_without_currency }}`,
+          quantity: 1
+        }{% unless forloop.last %},{% endunless %}
+      {% endfor %}
+    ];
+    setTimeout(function () {
+      rxTrackCollectionView(products);
+    });
+    this.parentNode.removeChild(this);
+  "
+  style="display: none"
+/>

@@ -1,0 +1,38 @@
+{% schema %}
+{
+  "name": "Products Slider",
+  "blocks": [
+    {
+      "limit": 12,
+      "type": "product_block",
+      "name": "Product",
+      "settings": [
+        {
+          "id": "product",
+          "type": "product",
+          "label": "Product"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Products Slider",
+      "category": "Content"
+    }
+  ]
+}
+{% endschema %}
+<div class="products-slider js-scroll js-scroll--fade">
+  <div class="js-slider js-mobileSlider slider" data-slider="products">
+    {% for block in section.blocks %}
+      {% assign product = all_products[block.settings.product] %}
+      <div class="products-slider__item">
+        {% render 'slider-product', product: product %}
+      </div>
+    {% endfor %}
+  </div>
+  <div class="slider-bar">
+    <div class="slider-bar__inner js-sliderBar"></div>
+  </div>
+</div>

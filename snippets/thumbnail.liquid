@@ -1,0 +1,33 @@
+{% if fromMetafields == true %}
+  {% capture img1x %}
+    {%- render 'img-url', image: img, size: '83x103' -%}
+  {% endcapture %}
+  {% capture img2x %}
+    {%- render 'img-url', image: img, size: '166x206' -%}
+  {% endcapture %}
+{% else %}
+  {% capture img1x %}
+    {{ img | img_url: '83x103' }}
+  {% endcapture %}
+  {% capture img2x %}
+    {{ img | img_url: '83x103', scale: 2 }}
+  {% endcapture %}
+{% endif %}
+
+<div class="thumbnail">
+  <picture>
+    {% if hideForMobile %}
+      <source media="(max-width: 1023px)"
+              srcset="{%- render 'blank-pixel' -%}"/>
+      <source media="(min-width: 1024px)"
+              srcset="{{ img1x }} 1x, {{ img2x }} 2x"/>
+
+      <img src="{%- render 'blank-pixel' -%}" alt="" class="is-loading" loading="lazy" width="720" height="720">
+    {% else %}
+      <img src="{{ img1x }}"
+           srcset="{{ img1x }} 1x, {{ img2x }} 2x"
+           alt=""
+           class="is-loading" loading="lazy" height="720" width="720">
+    {% endif %}
+  </picture>
+</div>

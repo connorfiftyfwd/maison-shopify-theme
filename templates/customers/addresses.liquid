@@ -1,0 +1,61 @@
+<div class="account js-scroll" data-view="account">
+  {% render 'account-nav' %}
+  <div class="account__content">
+    <div class="account-content__wrapper account-content__wrapper--small-padding">
+      <h1 class="account-content__title">
+        My Account
+      </h1>
+      
+      <div class="account-content--my-account">
+        <ul class="account__addresses">
+        {% if customer.addresses.size > 0 %}
+          {% for address in customer.addresses %}
+            {% render 'account-address' address: address %}
+          {% endfor %}
+        {% else %}
+          <li class="address">
+              No addresses added.
+          </li>
+        {% endif %}
+        </ul>
+        {% if customer.addresses.size > 0 %}
+        <div class="account__forms js-editForms">
+          {% for address in customer.addresses %}
+            <div class="account__form account__form--edit js-accountEditAddress" data-form-id="{{ address.id }}" aria-hidden="true">
+              <div class="account-form__wrapper">
+                <div class="account-content__title">
+                  Edit address
+                </div>
+                <div class="account-form--edit js-formValidation js-accountAddressFormParent">
+                {% form 'customer_address', address %}
+                  {% render 'account-address-form' %}
+                {% endform %}
+                </div>
+                <button class="account-form__cancel js-accountEditAddressCancel">
+                  Cancel
+                </button>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      {% endif %}
+      </div>
+    </div>
+  </div>
+
+  <div class="account__content">
+    <div class="account-content__wrapper">
+      <div class="js-accountAddNewAddress">
+        <h2 class="account-content__title">
+          Add new address
+        </h2>
+        
+        <div class="js-formValidation js-accountAddressFormParent">
+        {% form 'customer_address', customer.new_address %}
+          {% render 'account-address-form' new: true addresses: customer.new_address %}
+        {% endform %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

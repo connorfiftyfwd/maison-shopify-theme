@@ -1,0 +1,19 @@
+<div class="journal-slider js-scroll js-scroll--fade">
+  {% unless title == blank %}
+    <div class="journal-slider__title">
+      {{ title }}
+    </div>
+  {% endunless %}
+  <div class="journal-slider__items js-slider js-mobileSlider slider" data-slider="journal">
+    {% for article in blogs['journal'].articles limit: 9 %}
+      <div class="journal-slider__item slide js-slide">
+        <div class="journal-item journal-item--slider">
+          {% render 'journal-item', article: article, slider: true %}
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+  <div class="slider-bar">
+    <div class="slider-bar__inner js-sliderBar"></div>
+  </div>
+</div>

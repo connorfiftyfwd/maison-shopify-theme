@@ -1,0 +1,21 @@
+<div class="utility__content js-toggleContent js-toggleContentTablet" id="{{ hash }}">
+  <h3 class="utility-content__header js-sideNavTabMobile" data-hash="{{ hash }}">
+    {% if headingMobile != blank %}
+      {{ headingMobile }}
+    {% else %}
+      {{ heading }}
+    {% endif %}
+    <span class="utility__arrow utility__arrow--padding"></span>
+  </h3>
+  <div class="utility-content js-sectionNav js-sideNavPanelMobile">
+    <div class="utility-content__wrapper">
+      <h3 class="utility-content__title{% if type == 'legal' %} utility-content__title--no-dots{% endif %}">
+        {{ heading }}
+      </h3>
+
+      <div class="{% if type == 'legal' %}utility__text{% else %}utility-content--copy{% endif %}">
+        {{ content | newline_to_br }}
+      </div>
+    </div>
+  </div>
+</div>

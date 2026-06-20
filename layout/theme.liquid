@@ -1,0 +1,144 @@
+<!doctype html>
+<!--[if IE 9]> <html class="ie9 no-js supports-no-cookies" lang="{{ shop.locale }}"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js supports-no-cookies" lang="{{ shop.locale }}"> <!--<![endif]-->
+<head>
+
+<!-- Google Consent Mode V2 Consentmo -->
+{% render 'gcm-integration-script' %}
+  
+<!-- Anti-flicker snippet (recommended)  -->
+<style>.async-hide { opacity: 0 !important} </style>
+<script>(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;
+h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
+(a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
+})(window,document.documentElement,'async-hide','dataLayer',4000,
+{'GTM-5DLSJHK':true});</script>
+    
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KZX8HSZ4');</script>
+<!-- End Google Tag Manager -->
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11359678859"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-11359678859');
+  </script>
+  
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="canonical" href="{{ canonical_url }}">
+  {% render 'head-tags' %}
+  {% render 'social-meta-tags' %}
+
+  <meta name="p:domain_verify" content="3818804bc7ebccd9ca8d674223cd4e25"/>
+
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ 'apple-touch-icon.png' | asset_url }}">
+  <link rel="icon" type="image/png" sizes="512x512" href="{{ 'android-chrome-512x512.png' | asset_url }}">
+  <link rel="icon" type="image/png" sizes="192x192" href="{{ 'android-chrome-192x192.png' | asset_url }}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ 'favicon-32x32.png' | asset_url }}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ 'favicon-16x16.png' | asset_url }}">
+  <link rel="icon" type="image/x-icon" href="{{ 'favicon.ico' | asset_url }}" >
+  <link rel="shortcut icon" type="image/png" href="{{ 'mstile-150x150.png' | asset_url }}">
+  <meta name="msapplication-config" content="{{ 'browserconfig.xml' | asset_url }}">
+  <link rel="mask-icon" href="{{ 'safari-pinned-tab.svg' | asset_url }}" color="#626950">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#ffffff">
+
+  <link rel="manifest" href="{{ 'site.webmanifest' | asset_url }}">
+
+  {{ 'style.css' | asset_url | stylesheet_tag }}
+  {{ 'custom.scss.css' | asset_url | stylesheet_tag }}
+  {{ 'modernizr.js' | asset_url | script_tag }}
+
+  {% capture scripts %}{{ content_for_header }}{% endcapture %}
+  {% capture restockScript %},"https:\/\/s3-us-west-2.amazonaws.com\/da-restock\/da-restock.js?shop={{ shop.permanent_domain }}"{% endcapture %}
+  {{ scripts | replace: restockScript, '' }}
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','{{ settings.GTM_ID }}');</script>
+  <!-- End Google Tag Manager -->
+  {{ settings.inject_code }}
+
+</head>
+ 
+<body
+  data-sprite="{{ 'icons.svg' | asset_url }}"
+  itemscope
+  itemtype="http://schema.org/WebPage"
+>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KZX8HSZ4"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+  
+  {% render 'header' %}
+
+  <main role="main" id="main" class="content">
+    {{ content_for_layout }}
+  </main>
+
+  {% render 'footer' %}
+
+  <script>
+    window.settings = {
+      {% unless settings.mailchimp == blank %}mailchimp: "{{ settings.mailchimp }}",{% endunless %}
+    };
+  </script>
+  <script src="{{ 'site.js' | asset_url }}"></script>
+  {{ 'custom.js' | asset_url | script_tag }}
+
+  <script>(function(){ var s = document.createElement('script'), e = ! document.body ? document.querySelector('head') : document.body; s.src = 'https://acsbapp.com/apps/app/dist/js/app.js'; s.async = true; s.onload = function(){ acsbJS.init({ statementLink : '', footerHtml : '', hideMobile : false, hideTrigger : false, language : 'en', position : 'right', leadColor : '#626950', triggerColor : '#626950', triggerRadius : '50%', triggerPositionX : 'right', triggerPositionY : 'bottom', triggerIcon : 'people', triggerSize : 'medium', triggerOffsetX : 20, triggerOffsetY : 20, mobile : { triggerSize : 'small', triggerPositionX : 'right', triggerPositionY : 'bottom', triggerOffsetX : 10, triggerOffsetY : 10, triggerRadius : '50%' } }); }; e.appendChild(s);}());</script>
+
+{{ '//cdn.shopify.com/s/files/1/0194/1736/6592/t/1/assets/booster-page-speed-optimizer.js?23' | script_tag }}
+{% if product %}
+  {% render 'klaviyo-add-to-cart-event' %}
+{% endif %}
+{% render 'freegifts-snippet' %}
+{% render 'klaviyo-back-in-stock' %}
+
+  <!-- ShopMy click tracking-->
+  <script defer src="https://static.shopmy.us/Affiliates/sms_aff_clicktrack.js"></script>
+
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const autoplayVideos = document.querySelectorAll('.homepage-video');
+
+    autoplayVideos.forEach(video => {
+      // Remove theme block that may interfere
+      const module = video.closest('.video-module');
+      if (module) module.classList.remove('is-not-playing');
+
+      // Attempt to autoplay
+      video.play().catch(err => {
+        console.warn("Autoplay prevented:", err);
+      });
+    });
+  });
+</script>
+
+<script>
+  const bar = document.getElementById("announcementBar");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 10) {
+      bar.classList.add("scrolled");
+    } else {
+      bar.classList.remove("scrolled");
+    }
+  });
+</script>
+  
+</body>
+</html>

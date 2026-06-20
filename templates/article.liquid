@@ -1,0 +1,50 @@
+<div class="article" data-view="article">
+  <div class="article__header">
+    <div class="article__header__half">
+      <div class="article__header__image">
+        {% render 'image-half', img: article.image %}
+      </div>
+    </div>
+    <div class="article__header__copy article__header__half">
+      <h1 class="article__title">{{ article.title }}</h1>
+      <div class="article__meta">
+        {% if article.metafields["global"]["author"] %}
+          TEXT: {{ article.metafields["global"]["author"] }}
+        {% endif %}
+        {% if article.metafields["global"]["photographer"] %}<br>
+          PHOTOS: {{ article.metafields["global"]["photographer"] }}
+        {% endif %}
+      </div>
+      <div class="article__excerpt">
+        {{ article.excerpt }}
+      </div>
+    </div>
+  </div>
+  <div class="article__content js-scroll js-scroll--fade">
+    <div class="article__body">
+      {{ article.content }}
+    </div>
+  </div>
+  {% if article.metafields["global"]["video"] %}
+    {% render 'video-module',
+      video: article.metafields["global"]["video"],
+      image: article.metafields["global"]["video-cover"],
+      imageMobile: article.metafields["global"]["video-cover-mobile"],
+      fromMetafields: true
+    %}
+  {% endif %}
+
+  {% if article.metafields["global"]["quote"] %}
+    {% render 'article-quote', text: article.metafields["global"]["quote"] %}
+  {% endif %}
+
+  {% if article.metafields["global"]["text-bottom"] %}
+    <div class="article__content js-scroll js-scroll--fade">
+      <div class="article__body">
+        {{ article.metafields["global"]["text-bottom"] }}
+      </div>
+    </div>
+  {% endif %}
+
+  {% render 'journal-slider', title: 'Read more:' %}
+</div>

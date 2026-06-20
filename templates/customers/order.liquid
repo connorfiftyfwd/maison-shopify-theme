@@ -1,0 +1,105 @@
+<div class="account account--order js-scroll" data-view="account">
+  {% render 'account-nav' %}
+
+  <div class="account__content">
+    <div class="account-content__wrapper">
+      <h1 class="account-content__title utility-content__title--no-dots" data-label="Order">
+        Order {{ order.name }}
+      </h1>
+      
+      <div class="account-content--order">
+        <a href="/orders" class="account__back-link">
+          Back to all orders
+        </a>
+        <table>
+          <thead>
+            <tr>
+              <th>Product</th>
+              <th>Price</th>
+              <th>Quantity</th>
+              <th>Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for line_item in order.line_items %}
+              <tr>
+                <td data-label="Product">
+                  <span class="mobile-visible">Product</span>
+                  {{ line_item.product.title }}<br />
+                  <em>{{ line_item.product.type }}</em>
+                </td>
+                <td data-labe="Price">
+                  <span class="mobile-visible">Price</span>
+                  {{ line_item.price | money }}
+                </td>
+                <td data-labe="Quantity">
+                  <span class="mobile-visible">Quantity</span>
+                  {{ line_item.quantity }}
+                </td>
+                <td data-labe="Total">
+                  <span class="mobile-visible">Total</span>
+                  {{ line_item.quantity | times: line_item.price | money }}
+                </td>
+              </tr>
+            {% endfor %}
+          </tbody>
+          <tfoot>
+            <tr>
+              <td></td>
+              <td>
+                Subtotal
+              </td>
+              <td></td>
+              <td>
+                {{ order.subtotal_price | money }}
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                Shipping
+              </td>
+              <td></td>
+              <td>
+                {{ order.shipping_price | money }}
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                Total
+              </td>
+              <td></td>
+              <td>
+                {{ order.total_price | money }}
+              </td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+
+      <div class="account-content--order-address">
+        <table>
+          <thead>
+            <tr>
+              <th>Shipping Address</th>
+              <th>Billing Address</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <span class="mobile-visible">Shipping Address</span>
+                {{ order.shipping_address | format_address }}
+              </td>
+              <td>
+                <span class="mobile-visible">Billing Address</span>
+                {{ order.billing_address | format_address }}
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

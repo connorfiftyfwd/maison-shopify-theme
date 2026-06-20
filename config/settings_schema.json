@@ -1,0 +1,182 @@
+[
+  {
+    "name": "theme_info",
+    "theme_name": "maison_d_etto",
+    "theme_version": "1.0.0",
+    "theme_author": "praesens.co",
+    "theme_documentation_url": "https:\/\/github.com\/praesensco\/maison-d-etto",
+    "theme_support_url": "https:\/\/github.com\/praesensco\/maison-d-etto"
+  },
+  {
+    "name": "Announcement Bar",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Announcement Bar"
+      },
+      {
+        "type": "text",
+        "id": "announcement_text",
+        "label": "Announcement Text",
+        "default": "Receive a curated trio of samples with every order over $95"
+      },
+      {
+        "type": "text",
+        "id": "announcement_highlight",
+        "label": "Highlight Text",
+        "default": "— THROUGH MOTHER'S DAY →"
+      },
+      {
+        "type": "url",
+        "id": "announcement_link",
+        "label": "Announcement Link"
+      }
+    ]
+  },
+  {
+    "name": "Ecommerce",
+    "settings": [
+      {
+        "type": "url",
+        "id": "continue_shopping_link",
+        "label": "Continue shopping link",
+        "info": "Continue shopping link shown when the cart is empty"
+      },
+      {
+        "type": "text",
+        "id": "mailchimp",
+        "label": "MailChimp subscription URL"
+      }
+    ]
+  },
+  {
+    "name": "Sales",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "enable_checkout",
+        "label": "Enable Checkout",
+        "info": "Uncheck to hide the cart and all buy buttons from the store.",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_waitlist",
+        "label": "Enable Waitlist",
+        "info": "Uncheck to show the waitlist fields.",
+        "default": true
+      }
+    ]
+  },
+  {
+    "name": "Header promo",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "header_promo_is_active",
+        "label": "Show header promo"
+      },
+      {
+        "type": "richtext",
+        "id": "header_promo_richtext",
+        "label": "Text",
+        "info": "Any italic text will become underlined in the header."
+      }
+    ]
+  },
+  {
+    "name": "Tracking",
+    "settings": [
+      {
+        "type": "text",
+        "id": "GTM_ID",
+        "label": "Google Tag Manager ID"
+      },
+      {
+        "type": "text",
+        "id": "inject_code",
+        "label": "Head Code Injection"
+      }
+    ]
+  },
+  {
+    "name": "Social media",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "og_image",
+        "label": "og:image",
+        "info": "1200x630px"
+      },
+      {
+        "type": "text",
+        "id": "social_instagram_link",
+        "label": "Instagram link"
+      },
+      {
+        "type": "text",
+        "id": "social_facebook_link",
+        "label": "Facebook link"
+      },
+      {
+        "type": "text",
+        "id": "social_twitter_link",
+        "label": "Twitter link"
+      }
+    ]
+  },
+  {
+    "name": "Contact",
+    "settings": [
+      {
+        "type": "text",
+        "id": "contact_phone",
+        "label": "Contact phone number"
+      },
+      {
+        "type": "text",
+        "id": "contact_email",
+        "label": "Contact email address"
+      },
+      {
+        "type": "text",
+        "id": "contact_press_email",
+        "label": "Press email address"
+      }
+    ]
+  },
+  {
+    "name": "Bundle Products",
+    "settings": [
+      {
+        "type": "paragraph",
+        "content": "Bundle Products use a special product template that adds multiple products to the cart with one click. The main bundle product item needs to be priced at 0.00 in the product admin area because the products being added to cart will combined to be the total of the bundled products in the cart and checkout. We manually override the main bundle product item price of 0.00 with the settings here and in each product template."
+      },
+      {
+        "type": "text",
+        "id": "candle_bundle_price",
+        "label": "Candle Bundle Price"
+      },
+      {
+        "type": "text",
+        "id": "sample_set_three_price",
+        "label": "3 Piece Discovery Price"
+      },
+      {
+        "type": "text",
+        "id": "sample_set_five_price",
+        "label": "5 Piece Discovery Price"
+      }
+    ]
+  },
+  {
+    "name": "Default collection thumbnail",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "default_collection_thumbnail",
+        "label": "Thumbnail"
+      }
+    ]
+  }
+]

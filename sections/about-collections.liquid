@@ -1,0 +1,104 @@
+{% schema %}
+{
+  "name": "Collections",
+  "settings": [
+    {
+      "id": "heading",
+      "type": "text",
+      "label": "Heading"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable",
+      "label": "Enable",
+      "default": true
+    }
+  ],
+  "blocks": [
+    {
+      "type": "section",
+      "name": "Collections",
+      "settings": [
+        {
+          "type": "collection",
+          "id": "col",
+          "label": "Collection"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
+
+{% if section.settings.enable %}
+  <div class="utility__content js-toggleContent js-toggleContentTablet" id="{{ section.settings.heading | downcase | handleize }}">
+    <h3 class="utility-content__header js-sideNavTabMobile" data-hash="{{ section.settings.heading | downcase | handleize }}">
+        {{ section.settings.heading }}
+      <span class="utility__arrow utility__arrow--padding"></span>
+    </h3>
+    <div class="utility-content js-sectionNav js-sideNavPanelMobile">
+      <div class="about-content__wrapper about-content__wrapper--wrap about-content__wrapper--small-padding">
+        <div class="about-content__collections-nav">
+          <ul class="js-aboutCollectionsSwitcher" role="tablist">
+            {% for block in section.blocks %}
+              {%- assign element = collections[block.settings.col] -%}
+              <li class="about-content__collection-name" role="tab" aria-expanded="false">
+                <button data-collection-id="{{ element.title | handleize }}">
+                  {{ element.title }}
+                </button>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+        
+        <div class="about-collection__wrapper js-aboutCollections" role="tablist">
+          {% for block in section.blocks %}
+            {%- assign el = collections[block.settings.col] -%}
+            <div class="js-toggleContent js-toggleContentTablet js-aboutCollection">
+              <div class="about-content__collection-heading js-aboutCollectionMobileTab" data-collection-id="{{ el.title | handleize }}" role="tab" aria-expanded="false">
+                {{ el.title }}
+                <span class="utility__triangle"></span>
+              </div>
+
+              <div class="about-collection__content js-aboutCollectionMobileTabpanel" data-collection-content="{{ el.title | handleize }}" role="tabpanel" aria-hidden="true">
+                <div class="about-collection__content-wrap">
+                  <div class="about-collection__content-panel js-aboutCollectionContentPanel">
+                    <div class="about-content--description utility-content--no-padding">
+                      {{ el.description }}
+                    </div>
+                  </div>
+
+                  <ul class="about-content__collection about-collection__wrapper--slider js-slider js-mobileSlider slider" data-slider="about">
+                    {% for product in el.products limit: 5 %}
+                      <li>
+                        <a href="{{ product.url }}" class="about-content__collection-item">
+                          <div class="about-collection-item__image">
+                            <picture>
+                              <source srcset="{{ product.images[0] | image_url: width: 80, height: 100 }} 1x,
+                                              {{ product.images[0] | image_url: width: 160, height: 200 }} 2x"/>
+                              <img style="object-fit: contain;"  src="{{ product.images[0] | image_url: width: 80, height: 100 }}" alt="{{ product.title }}" class="is-loading" loading="lazy" height="320" width="180">
+                            </picture>
+                          </div>
+                          <div class="about-collection-item__content">
+                            <h5 class="about-collection-item__name">
+                              {{ product.title }}
+                            </h5>
+                            {% if product.metafields["global"]["short-description"] %}
+                              <div class="about-collection-item__description">
+                                {{ product.metafields["global"]["short-description"] }}
+                              </div>
+                            {% endif %}
+                          </div>
+                        </a>
+                      </li>
+                    {% endfor %}
+                  </ul>
+                </div>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+{% endif %}

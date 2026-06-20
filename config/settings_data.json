@@ -1,0 +1,3748 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "current": {
+    "announcement_text": "Receive a curated trio of samples with every order over $95",
+    "announcement_highlight": "—  THROUGH FATHER'S DAY",
+    "announcement_link": "/collections/shop-all",
+    "continue_shopping_link": "",
+    "mailchimp": "https://maisondetto.us20.list-manage.com/subscribe/post-json?u=127c2f134b0233f6532c47967&id=3eebea79dd",
+    "enable_checkout": true,
+    "enable_waitlist": true,
+    "header_promo_is_active": true,
+    "header_promo_richtext": "<p><a href=\"/products/discovery-set-collection-i\" title=\"DISCOVERY SET: Collection I\">Try at Home</a></p>",
+    "GTM_ID": "",
+    "inject_code": "",
+    "og_image": "",
+    "social_instagram_link": "",
+    "social_facebook_link": "",
+    "social_twitter_link": "",
+    "contact_phone": "",
+    "contact_email": "",
+    "contact_press_email": "",
+    "candle_bundle_price": "$500.00",
+    "sample_set_three_price": "$65.00",
+    "sample_set_five_price": "$85.00",
+    "default_collection_thumbnail": "",
+    "checkout_header_image": "",
+    "checkout_logo_image": "shopify://shop_images/miason-d-etto-logo.png",
+    "checkout_logo_position": "center",
+    "checkout_logo_size": "medium",
+    "checkout_body_background_image": "",
+    "checkout_body_background_color": "#fff",
+    "checkout_input_background_color_mode": "white",
+    "checkout_sidebar_background_image": "",
+    "checkout_sidebar_background_color": "#f3f2ee",
+    "checkout_heading_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+    "checkout_body_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+    "checkout_accent_color": "#626950",
+    "checkout_button_color": "#626950",
+    "checkout_error_color": "#e32c2b",
+    "color_text": "#3d4246",
+    "color_body_text": "#69727b",
+    "color_sale_text": "#557B97",
+    "color_button": "#557B97",
+    "color_button_text": "#fff",
+    "color_small_button_text_border": "#3d4246",
+    "color_text_field_text": "#000",
+    "color_text_field_border": "#949494",
+    "color_text_field": "#fff",
+    "color_image_overlay_text": "#fff",
+    "color_image_overlay": "#3d4246",
+    "image_overlay_opacity": 40,
+    "color_borders": "#e8e9eb",
+    "color_body_bg": "#fff",
+    "type_header_font": "work_sans_n6",
+    "type_header_base_size": 26,
+    "type_base_font": "work_sans_n4",
+    "type_base_size": 16,
+    "type_bold_product_titles": false,
+    "share_facebook": true,
+    "share_twitter": true,
+    "share_pinterest": true,
+    "sections": {
+      "1569424912417": {
+        "type": "hero",
+        "settings": {
+          "image_1": "shopify://shop_images/Screenshot_2025-11-09_at_3.58.42_PM.png",
+          "copy_1": "",
+          "url_1": "shopify://products/discovery-set-new0",
+          "image_2": "shopify://shop_images/MDE_DISCOVERY_SET-18.jpg",
+          "copy_2": "NOW THROUGH MOTHER’S DAY. <br> A SELECTION OF THREE SIGNATURE 2.5ML SCENTS IS OUR GIFT TO YOU WITH EVERY PURCHASE OF $95 OR MORE. <br>",
+          "url_2": "shopify://products/discovery-set-new0"
+        }
+      },
+      "1569425852619": {
+        "type": "journal-slider",
+        "disabled": true,
+        "settings": {
+          "section_title": "The Journal"
+        }
+      },
+      "1569427181722": {
+        "type": "fragrance-house",
+        "blocks": {
+          "1569427253093": {
+            "type": "section",
+            "settings": {
+              "thumbnail": "shopify://shop_images/HP-About-02.jpg"
+            }
+          },
+          "1569427261979": {
+            "type": "section",
+            "settings": {
+              "thumbnail": "shopify://shop_images/HOMEPAGE-06.jpg"
+            }
+          }
+        },
+        "block_order": [
+          "1569427253093",
+          "1569427261979"
+        ],
+        "name": "A MODERN FRAGRANCE HOUSE",
+        "settings": {
+          "copy": "<p>Conceptual Luxury Fragrances. Inspired by Horses. </p><p>Maison d’Etto is a luxury fragrance house rooted in authenticity, intentionality, and the equestrian spirit.</p><p>Each scent is inspired by a real horse that changed a life — capturing invisible languages, deep emotion, and the quiet power of movement. Crafted in collaboration with world-renowned perfumers, our fragrances are raw, personal expressions of memory, identity, and the beauty of imperfection.</p><p>Where scents are not just worn but lived. Thoughtfully created to inspire moments of connection, reflection, and well-being, each fragrance nurtures the human spirit, awakening deeper meaning — one moment at a time.</p><p>Authentic, genderless, and modern, Maison d’Etto invites you to connect with scent in a more intimate, profound way — one that honors individuality and champions sustainability, story, and soul.</p>",
+          "link": "/pages/about",
+          "main_thumbnail": "shopify://shop_images/HP-About-01_eacbda23-64c5-40c8-83e1-e9e35097f765.jpg",
+          "main_thumbnail_caption": "<p>Maison d'Etto draws inspiration from art, architecture, design and the modern equestrian lifestyle.</p>"
+        }
+      },
+      "1569427951573": {
+        "type": "featured-product",
+        "settings": {
+          "product": "discovery-set-new0",
+          "featured_product_image": "shopify://shop_images/6U1A0060_copy.jpg",
+          "featured_product_copy": "<p>We invite you to experience all seven fragrances in our collection—each inspired by the horses that have taken me on deeply personal journeys, connecting me to myself, others, nature, and the world through unspoken, invisible languages. May these scents become meaningful metaphors in your own story.</p>"
+        }
+      },
+      "1569428918320": {
+        "type": "products-slider",
+        "blocks": {
+          "18bed5a8-662f-40a4-93ab-2eef1bd83bf7": {
+            "type": "product_block",
+            "settings": {
+              "product": "discovery-set-new0"
+            }
+          },
+          "1573016938244": {
+            "type": "product_block",
+            "settings": {
+              "product": "i-dream"
+            }
+          },
+          "1573016929447": {
+            "type": "product_block",
+            "settings": {
+              "product": "durban-jane"
+            }
+          },
+          "1569428925237": {
+            "type": "product_block",
+            "settings": {
+              "product": "macanudo-60ml-edp"
+            }
+          },
+          "fe8de7d4-103c-444d-ba74-051ade77feec": {
+            "type": "product_block",
+            "settings": {
+              "product": "canaan"
+            }
+          },
+          "97b56f48-a389-4ecc-b7cf-c130c2a39aa1": {
+            "type": "product_block",
+            "settings": {
+              "product": "noisette"
+            }
+          },
+          "1573016897754": {
+            "type": "product_block",
+            "settings": {
+              "product": "verdades"
+            }
+          },
+          "product_block_YkQAB6": {
+            "type": "product_block",
+            "disabled": true,
+            "settings": {
+              "product": "discovery-set-5-piece"
+            }
+          },
+          "product_block_8Dz3ht": {
+            "type": "product_block",
+            "disabled": true,
+            "settings": {
+              "product": "discovery-set-3-piece"
+            }
+          },
+          "80dc30e3-4c0e-4401-8a88-f5c0ecc674c7": {
+            "type": "product_block",
+            "disabled": true,
+            "settings": {
+              "product": "durban-jane-275g-candle"
+            }
+          },
+          "d8f576e7-b6f4-4864-b3b2-9ce97710d88a": {
+            "type": "product_block",
+            "disabled": true,
+            "settings": {
+              "product": "macanudo-275g-candle"
+            }
+          },
+          "1569428940548": {
+            "type": "product_block",
+            "disabled": true,
+            "settings": {
+              "product": "karat-eg-275g-candle"
+            }
+          }
+        },
+        "block_order": [
+          "18bed5a8-662f-40a4-93ab-2eef1bd83bf7",
+          "1573016938244",
+          "1573016929447",
+          "1569428925237",
+          "fe8de7d4-103c-444d-ba74-051ade77feec",
+          "97b56f48-a389-4ecc-b7cf-c130c2a39aa1",
+          "1573016897754",
+          "product_block_YkQAB6",
+          "product_block_8Dz3ht",
+          "80dc30e3-4c0e-4401-8a88-f5c0ecc674c7",
+          "d8f576e7-b6f4-4864-b3b2-9ce97710d88a",
+          "1569428940548"
+        ],
+        "settings": {}
+      },
+      "1569841775800": {
+        "type": "index-video-module",
+        "disabled": true,
+        "settings": {
+          "video": "https://cdn.shopify.com/s/files/1/0053/1890/1795/files/Flowers.mp4?833",
+          "videoMobile": ""
+        }
+      },
+      "utility-nav": {
+        "type": "utility-nav",
+        "blocks": {
+          "1571231363463": {
+            "type": "section",
+            "settings": {
+              "title": "Contact",
+              "stockist_link": ""
+            }
+          },
+          "1597888831567": {
+            "type": "section",
+            "settings": {
+              "title": "Stockists",
+              "stockist_link": "shopify://pages/stockists"
+            }
+          },
+          "1571231410996": {
+            "type": "section",
+            "settings": {
+              "title": "F.A.Q.",
+              "stockist_link": ""
+            }
+          },
+          "1571231472763": {
+            "type": "section",
+            "settings": {
+              "title": "Shipping & Returns",
+              "stockist_link": ""
+            }
+          }
+        },
+        "block_order": [
+          "1571231363463",
+          "1597888831567",
+          "1571231410996",
+          "1571231472763"
+        ],
+        "settings": {}
+      },
+      "utility-contact": {
+        "type": "utility-contact",
+        "blocks": {
+          "1571231292705": {
+            "type": "section",
+            "settings": {
+              "contactName": "Press Inquiries",
+              "contactDetails": "press@maisondetto.com"
+            }
+          },
+          "1571231264082": {
+            "type": "section",
+            "settings": {
+              "contactName": "General Information",
+              "contactDetails": "info@maisondetto.com"
+            }
+          }
+        },
+        "block_order": [
+          "1571231292705",
+          "1571231264082"
+        ],
+        "settings": {
+          "heading": "Contact",
+          "headingMobile": "Contact",
+          "isContactEnable": true
+        }
+      },
+      "utility-faq": {
+        "type": "utility-faq",
+        "blocks": {
+          "1597877325515": {
+            "type": "section",
+            "disabled": true,
+            "settings": {
+              "question": "Stockists",
+              "answer": "Bergdorf Goodman \n754 5th Avenue\nNew York, NY 10019\n212-753-7300\n\n\nThe Conservatory New York at Hudson Yards\n20 Hudson Yards\nNew York, NY 10001\n212-473-1333\n\nThe Conservatory Dallas\nThe Conservatory on Two\n100 Highland Park Village, 205 Dallas, TX 75205\n972-629-9919\n\nThe Conservatory Bijoux\n4 Highland Park Village \nDallas, TX 75205\n972-629-9919\n\nThe Conservatory Napa\nEdward James Courtyard\n6540 Washington St\nYountville, CA 94599\n707-415-5015\n\nThe Future Perfect's Casa Perfect\nBy Appointment Only \ninfo@maisondetto.com\n\nMatriark \n133 Main Street \nSag Harbor, NY 11963\n631-919-5577\n\nMarla Aaron Fine Jewelry \nBy Appointment Only \ninfo@marlaaaron.com \n646-628-2389\n\nNeue House New York \nBy Appointment Only \ninfo@maisondetto.com\n110 E 25th Street\nNew York, NY 10010"
+            }
+          },
+          "1573448054372": {
+            "type": "section",
+            "settings": {
+              "question": "How can I experience the fragrances in person?",
+              "answer": "The Discovery Set was created to try each fragrance on your own time at your own pace, in the comfort of your home. Additionally, if you would like a deeper overview of the collection you can email info@maisondetto.com to find the nearest stockist to you."
+            }
+          },
+          "1571231334137": {
+            "type": "section",
+            "settings": {
+              "question": "When will my order ship?",
+              "answer": "We strive to ship all orders within 3 business days of the day the order is placed. According to law, we must ship perfume via ground transport so shipping can take 1-7 days with our carriers, USPS or UPS (usually 1-2 days within NY-Tristate). \n\nIf you need your order expedited please email info@maisondetto.com directly before placing order and we can determine the most expedient method for delivery."
+            }
+          },
+          "1573447785127": {
+            "type": "section",
+            "settings": {
+              "question": "Need help?",
+              "answer": "Please email us at info@maisondetto.com"
+            }
+          }
+        },
+        "block_order": [
+          "1597877325515",
+          "1573448054372",
+          "1571231334137",
+          "1573447785127"
+        ],
+        "settings": {
+          "heading": "F.A.Q.",
+          "headingMobile": "F.A.Q.",
+          "isFaqEnable": true
+        }
+      },
+      "utility-content": {
+        "type": "utility-content",
+        "settings": {
+          "heading": "Shipping & Returns",
+          "headingMobile": "Shipping & Returns",
+          "content": "<p>Maison d'Etto ships to the continental United States (excludes Puerto Rico, Guam, American Samoa, Alaska, and Hawaii). We are currently not able to deliver shipments to P.O boxes or APO/FPO addresses, military states, U.S territories, or International locations. </p><p>We ship orders within 3 business days of the day the order is placed. We must ship perfume via ground transport according to the law, so shipping time can take 1-7 days with our carrier, USPS or UPS (usually 1-2 days within NY-Tristate area).</p><p>DELIVERY DELAYS & LOST PACKAGES<br/>All purchase orders come with the opportunity for you to protect your purchase at checkout with Route shipping insurance. We are not responsible for carrier delivery delays and lost packages. If a package is lost by the carrier, and you have not opted in Route insurance, we will do our best to assist you and the carrier to find it but cannot make any guarantees. Please email <a href=\"mailto:info@maisondetto.com\">info@maisondetto.com</a> with any additional questions regarding shipping and delivery.</p><p>RETURNS & EXCHANGES<br/>If you are interested in returning an eligible, unopened, unused product with packaging fully intact within 14 days of receipt of your order, you may initiate a return request by emailing <a href=\"mailto:info@maisondetto.com\">info@maisondetto.com</a> and referencing your order number. </p><p>The customer is responsible for the costs of return shipping. Once the product is received back to our warehouse, we will refund the purchase amount minus a restocking fee of $15. Returns will only be accepted the original packaging and labeling are fully intact and the product is in salable condition. Refunds for returned merchandise will be made within two weeks of the return of the product to the original credit card. </p><p>If you have a quality concern such as breakage during transportation or malfunction within a 14-day period following delivery, please take a photo of the issue in question and send it with your order number and description to <a href=\"mailto:info@maisondetto.com\">info@maisondetto.com</a> and we will happily proceed to resolve the issue. </p><p>Items purchased online at <a href=\"http://www.maisondetto.com\">www.maisondetto.com</a> will not be accepted in retail store or pop-up locations or any third-party locations carrying Maison d'Etto merchandise.</p><p>Items purchased in a retail store, pop-up location, or third party location are not available for return directly to Maison d'Etto.</p><p>The Discovery Set and customized sample sets are final sale, and not eligible for return.</p><p>ADDITIONAL QUESTIONS<br/>For any other questions, please contact us via email at <a href=\"mailto:info@maisondetto.com\">info@maisondetto.com</a>. Please reference your order number within your email to help facilitate the process. We are available Monday through Friday, between 10:00AM and 3:00PM Eastern standard time.</p>",
+          "isShippingEnable": true
+        }
+      },
+      "product-shipping": {
+        "type": "product-shipping",
+        "settings": {
+          "copy": "<p>Please see below for our Shipping & Return policies:</p>",
+          "text": "<p>Standard shipping will be calculated at checkout. By law, fragrance must be shipped via ground transportation, because of this please allow additional time for it to reach your destination. We hope you are fully satisfied with your order and experience, however in the case that a return needs to be made. You are able to return unopened, unused product with packaging fully intact within 14 days of delivery. There will be a $15 restocking fee and you will be responsible for the costs of return shipping. If the product is damaged we will address on a case by case basis. For additional information on our policies please review our shipping & returns page. Additional questions? <a href=\"/pages/support\">Contact us</a>.</p>"
+        }
+      },
+      "about-nav": {
+        "type": "about-nav",
+        "blocks": {
+          "1572532234303": {
+            "type": "section",
+            "settings": {
+              "title": "About"
+            }
+          },
+          "1572532236857": {
+            "type": "section",
+            "settings": {
+              "title": "Collections"
+            }
+          },
+          "1572532239641": {
+            "type": "section",
+            "settings": {
+              "title": "People"
+            }
+          },
+          "1588592362673": {
+            "type": "section",
+            "settings": {
+              "title": "Press"
+            }
+          }
+        },
+        "block_order": [
+          "1572532234303",
+          "1572532236857",
+          "1572532239641",
+          "1588592362673"
+        ],
+        "settings": {}
+      },
+      "about": {
+        "type": "about",
+        "settings": {
+          "heading": "About",
+          "image": "shopify://shop_images/ABOUT-01.jpg",
+          "title": "MODERN LUXURY SCENTS \nTO INSPIRE CONNECTION",
+          "contentLeft": "<p>What does ETTO mean?<br/></p><p>The word ETTO is born from Ethics and Motto — a quiet echo of the beliefs we carry with us, constant and unshakable, no matter where we stand in life. It also gestures toward the phrase Each To Their Own — a reverence for individuality, self-expression, and the freedom to feel deeply and define beauty on one’s own terms.</p><p>At Maison d’Etto, we don’t impose meaning. We offer a sensorial framework — a series of olfactive portraits — through which you are invited to explore your own truths. </p><p>Here, fragrance becomes a form of inner dialogue, a return to self, and a space for memory, movement, and discovery.</p>",
+          "contentRight": "<p>What does ETTO mean? </p><p>The word ETTO is a combination of Ethics + Motto. ETTO represents the core truths and beliefs carried despite where you are in life or what you are going through. ETTO also stands for \"Each To Their Own.\" We are a brand that refuses to dictate values and beliefs to the wearer but empowers them to explore what ETTO uniquely means. </p><p>What does Etto actually mean? Derived from the words <em>“Ethics”</em> and <em>“Motto,”</em> ETTO reflects the core beliefs that guide us — truths that remain constant, no matter where life leads. </p><p>At Maison d’Etto, we don’t dictate what to believe or how to feel. Instead, we offer a canvas — through fragrance — for you to explore and define what <em>Etto</em> means to you. Our scents are designed to evoke emotion, stir memory, and connect you to something deeper and uniquely your own.</p><p>It also stands for <em>“Each To Their Own,”</em> a phrase that captures our belief in personal freedom, self-expression, and individuality.</p>",
+          "enable": true
+        }
+      },
+      "about-collections": {
+        "type": "about-collections",
+        "blocks": {
+          "1572531135943": {
+            "type": "section",
+            "settings": {
+              "col": "fragrance"
+            }
+          }
+        },
+        "block_order": [
+          "1572531135943"
+        ],
+        "settings": {
+          "heading": "Collections",
+          "enable": true
+        }
+      },
+      "about-people": {
+        "type": "about-people",
+        "blocks": {
+          "1572541633884": {
+            "type": "section",
+            "settings": {
+              "name": "Brianna Lipovsky",
+              "position": "Founder",
+              "image": "shopify://shop_images/ABOUT-Team-Brianna.jpg",
+              "description": "Brianna Lipovsky is the Founder of Maison d’Etto.\nA former agency executive and brand builder who is marked by her incredible attention to detail, vast knowledge of the fashion, luxury, lifestyle and beauty industries, as well as her fierce passion for the equestrian world.\n \nFollowing over a decade of successfully working with top-tier brands, and running highly sought-after creative agencies in North America. A personal desire to have a business of her own as well as a creative outlet led to Maison d’Etto. Its development began with two of Brianna’s greatest passions: horses and scent. \n\nBrianna was intrigued by both as a young girl. Her first scent memory was riding a lawn mower with her father — the intoxicating scent of freshly cut grass, mixed with gasoline and the sharp metallic notes of the blades. Her further olfactive exposure took on a life of its own at the age of five when she rode her first horse and her life was irrevocably changed. From that point forward, her days were spent at the stables, caring for, cleaning, training and competing horses. With olfactive territories being developed in the first decade of life it’s no surprise that horses and nature serve as the pillars of inspiration for Maison d’Etto. \n\nBrianna began Maison d'Etto as a way of merging these two loves. The power of scent as a means of memory — of storytelling — has remained a constant source of curiosity and meaning throughout her life. \n \nWhen Brianna is not balancing family-life, launching her own brand, or running her own consulting agency, she can be found on a horse climbing her way up to the Grand Prix Level of Dressage – a discipline she describes as living, breathing art.",
+              "extraInformation": "",
+              "coworking": ""
+            }
+          },
+          "1572541705691": {
+            "type": "section",
+            "settings": {
+              "name": "Carlos Benaïm",
+              "position": "Perfumer",
+              "image": "shopify://shop_images/ABOUT-Team-Carlos2.jpg",
+              "description": "“The art of perfume is in the olfactory image - the lingering impression left in the air after its wearer has left the room.”\nCarlos Benaïm is one of the living legends of modern perfumery. Son of a pharmacist who distilled plants and flowers as a hobby, Carlos’ earliest childhood recollections are the smells of Tangiers. The distinctive violet scent of his grandfather’s tobacco, the pennyroyal essence that lingered on his father’s hands after a day working with medicinal herbs, the odor of the markets where Berber women would come from the mountains to sell their wares – this rich tapestry of memories from the southern Mediterranean provides a distinctive twist to Carlos’ approach to perfume.\nHe is also a skilled painter. Carlos interlaces the intangibility of color and emotion, balancing them with a deep understanding of the technical aspects of perfumery. His perception of perfumery is touched by the science of the consumer’s scent experience and how fragrance behaves on the skin. Composing in four dimensions, Carlos is an architect of the conceptual. Balancing his own vision with true passion for the art of it all.",
+              "extraInformation": "",
+              "coworking": "<p></p><p><a href=\"/products/rotano-60ml-edp\" title=\"Rotano\">Rotano</a> <a href=\"/products/karat-eg-60ml-edp\" title=\"Karat EG\">Karat EG</a></p><p></p>"
+            }
+          },
+          "1572825502638": {
+            "type": "section",
+            "settings": {
+              "name": "Celine Barel",
+              "position": "Perfumer",
+              "image": "shopify://shop_images/ABOUT-Team-Celine1.jpg",
+              "description": "“My fragrances are an invitation to the voyage — enter through the looking glass.”\nCeline Barel grew up surrounded by the heady aromas of Southern France, and was impassioned by fragrance since childhood. Engaging with blind children at her primary school, she turned to the olfactory world to share experiences and stimulate play. Morocco was another childhood home, and here Celine developed her taste for adventure, tribal cultures and exoticism.\nThese early influences led her to “find beauty in harmonious imperfection” and the world of dreams, imagination and stories. Today, Celine equates her role as perfumer with that of a novelist. “I aim to create fragrances that tell a story; an invitation to the Voyage.”  \nCommitted to promoting the world of fragrance beyond conventional parameters, and a long-term lover and student of painting, design, literature and philosophy, Celine is particularly interested in mixed media pairings and fragrance-related collaborations. Her initiatives to date include exhibitions with the Museum of Modern Art, Parsons School of Design, and Robert Wilson’s Watermill Center, where she served as Resident Artist.",
+              "extraInformation": "",
+              "coworking": "<p><a href=\"/products/durban-jane\" title=\"Durban Jane\">Durban Jane</a> <a href=\"/products/canaan\" title=\"Canaan\">Canaan</a></p>"
+            }
+          },
+          "1572825568515": {
+            "type": "section",
+            "settings": {
+              "name": "Mackenzie Reilly",
+              "position": "Perfumer",
+              "image": "shopify://shop_images/ABOUT-Team-Mackenzie2.jpg",
+              "description": "\"To gain the ability to sculpt memories, experiences and ideas out of tiny, invisible, volatile molecules is the most incredible, shocking, brilliant and powerful thing I have ever realized.”\n\nMackenzie Reilly was born and raised in New York. She remembers feeling bewitched, at the age of five, by the glamorous sight of her mother applying Shalimar perfume at her vanity. However, at the age of sixteen a singular fragrance completely changed her life and inspired her to become a perfumer. The niche perfume Dzing!, designed to conjure the aroma of the circus, immediately captured Mackenzie’s curiosity and imagination. \n\nToday, Mackenzie has a strong self-taught impulse and loves to experiment in both the lab and field to develop raw, virginal ideas impervious to market trends.",
+              "extraInformation": "",
+              "coworking": "<p><a href=\"/products/macanudo-60ml-edp\" title=\"Macanudo\">Macanudo</a></p>"
+            }
+          },
+          "d0a675fa-e5b6-4816-b473-bfd3367351a6": {
+            "type": "section",
+            "settings": {
+              "name": "Pascal Gaurin",
+              "position": "Perfumer",
+              "image": "shopify://shop_images/BW_190226_IFF_MA_PASCAL_GAURIA_0348_BW_copy.jpg",
+              "description": "“Anything that expresses extreme contrast – that’s what inspires me most.”\n\nAt 19 years old, Pascal Gaurin radically changed course to follow his dream. Early on, his fascination with craftsmanship was a way to connect with his great grandfather, a sculptor of bronze, and also gave him the certitude that one day he would work with luxury products. While preparing to enter business school, HEC in Paris, Pascal picked up an issue of Vogue and read an article on the perfume industry and had a revelation. There and then, he decided that his single obsession would be to create perfume.\n\nPascal began working as a perfumer in Hong Kong. He created fragrances for China, Australia, New Zealand and the Philippines – a cultural shock that he considered a lesson in humility. Disconnected from everything familiar, Pascal learned Asiatic customs and olfactive tastes. Eventually, he made New York his home.\n\nPascal is most inspired by dense essences, like resins and deep woods. His taste for darkness originates from his grandparents’ home in Creuse, France, where the forests are very dark and it always feels like nighttime. “You can feel the vapors of mushrooms, leaves and bark.” he says, and it only takes the smell of a bale of hay, an uncultivated field or a stable to bring a smile to his lips. “I love frontal materials, those you need to tame like a sculptor does stone.”",
+              "extraInformation": "",
+              "coworking": "<p></p><p><a href=\"/products/noisette\" title=\"Noisette\">Noisette</a></p>"
+            }
+          },
+          "section_AehCU8": {
+            "type": "section",
+            "settings": {
+              "name": "Julien Rasquinet",
+              "position": "Perfumer",
+              "image": "shopify://shop_images/JULIEN_RASQUINET_BW_PORTRAIT.jpg",
+              "description": "Julien Rasquinet was Pierre Bourdon’s last student after a chance meeting. Rasquinet has since carved a name for himself as being one of the most dynamic niche luxury perfumers in the world. Beginning his career working solely with the Creed family in Dubaï he then moved to the fragrance house, IFF, where he was discovered by Frederic Malle. His experience working with Tunisian neroli and orange blossom made him the perfect nose for Verdades.\n\n“My creations can be very figurative or very abstract, but they will always have the ambition to touch.”",
+              "extraInformation": "",
+              "coworking": "<p><a href=\"/products/verdades\" title=\"VERDADES\">Verdades</a></p>"
+            }
+          },
+          "1573187524442": {
+            "type": "section",
+            "settings": {
+              "name": "Lotta Nieminen",
+              "position": "Creative Director",
+              "image": "shopify://shop_images/ln-portrait.jpg",
+              "description": "Lotta Nieminen Studio is a graphic design, art direction and illustration studio creating holistic visual solutions for clients across disciplines. Passionate about finding the best tools to execute content-driven visuals, the studio works as a creative partner in all aspects branding, bringing visual identities to life through thoughtfully crafted print and digital implementations.\n\nOriginally from Finland, Lotta Nieminen studied graphic design and illustration at the University of Art and Design Helsinki and the Rhode Island School of Design, before founding her New York-based studio in 2012. She has been nominated for Forbes magazine’s annual 30 Under 30 list, the Art Directors Club Young Guns award and Print magazine’s New Visual Artist, and has given talks at conferences and educational institutions across the United States and Europe.",
+              "extraInformation": "",
+              "coworking": ""
+            }
+          },
+          "1573187957797": {
+            "type": "section",
+            "settings": {
+              "name": "Courtney Maum",
+              "position": "Author & Naming",
+              "image": "shopify://shop_images/Courtney_Maum_9-14-16_578_1.jpg",
+              "description": "Courtney Maum is an avid horsewoman, polo player and accomplished novelist. Her third novel, COSTALEGRE was a GOOP Book Club pick, TOUCH was an NPR Best Book of the Year selection, and I AM HAVING SO MUCH FUN HERE WITHOUT YOU, her debut, was voted a \"best book of the summer\" by everyone from O the Oprah Magazine to The Wall Street Journal. In addition to her creative writing, she is also a corporate namer with twenty years experience in marketing and branding. Her favorite thing to do is ride with her daughter and she is currently working on a memoir about the relationship between horses and mental health. Find out more at courtneymaum.com where you can sign up for her newsletter, Maumalog.",
+              "extraInformation": "",
+              "coworking": ""
+            }
+          }
+        },
+        "block_order": [
+          "1572541633884",
+          "1572541705691",
+          "1572825502638",
+          "1572825568515",
+          "d0a675fa-e5b6-4816-b473-bfd3367351a6",
+          "section_AehCU8",
+          "1573187524442",
+          "1573187957797"
+        ],
+        "settings": {
+          "heading": "People",
+          "content": "Maison d'Etto is a study in collaboration. Working with award-winning graphic artists, perfumers, artisans, photographers, designers and engineers. Every aspect of Maison d'Etto is brought to life with love and passion.",
+          "enable": true
+        }
+      },
+      "about-as-seen-in": {
+        "type": "about-as-seen-in",
+        "blocks": {
+          "1578280078144": {
+            "type": "section",
+            "settings": {
+              "image": "shopify://shop_images/30tmag-beauty-01-superJumbo_1.jpg",
+              "title": "T: NYTimes Style Magazine",
+              "description": "The Seasons Most Original Oud Perfumes",
+              "url": "https://www.nytimes.com/2019/12/30/t-magazine/oud-perfume-fragrance.html",
+              "isExternal": true
+            }
+          },
+          "section_pn8p7r": {
+            "type": "section",
+            "settings": {
+              "image": "shopify://shop_images/DISCOVERY_SET_STACK_WITH_BALL.jpg",
+              "title": "Highsnobiety",
+              "description": "Horses Smell Like Magic",
+              "url": "https://www.highsnobiety.com/p/maison-detto-perfume-brianna-lipovsky-interview/",
+              "isExternal": false
+            }
+          },
+          "1578282314448": {
+            "type": "section",
+            "settings": {
+              "image": "shopify://shop_images/750XX_XXX_05C_MG_0609Brianna_Portrait.jpg",
+              "title": "Cultured Magazine",
+              "description": "Perfect Scents With Maison d'Etto",
+              "url": "https://www.culturedmag.com/perfect-scents-with-maison-detto/",
+              "isExternal": false
+            }
+          },
+          "section_dtViC4": {
+            "type": "section",
+            "settings": {
+              "image": "shopify://shop_images/dsc_0226_copy_2.jpg",
+              "title": "FORBES",
+              "description": "New Brand to Know Maison d'Etto",
+              "url": "https://www.forbes.com/sites/loreleimarfil/2020/12/04/new-brand-to-knowmaison-detto/?sh=28748f0f3e08",
+              "isExternal": false
+            }
+          },
+          "section_FaEJQT": {
+            "type": "section",
+            "settings": {
+              "image": "shopify://shop_images/DSC_9814_copy-b_1.jpg",
+              "title": "Harper's Bazaar",
+              "description": "Spotlight on Maison d'Etto",
+              "url": "https://shop.harpersbazaar.com/the-edit/spotlight-maison-d-etto-brianna-lipovksy-interview",
+              "isExternal": false
+            }
+          },
+          "f7a0a8c8-9d9d-46a8-9c94-186f73c8270c": {
+            "type": "section",
+            "settings": {
+              "image": "shopify://shop_images/10.01.20_MAISONdETTO_OMagazine_MdE_Feature_Crop_67986bbc-2853-4137-bab2-a75eb4c0b203.jpeg",
+              "title": "The Oprah Magazine",
+              "description": "Rotano Named, \"Scents of Wonder\"",
+              "url": "shopify://products/rotano-60ml-edp",
+              "isExternal": false
+            }
+          },
+          "section_kTgBUW": {
+            "type": "section",
+            "settings": {
+              "image": "shopify://shop_images/6U1A7019_FOR_WEB__CROP_FOR_HOMEPAGE.jpg",
+              "title": "Cultured magazine",
+              "description": "Rich, Complex, and Animalistic Fragrances",
+              "url": "",
+              "isExternal": false
+            }
+          },
+          "01509b97-a75d-4671-9f87-9b1a5679ba61": {
+            "type": "section",
+            "settings": {
+              "image": "shopify://shop_images/MOOD_WOODEN_SHELL_1200_x_1500.jpg",
+              "title": "Whitewall",
+              "description": "Using Fragrance to Build Connections",
+              "url": "https://whitewall.art/lifestyle/maison-detto-using-fragrance-to-build-connections-with-ourselves-nature-our-communities-and-the-world-around-us/",
+              "isExternal": false
+            }
+          },
+          "1578280975478": {
+            "type": "section",
+            "settings": {
+              "image": "shopify://shop_images/BFA_30133_4035921.jpg",
+              "title": "Cultured Magazine",
+              "description": "Maison d'Etto Has Arrived at Casa Perfect",
+              "url": "https://www.culturedmag.com/something-is-in-the-air-maison-detto-has-arrived/",
+              "isExternal": true
+            }
+          },
+          "section_LmCbnR": {
+            "type": "section",
+            "settings": {
+              "image": "shopify://shop_images/4.jpg",
+              "title": "Air Mail",
+              "description": "A Very Air Mail Holiday",
+              "url": "https://airmail.news/shop/collections/a-very-air-mail-holiday-gifts-for-her/products",
+              "isExternal": false
+            }
+          },
+          "1590259689988": {
+            "type": "section",
+            "settings": {
+              "image": "shopify://shop_images/4.08.20_MaisondEtto_TownandCountry_crop_copy.jpeg",
+              "title": "Town & Country",
+              "description": "Beauty Director, April Long's Seasonal Pick",
+              "url": "",
+              "isExternal": false
+            }
+          },
+          "1601644529356": {
+            "type": "section",
+            "settings": {
+              "image": "shopify://shop_images/10.01.20_MAISONdETTO_OMagazine_f62fb06b-869b-444c-81e2-259550f461a4.jpg",
+              "title": "The Oprah Magazine",
+              "description": "Rotano Named \"Scents of Wonder\"",
+              "url": "shopify://products/rotano-60ml-edp",
+              "isExternal": false
+            }
+          },
+          "section_HLezYT": {
+            "type": "section",
+            "settings": {
+              "image": "shopify://shop_images/COVER-Queen-and-Slim-2019-copy-800x997_copy_crop_9501dd20-3bbe-432e-b8e8-417b0b292095.jpeg",
+              "title": "Cultured Magazine",
+              "description": "Perfect Scents With Maison d'Etto",
+              "url": "https://www.culturedmag.com/perfect-scents-with-maison-detto/",
+              "isExternal": false
+            }
+          },
+          "section_c6yMRY": {
+            "type": "section",
+            "settings": {
+              "image": "shopify://shop_images/DISCOVERY_SET_SHADOW.jpg",
+              "title": "Vogue",
+              "description": "Must-Follow Fragrance Expert",
+              "url": "https://www.vogue.com/article/stylist-allison-bornstein-fragrance",
+              "isExternal": false
+            }
+          },
+          "587ee5a7-4171-4dd5-95d6-f70c6682e173": {
+            "type": "section",
+            "settings": {
+              "image": "shopify://shop_images/EFE15AF4-D340-41BB-86A2-02E9369CBA84.jpg",
+              "title": "Vogue",
+              "description": "Calming Scents to Reduce Election Anxiety",
+              "url": "https://www.vogue.com/article/calming-scents-to-reduce-stress",
+              "isExternal": false
+            }
+          },
+          "cb96981d-5553-4dfb-81ca-7e9373b1f481": {
+            "type": "section",
+            "settings": {
+              "image": "shopify://shop_images/5CD2D3DE-29BD-400A-9C8A-E8DD7386FDA8.jpg",
+              "title": "Vogue",
+              "description": "Winter's Best Fragrances Are Perfect for Gifting",
+              "url": "https://www.vogue.com/article/winter-best-fragrances-holiday-gifting",
+              "isExternal": false
+            }
+          },
+          "1591373496098": {
+            "type": "section",
+            "settings": {
+              "image": "shopify://shop_images/3757-02E_LCM_MEO_RGB_ECOM_MACANUDO_WITH_BOX.jpg",
+              "title": "Town & Country",
+              "description": "The 10 Best Fragrances to Wear This Summer",
+              "url": "https://www.townandcountrymag.com/style/beauty-products/g28065766/best-summer-fragrances/",
+              "isExternal": false
+            }
+          },
+          "1597874419085": {
+            "type": "section",
+            "settings": {
+              "image": "shopify://shop_images/750XX_XXX_06C_MG_0777Brianna_presspagecrop.jpg",
+              "title": "The Idea Mix Podcast",
+              "description": "Maison d'Etto Founder on Finding Purpose",
+              "url": "https://www.spreaker.com/user/ideamix/81-brianna-lipovsky-2020-05-27-online-au?utm_medium=widget&utm_source=user%3A11864141&utm_term=episode_title",
+              "isExternal": false
+            }
+          },
+          "1590260918167": {
+            "type": "section",
+            "settings": {
+              "image": "shopify://shop_images/3757-01E_LCM_MEO_RGB_ECOM_MACANUDO_GREY.jpg",
+              "title": "Coveteur",
+              "description": "Elevate Your Skin-Care and Fashion For Spring",
+              "url": "https://coveteur.com/2020/03/09/spring-fashion-beauty/",
+              "isExternal": false
+            }
+          },
+          "1597871730422": {
+            "type": "section",
+            "settings": {
+              "image": "shopify://shop_images/IMG_7629.jpg",
+              "title": "DORÉ",
+              "description": "Weekends at Home: The Colony Palm Beach",
+              "url": "https://www.wearedore.com/style/weekends-at-home/",
+              "isExternal": false
+            }
+          },
+          "c90fb5d0-393c-4fbf-9324-5a5a377f59cc": {
+            "type": "section",
+            "settings": {
+              "image": "shopify://shop_images/Jill-H-Fine_e5b1801e-734e-4da7-8b87-a7d9de3f043d.jpg",
+              "title": "Sight Unseen",
+              "description": "2020 Holiday Gift Guide",
+              "url": "https://www.sightunseen.com/2020/11/2020-sight-unseen-gift-guide-jill/",
+              "isExternal": false
+            }
+          },
+          "ae5a4901-9352-42eb-a04f-c5c834f099f2": {
+            "type": "section",
+            "settings": {
+              "image": "shopify://shop_images/750XX_XXX_03C_MG_0347Brianna_portrait_Presspagecrop.jpg",
+              "title": "TFF Accords",
+              "description": "Interview with Editor April Long",
+              "url": "http://www.fragrancefoundationaccords.org/accord/spotlight/the-thoroughbred-brianna-lipovsky",
+              "isExternal": false
+            }
+          },
+          "4a13aa2c-3b45-41a3-b06c-82189232a55b": {
+            "type": "section",
+            "settings": {
+              "image": "shopify://shop_images/HERO-Mood-01_48246c3c-78a2-469c-8d43-56547a57f690.jpg",
+              "title": "Shoutout LA",
+              "description": "Meet Maison d'Etto Founder",
+              "url": "https://shoutoutla.com/meet-brianna-lipovsky-founder-creative-director/",
+              "isExternal": false
+            }
+          },
+          "1597876709652": {
+            "type": "section",
+            "settings": {
+              "image": "shopify://shop_images/SA_MAISONdETTO_12032020_cropped.jpg",
+              "title": "The Conservatory",
+              "description": "A Love Letter to the Front Lines",
+              "url": "https://almanac.theconservatorynyc.com/zooming-into-real-life-a-love-letter-to-the-frontlines/",
+              "isExternal": false
+            }
+          },
+          "1590260161704": {
+            "type": "section",
+            "settings": {
+              "image": "shopify://shop_images/HOMEPAGE-06_b3bbba33-138f-44b0-98fd-4b77c2ca5e40.jpg",
+              "title": "Equestrian Life",
+              "description": "This Is What Success Smells Like",
+              "url": "https://indd.adobe.com/view/85ad5612-5365-4c9a-9dce-6950f0ffb5fc",
+              "isExternal": false
+            }
+          },
+          "1597873493733": {
+            "type": "section",
+            "settings": {
+              "image": "shopify://shop_images/Saddle_DJ_09744a89-a3c5-44bb-9ba9-790380ed8cc2.jpg",
+              "title": "My Equestrian Style",
+              "description": "In The Saddle With Maison d'Etto",
+              "url": "https://myequestrianstyle.com/maison-detto/",
+              "isExternal": true
+            }
+          },
+          "1583177558949": {
+            "type": "section",
+            "settings": {
+              "image": "shopify://shop_images/HERO-Editorial-02_c4352d8d-d20f-4b39-9644-07954103c9c1.jpg",
+              "title": "Ca Fleure Bon",
+              "description": "Review of Macanudo by Mackenzie Reilly",
+              "url": "https://www.cafleurebon.com/maison-detto-macanudo-review-mackenzie-reilly/",
+              "isExternal": false
+            }
+          },
+          "1590259926147": {
+            "type": "section",
+            "settings": {
+              "image": "shopify://shop_images/EDITORIAL_01_Rotano_LoRes_Desktop.jpeg",
+              "title": "Ca Fleur Bon",
+              "description": "Review of Rotano by Carlos Benaïm",
+              "url": "https://www.cafleurebon.com/maison-detto-rotano-review-carlos-benaim-galloping-horse-draw/",
+              "isExternal": false
+            }
+          },
+          "section_VacqV4": {
+            "type": "section",
+            "settings": {
+              "image": "shopify://shop_images/HERO-Mood-02_f3a46a5a-9c16-43dc-b9c7-cb31ea527e15.jpg",
+              "title": "Miami Living Magazine",
+              "description": "One to Watch Maison d'Etto",
+              "url": "https://www.miamilivingmagazine.com/post/maison-d-etto-by-brianna-lipovsky-launches-6-luxury-handcrafted-fragrances",
+              "isExternal": false
+            }
+          }
+        },
+        "block_order": [
+          "1578280078144",
+          "section_pn8p7r",
+          "1578282314448",
+          "section_dtViC4",
+          "section_FaEJQT",
+          "f7a0a8c8-9d9d-46a8-9c94-186f73c8270c",
+          "section_kTgBUW",
+          "01509b97-a75d-4671-9f87-9b1a5679ba61",
+          "1578280975478",
+          "section_LmCbnR",
+          "1590259689988",
+          "1601644529356",
+          "section_HLezYT",
+          "section_c6yMRY",
+          "587ee5a7-4171-4dd5-95d6-f70c6682e173",
+          "cb96981d-5553-4dfb-81ca-7e9373b1f481",
+          "1591373496098",
+          "1597874419085",
+          "1590260918167",
+          "1597871730422",
+          "c90fb5d0-393c-4fbf-9324-5a5a377f59cc",
+          "ae5a4901-9352-42eb-a04f-c5c834f099f2",
+          "4a13aa2c-3b45-41a3-b06c-82189232a55b",
+          "1597876709652",
+          "1590260161704",
+          "1597873493733",
+          "1583177558949",
+          "1590259926147",
+          "section_VacqV4"
+        ],
+        "settings": {
+          "heading": "Press",
+          "enable": true
+        }
+      },
+      "privacy-nav": {
+        "type": "privacy-nav",
+        "blocks": {
+          "1572541788629": {
+            "type": "section",
+            "settings": {
+              "title": "Terms & Conditions"
+            }
+          },
+          "1572541793813": {
+            "type": "section",
+            "settings": {
+              "title": "Privacy Policy"
+            }
+          },
+          "1572541797345": {
+            "type": "section",
+            "settings": {
+              "title": "Accessibility"
+            }
+          }
+        },
+        "block_order": [
+          "1572541788629",
+          "1572541793813",
+          "1572541797345"
+        ],
+        "settings": {}
+      },
+      "terms-content": {
+        "type": "terms-content",
+        "settings": {
+          "heading": "Terms & Conditions",
+          "headingMobile": "Terms & Conditions",
+          "content": "<p>Lorem Ipsum</p>",
+          "isTermsEnable": true
+        }
+      },
+      "privacy-content": {
+        "type": "privacy-content",
+        "settings": {
+          "heading": "Privacy Policy",
+          "headingMobile": "Privacy Policy",
+          "content": "<p><strong>MAISON D&rsquo;ETTO NORTH AMERICA PRIVACY POLICY</strong></p>\n<p>Effective Date: November 12, 2019</p>\n<p><strong>MAISON D&rsquo;ETTO LLC </strong>(&ldquo;Maison d&rsquo;Etto&rdquo;, &ldquo;we&rdquo;, &ldquo;us&rdquo;, or our&rdquo;) respects your concerns about privacy and values the relationship we have with you. This Privacy Policy describes the types of personal information we collect about our customers, whether in-store, online or via one of our mobile applications, how we use the information, with whom we share it, and the choices available to our customers regarding our use of the information. We also describe the measures we take to protect the security of the information and how our customers can contact us about our privacy practices.</p>\n<p></p>\n<p><strong>INFORMATION WE COLLECT</strong></p>\n<p>We may obtain personal information about you from various sources. We may collect this information when you provide it at one of our stores, on our website, via our social media pages, when you download one of our mobile applications (either via Apple iOS or Android) onto your mobile devices or at one of our events. Our products are available for sale in certain department stores and at third party online retailers. Unless otherwise indicated at the time that you provide your personal information, any personal information collected in these department stores or online retailers is not provided to us. This Privacy Policy does not address any data collection at our retail partners. When you visit this site, our social media pages, click on our advertisements, or use services or features of one of our mobile applications, we may also collect certain information about your device or usage by automated means, including using technologies such as cookies, web server logs and web beacons.</p>\n<p></p>\n<p><strong>INFORMATION YOU PROVIDE</strong></p>\n<p>You may choose to provide personal information to us in a number of ways, such as when you participate in an offer or promotion, when you complete forms on our site, when you make a purchase on our site or in our stores, visit our social media pages or through one of our mobile applications. The types of personal information you may provide to us includes:</p>\n<p>Contact information (such as name, postal address, email address, mobile or other phone number)Date of birthGenderUsername and passwordPayment information (such as your payment card number, expiration date, delivery address, and billing address)Your purchase historyYour fragrance preferences (including product preferences)Contact information for friends or family you would like us to send a message to on your behalf (please ensure that you only submit contact information of individuals with whom you have a personal or family relationship and who would want to receive messages from you)Information or content you provide (such as photographs, videos, reviews, articles, survey responses, answers to our &ldquo;Discover Maison d&rsquo;Etto&rdquo; form and comments)Information provided to us through social networks or third-party platforms when you, for example, log-in to your account using social media log-in, visit or engage with our social media content, or communicate with us via social media (such as your name, e-mail, profile picture, likes, location, friend list, photos or other information described by the applicable social network or platform)Geo-location details</p>\n<p></p>\n<p><strong>HOW WE USE THE INFORMATION</strong></p>\n<p>We may use the information you provide to:</p>\n<p>Send you promotional materials or other communicationsProvide services to you and operate features on our siteProcess your payment and/or gift card transactionsCreate and manage your online account, including access to your online and in-store purchase historyAssist with product selection and replenishment through our in-store customer registryChat with you or respond to your inquiries, requests, inquiries, comments, or suggestionsTailor ads displayed to you on our site and elsewhere to your interests and history with usCommunicate with you about, and administer your participation in, special events, contests, sweepstakes, programs, surveys and other offersOperate and communicate with you about our social media pages or mobile applicationsOperate, evaluate and improve our business (including developing new products and services; enhancing and improving our services; managing our communications; analyzing our products; performing data analytics; and performing accounting, auditing and other internal functions)Comply with applicable legal requirements, relevant industry standards and our policies</p>\n<p>We also may use the information in other ways for which we provide specific notice at the time of collection. The information collected is necessary for the purposes set forth above. Without this information, you may not be able to take advantage of some of our products or services.</p>\n<p></p>\n<p><strong>INFORMATION WE COLLECT BY AUTOMATED MEANS</strong></p>\n<p>When you visit our site, view or click on our online advertisements (including our advertisements on third party websites), visit our social media pages or download and use one of our mobile applications, we also collect certain information about your usage or device by automated means or by using technologies such as cookies, web server logs and web beacons. For example, if you use one of our mobile applications, we may collect your IP address, your unique device identifier (or other device identifier) and/or geolocation data in order to offer you certain features or functionalities within that mobile application. As set forth in more detail below, we may also collect information about your usage and browsing habits using various web-based technologies.</p>\n<p>For your convenience, our mobile applications may also include functionality that allows you to remain logged in to the application so that you do not have to reenter a password each time you want to access the application. IF YOU CHOOSE TO REMAIN LOGGED IN, YOU SHOULD BE AWARE THAT ANYONE WITH ACCESS TO YOUR MOBILE DEVICE WILL BE ABLE TO ACCESS AND MAKE CHANGES TO YOUR MOBILE ACCOUNT AND MAY BE ABLE TO MAKE PURCHASES THROUGH YOUR ACCOUNT. For that reason, if you choose to remain logged in to the application on your mobile device, we strongly recommend you enable the Passcode Lock security feature on your mobile device to protect against unauthorized access to and use of your mobile device and your account in the application.</p>\n<p></p>\n<p><strong>TECHNOLOGIES WE USE</strong><strong>COOKIES, WEB SERVER LOGS AND WEB BEACONS</strong></p>\n<p>Cookies are small text files that websites send to your computer or other Internet-connected device to uniquely identify your browser or to store information or settings in your browser. Your browser may tell you how to be notified when you receive certain types of cookies and how to restrict or disable certain cookies. Please note, however, that without cookies you may not be able to use all of the features of our website. To edit your cookie settings, click here:&nbsp;</p>\n<p>Cookie Settings.</p>\n<p>In conjunction with obtaining information through cookies, our web servers may log details such as your operating system type, browser type, domain, and other system settings, as well as the language your system uses and the country and time zone in which your device is located. The web server logs also may record information such as the address of the web page that linked you to our site and the IP address of the device you use to connect to the Internet.</p>\n<p>To control which web servers collect this information, we may place tags on our web pages called &ldquo;web beacons.&rdquo; These are computer instructions that link web pages to particular web servers and their cookies.</p>\n<p></p>\n<p><strong>THIRD PARTY WEB ANALYTICS SERVICES</strong></p>\n<p>We may use third party web analytics services on this site, our social networking pages, or our mobile applications, such as those of Adobe Site Catalyst and/or Google Analytics. The service providers that administer these services use technologies such as cookies, web server logs and web beacons to collect information (such as IP address) and use that information to help us analyze how visitors use the site. These vendors may use cookies placed on this Site (such as the Google Analytics cookie) and cookies placed on third-party web sites (such as Google advertising cookies), or other third-party identifiers, together, to analyze our Site visitors.</p>\n<p>You may deactivate the ability of these analytics services to analyze your browsing activities on this site. To learn more about web analytics services and exercise your choice with respect to their collection of information on this site:</p>\n<p>To disable Google Analytics, please download the browser add-on for the deactivation of Google Analytics provided by Google at <a href=\"http://tools.google.com/dlpage/gaoptout?hl=en\">http://tools.google.com/dlpage/gaoptout?hl=en</a>.To learn more about privacy and Google Analytics please consult the Google Analytics overview provided by Google at: <a href=\"http://www.google.com/intl/en/analytics/privacyoverview.html\">http://www.google.com/intl/en/analytics/privacyoverview.html.</a>We may implement certain Google Analytics Advertising Features (including Remarketing with Google Analytics. Google Display Network Impression Reporting or Google Analytics Demographics and Interest Reporting). You can opt-out of the Google Analytics Advertising Features through Google Ad settings or by visiting <a href=\"https://tools.google.com/dlpage/gaoptout/\">https://tools.google.com/dlpage/gaoptout/.</a>We will use the data provided by these features as described under <a href=\"https://www.fredericmalle.com/customer-service-privacy#hwu\">How We Use the Information We Collect</a></p>\n<p></p>\n<p><strong>TARGETED ADVERTISING</strong></p>\n<p>We also may contract with third-party service providers and advertising networks that collect IP addresses and other information through the use of cookies, web server logs, web beacons and other tools on our websites and emails; on third-party websites and emails; and on our advertising placed on third-party websites. They use this information to provide advertisements about products and services tailored to your interests (including for companies not affiliated with us). You may see these advertisements on third party websites. This process also helps us manage and track the effectiveness of our marketing efforts. To learn more about advertising networks and to opt out of interest-based advertising, visit:</p>\n<p>In the US: the Digital Advertising Alliance at <a href=\"https://www.aboutads.info/choices\">https://www.aboutads.info/choices</a> or the Network Advertising Initiative at <a href=\"https://www.networkadvertising.org/choices\">https://www.networkadvertising.org/choices.</a>In Canada: the Digital Advertising Alliance of Canada at <a href=\"http://youradchoices.ca/choices/\">http://youradchoices.ca/choices/.</a></p>\n<p>We may also use third-party platforms and technology, including platforms operated by social networks, such as Google, Facebook and Pinterest to show you interest-based ads. These companies have specific Interest-Based Ads programs that match people that have shown interest in Frederic Malle through our websites, stores or other services with users on their platforms and properties. If we participate in these programs, we convert your personal information (which may include name, email address or telephone number) or other information into a unique value which can be matched by those third parties with a user on their platform or with other data they may have collected from you. This matching allows us to deliver interest-based ads to users of these platforms. To opt-out of these ads, you must change your advertising preferences for those third-party platforms. You can manage your preferences for these advertising programs by clicking on the following relevant links: for Facebook <a href=\"https://www.facebook.com/\">click here</a>, for Instagram click here, for Google <a href=\"https://www.google.com/\">click here</a>&nbsp; and for Pinterest <a href=\"https://www.pinterest.com/\">click here</a>.These platforms may have their own privacy notices or policies, which we strongly suggest you review.</p>\n<p><strong>HOW WE USE THE INFORMATION COLLECTED BY AUTOMATED MEANS</strong></p>\n<p>We may use the information collected through automated means on this site to deliver personalized content, improve our site, and product and service offerings, for market research, data analytics and system administration purposes, such as to determine whether you&rsquo;ve visited us before or are new to the site, to tailor ads displayed to you on third party sites, and for compliance with our legal obligations, policies and procedures, including compliance with relevant industry standards and the enforcement of our Terms and Conditions. We also may use the information in other ways for which specific notice is provided at the time of collection.</p>\n<p><strong>CALIFORNIA DO NOT TRACK NOTICE</strong></p>\n<p>Under California law, website and online service operators are required to disclose how they respond to web browser &ldquo;do not track&rdquo; signals or other similar mechanisms that provide consumers the ability to exercise choice regarding the collection of personal information about a consumer&rsquo;s online activities over time and across third-party websites. We currently do not change our tracking practices in response to &ldquo;do-not-track&rdquo; signals or other similar mechanisms.</p>\n<p>California law also requires website and online service operators to disclose whether third parties may collect personal information about their users&rsquo; online activities over time and across different sites when the users use the operator&rsquo;s website or service. Third parties that have content or services on our site such as a social feature, analytics service, or an advertising network partner, may obtain information about your browsing or usage habits but this information does not include personal information. These third parties do not change their tracking practices in response to &ldquo;do-not-track&rdquo; signals from your web browser and we do not obligate these parties to honor &ldquo;do-not-track&rdquo; signals. To learn more about browser tracking signals and &ldquo;Do Not Track,&rdquo; please visit <a href=\"http://allaboutdnt.org/\">http://allaboutdnt.org</a>.</p>\n<p><strong>INFORMATION WE SHARE</strong></p>\n<p>We do not rent lists, sell or otherwise disclose personal information we collect about you, except as described here. We may share your personal information with:</p>\n<p>Third party service providers who perform services on our behalf based on our instructions. We do not authorize these service providers to use or disclose the information except as necessary to perform services on our behalf or comply with legal requirements. Examples of these service providers include entities that process credit card payments, fulfill orders, and provide web hosting services, advertising services and marketing services.Other third parties with your consent.</p>\n<p>In addition, we and our affiliates and other service providers in Canada, the United States and other jurisdictions may disclose information about you if required or permitted to do so by law or legal process, including (i) to law enforcement authorities or other government officials, or (ii) when we believe disclosure is necessary or appropriate to prevent physical harm or financial loss, or in connection with an investigation of suspected or actual fraudulent or illegal activity.<br>We also reserve the right to transfer personal information we have about you in the event we sell or transfer all or a portion of our business or assets. Should such a sale or transfer occur, we will use reasonable efforts to direct the transferee to use personal information you have provided to us in a manner that is consistent with our Privacy Policy. Following such a sale or transfer, you may contact the entity to which we transferred your personal information with any inquiries concerning the processing of that information.</p>\n<p><strong>PUSH NOTIFICATIONS AND IN-APP ALERTS AND UPDATES</strong></p>\n<p>When you download one of our mobile applications, we may provide you with the option to opt in to receive push notifications from us on your mobile device in connection with that mobile application. These push notifications may include promotional communications regarding our products and services. You may, after downloading the applicable mobile application, opt out of receiving push notifications by adjusting the settings on your mobile device. Opting out of push notifications will not affect other communications you receive from us, such as email communications. You also may receive alerts and updates within our mobile applications regarding our products and services or your accounts with us. To opt out of receiving these alerts and updates, you may uninstall the applicable mobile application from your mobile device.</p>\n<p><strong>YOUR RIGHTS AND CHOICES</strong></p>\n<p>We offer you certain choices in connection with the personal information we collect from you, such as how we use the information and how we communicate with you. To update your preferences, ask us to remove your information from our mailing lists or submit a request, please contact us as specified below.</p>\n<p>Email Opt-OutYou can at any time tell us not to send you marketing communications by email by clicking on the unsubscribe link within the marketing emails you receive from us or by emailing us at info@maisondetto.com. If you opt out of receiving marketing communications from us, we may still contact you in connection with your account, transactions and communications with us.Postal Mail Opt-OutYou can ask Maison d&rsquo;Etto to stop sending you marketing communications by postal mail by following the instructions that may be included in a particular promotion. You also can request that we refrain from sending you promotional postal mail by contacting us as indicated below.Social NetworksThis site may include features and functionalities that allow you to share personal information with us that you have already provided to a third party social networking platform.&nbsp; For example, you may be able to create an account on our site or log-in to our site using your Facebook account or other third party credentials. If you do so, then information that you have provided to that third party will be made available to us, pursuant to the third party&rsquo;s terms and conditions, and our use will be subject to this Privacy Policy.&nbsp; These third parties may provide you with choices concerning the personal information you share with us, including the option to revoke access. We encourage you to consult the privacy notices or policies of those platforms for more information regarding your rights.Geo-Location InformationWhen you use one of our mobile applications, we may ask you for your geo-location. You may choose not to share your geo-location details by adjusting your mobile device&rsquo;s location services settings. To decline from sharing your geo-location details, follow the instructions on your mobile device on changing the relevant settings; otherwise, please contact your service provider or device manufacturer.Withdrawing ConsentYou may withdraw any consent you previously provided to us, or object at any time on legitimate grounds, to the processing of your personal information. We will apply your preferences going forward within a reasonable amount of time. In some circumstances, withdrawing your consent to our use or disclosure of your personal information will mean that you cannot take advantage of some of our products or services. Reviewing, Updating and Modifying Personal Information</p>\n<p>Subject to applicable law, you have the right to request access to and receive details about the personal information we maintain about you, update and correct inaccuracies in your personal data, and have the information blocked or deleted, as appropriate. The right to access personal information may be limited in some circumstances by local law requirements. You may request to review, change or delete your personal information by sending an email to info@maisondetto.com.We may take reasonable steps to verify your identity before granting access or making corrections.</p>\n<p><strong>DATA TRANSFERS</strong></p>\n<p>We may transfer the personal information we collect about you to countries other than the country in which the information was originally collected, including the United States, and your personal information may be processed and stored outside of your country of residence.Those countries may not have the same data protection laws as your country of residence and your personal information will be subject to applicable foreign laws.When we transfer your information to other countries, we will protect that information in the manner described in this Privacy Policy.</p>\n<p><strong>CHILDREN'S PRIVACY</strong></p>\n<p>If you are under thirteen years of age, you may browse our site. However, you may not provide personal information to us and you may not download any of our mobile applications. This site is not directed to children under the age of thirteen and we do not knowingly collect personal information from children under the age of thirteen on the site. If we become aware that we have inadvertently received personal information from a visitor under the age of thirteen on the site, we will delete the information from our records.</p>\n<p></p>\n<p><strong>HOW WE PROTECT PERSONAL INFORMATION</strong></p>\n<p>We maintain appropriate administrative, technical and physical safeguards designed to protect the personal information you provide against accidental, unlawful or unauthorized destruction, loss, alteration, access, disclosure or use. However, no security system is perfect and we cannot promise that information about you will remain secure in all circumstances, including the security of your data during transmission to us or the security of data on your mobile device.</p>\n<p></p>\n<p><strong>LINKS TO OTHER WEBSITES</strong></p>\n<p>Our website may provide links to other websites or third-party platforms for your convenience and information. These websites or third-party platforms may operate independently from us and have their own privacy notices or policies, which we strongly suggest you review.To the extent any linked websites or third-party platform you visit is not owned or controlled by us, we are not responsible for their content, any use of the sites or platforms, or their privacy practices.</p>\n<p></p>\n<p><strong>UPDATES TO OUR PRIVACY POLICY</strong></p>\n<p>This Privacy Policy may be updated periodically to reflect changes in our personal information practices. We will post a prominent notice on our website to notify you of any significant changes to our Privacy Policy and indicate at the top of the Policy when it was most recently updated.</p>\n<p><strong>HOW TO CONTACT US</strong></p>\n<p>If you have any questions or comments about this Privacy Policy, or if you would like us to update information we have about you or your preferences, please contact us by email at <a href=\"mailto:info@maisondetto.com\">info@maisondetto.com</a>.</p>\n<p>If we need, or are required, to contact you concerning any event that involves your personal information we may do so by telephone or email.</p>",
+          "isPrivacyEnable": true
+        }
+      },
+      "accessibility-content": {
+        "type": "accessibility-content",
+        "settings": {
+          "heading": "Accessibility",
+          "headingMobile": "Accessibility",
+          "content": "<p>We are committed to accessibility and believe that all of our consumers should be able to fully and completely access and use Maison d&rsquo;Etto&rsquo;s online content, including websites, mobile sites and all digital offerings. This is an ongoing commitment, and Maison d&rsquo;Etto will continue its efforts to effectively communicate with its consumers and to ensure its website is accessible to, and usable by, all persons including those with disabilities.</p>\n<p>We endeavor to design, create and update digital content that conforms to applicable accessibility laws and regulations.</p>\n<p>Our values inspire our commitment to operate responsibly and motivate us to build a business based on uncompromising ethics, integrity, fairness, diversity and trust.&nbsp; In partnership with our suppliers, our retailers, our consumers and everyone we touch, we aspire to foster our core values of respect for people and the environment and be a positive influence in every community we serve.</p>\n<p>We welcome feedback of your experience on this site and take it very seriously. If you have any accessibility comments or concerns, or if you would like to request any modifications, please let us know:</p>\n<p>E-mail: <a href=\"mailto:info@maisondetto.com\">info@maisondetto.com</a>, please include the Subject Line: Accessibility Concerns</p>",
+          "isAccessibilityEnable": true
+        }
+      },
+      "error": {
+        "type": "error",
+        "settings": {
+          "image": "shopify://shop_images/404.jpg",
+          "heading": "<p>(404)</p>\n<p>&nbsp;sorry, this page does not exist.</p>",
+          "linkCopy": "Take me Home",
+          "link": "https://maisondetto.com"
+        }
+      },
+      "1573226106221": {
+        "type": "index-video-module",
+        "settings": {
+          "image": "shopify://shop_images/97720008.jpg",
+          "imageMobile": "shopify://shop_images/97720008.jpg",
+          "video": "https://cdn.shopify.com/videos/c/o/v/680b7f56f08b44acb5e9a7c2958aa1ec.mp4",
+          "videoMobile": ""
+        }
+      },
+      "16117584650662abe0": {
+        "type": "featured-product",
+        "disabled": true,
+        "settings": {
+          "product": "karat-eg-60ml-edp",
+          "featured_product_image": "shopify://shop_images/HERO-Editorial-01_c3463237-84ac-4b8b-ab03-2b04f9ffe20b.jpg",
+          "featured_product_copy": "<p><em>VOGUE </em>—<em> </em>WINTER'S BEST FRAGRANCES ARE PERFECT FOR GIFTING</p><p>\"The chypre category of fragrance emerged in 1917 with the debut of the first oakmoss, labdanum, and patchouli blend, Francois Coty’s Chypre. Since then, the style has become associated with classics—Guerlain’s Mitsouko, Hermès Calèche, and the original Miss Dior are old school examples—but gender-neutral line Maison d’Etto sought to modernize the concept. The brand’s idiosyncratic scent Karat blends chypre-associated elements with modern touches like rose nectar and carrots. Perfumer Carlos Benaim’s mix of past and present should appeal to all.\" </p><p>—  Janelle Okwodu, Vogue</p>"
+        }
+      },
+      "16117592347a467f05": {
+        "type": "fragrance-house",
+        "blocks": {
+          "ed39b247-6e72-4602-b960-e857acda73f0": {
+            "type": "section",
+            "settings": {
+              "thumbnail": "shopify://shop_images/Rose_02.jpg"
+            }
+          },
+          "26196968-63ba-41ba-a406-eddd3bf47445": {
+            "type": "section",
+            "settings": {
+              "thumbnail": "shopify://shop_images/Patchouli.jpg"
+            }
+          }
+        },
+        "block_order": [
+          "ed39b247-6e72-4602-b960-e857acda73f0",
+          "26196968-63ba-41ba-a406-eddd3bf47445"
+        ],
+        "disabled": true,
+        "name": "A MODERN FRAGRANCE HOUSE",
+        "settings": {
+          "copy": "<p>The chypre category of fragrance emerged in 1917 with the debut of the first oakmoss, labdanum, and patchouli blend, Francois Coty’s Chypre. Since then, the style has become associated with classics—Guerlain’s Mitsouko, Hermès Calèche, and the original Miss Dior are old school examples—but gender-neutral line Maison d’Etto sought to modernize the concept. The brand’s idiosyncratic scent Karat blends chypre-associated elements with modern touches like rose nectar and carrots. Perfumer Carlos Benaim’s mix of past and present should appeal to all those who source their vintage from The Real Real and fill their Instagram folders with snapshots from bygone eras. — VOGUE</p>",
+          "link": "https://maisondetto.com/products/karat-eg-60ml-edp",
+          "main_thumbnail": "shopify://shop_images/HERO-Editorial-01_c3463237-84ac-4b8b-ab03-2b04f9ffe20b.jpg",
+          "main_thumbnail_caption": "<p>\"Winter’s Best Fragrances Are Perfect for Gifting\" by Vogue's Janelle Okwodu</p>"
+        }
+      },
+      "e9735541-f972-4bd4-809f-d93ea75b97e4": {
+        "type": "hero",
+        "disabled": true,
+        "settings": {
+          "image_1": "shopify://shop_images/2.jpg",
+          "copy_1": "Surround yourself in our featured fragrance, Noisette,  one of Vogue Magazine’s picks for scents that calm. “Noisette has notes of magnolia flowers, musk, and lavandin; the latter is a type of lavender oil that is especially known for its relaxing benefit.” — Christian Allaire at Vogue",
+          "url_1": "shopify://products/noisette",
+          "image_2": "shopify://shop_images/Noisette.jp.jpg",
+          "copy_2": "",
+          "url_2": "shopify://products/noisette"
+        }
+      },
+      "heading": {
+        "type": "heading",
+        "settings": {
+          "heading": "<p>STOCKISTS</p>",
+          "padding_top": 36,
+          "padding_bottom": 36
+        }
+      },
+      "california-image-with-text": {
+        "type": "california-image-with-text",
+        "blocks": {
+          "c8ea0175-07c2-4a48-90fd-a147bd6685ab": {
+            "type": "heading",
+            "settings": {
+              "heading": "CALIFORNIA",
+              "font_size": 30
+            }
+          },
+          "b3b868ce-98e9-4780-8828-4dab2f040785": {
+            "type": "content",
+            "settings": {
+              "content": "<h2>ATRIO</h2><p>8888 Washington Blvd </p><p>Suite 100</p><p>Culver City, CA 90232</p><p><a href=\"https://www.google.com/search?gs_ssp=eJzj4tVP1zc0zCouN8hOMksyYLRSNaiwMEg2SrK0TLIwNTJMNTe1tDKoMEpLMbE0NjQwMk8xMjU1N_JiTSwpyswHAAG4EIw&q=atrio&oq=atrio&gs_lcrp=EgZjaHJvbWUqFggBEC4YgwEYrwEYxwEYsQMYgAQYjgUyBggAEEUYOzIWCAEQLhiDARivARjHARixAxiABBiOBTINCAIQLhiDARixAxiABDINCAMQABiDARixAxiABDINCAQQABiDARixAxiABDINCAUQABiDARixAxiABDIQCAYQLhivARjHARiABBiOBTIGCAcQRRg90gEINDQ4MmowajeoAgCwAgA&sourceid=chrome&ie=UTF-8#\"><span style=\"text-decoration:underline\">(424) 766-1633</span></a></p>"
+            }
+          },
+          "content_qLTBpQ": {
+            "type": "content",
+            "settings": {
+              "content": "<h2>BLACK BUTTERFLY</h2><p>3728 Cross Creek Rd</p><p>Malibu, CA 90265</p>"
+            }
+          },
+          "83546180-022d-4e7f-bacf-c8e4d197c18e": {
+            "type": "content",
+            "settings": {
+              "content": "<h2>DACHA - WEST HOLLYWOOD</h2><p>420 North Robertson Blvd</p><p>West Hollywood, CA 90048</p>"
+            }
+          },
+          "content_7FG3Dg": {
+            "type": "content",
+            "settings": {
+              "content": "<h2>DACHA - MANHATTAN BEACH</h2><p>1219 Highland Ave</p><p>Manhattan Beach, CA 90266</p>"
+            }
+          },
+          "content_k7K8pg": {
+            "type": "content",
+            "settings": {
+              "content": "<h2>DRY DOWN BOUTIQUE</h2><p>565 Grand Ave</p><p>Carlsbad, CA 92008</p>"
+            }
+          },
+          "content_cYrejC": {
+            "type": "content",
+            "settings": {
+              "content": "<h2>JUST ONE EYE</h2><p>915 N Sycamore Ave</p><p>Los Angeles, CA 90038</p><p><a href=\"https://www.google.com/search?q=just+one+eye&sca_esv=590341986&ei=HPV4Zde6N9jakPIPn_C7gAU&ved=0ahUKEwjXuIHRjouDAxVYLUQIHR_4DlAQ4dUDCBE&uact=5&oq=just+one+eye&gs_lp=Egxnd3Mtd2l6LXNlcnAiDGp1c3Qgb25lIGV5ZTIOEC4YrwEYxwEYgAQYjgUyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyHRAuGK8BGMcBGIAEGI4FGJcFGNwEGN4EGOAE2AEBSJ0RUMkHWLMQcAN4AZABAJgBmQKgAaEPqgEFMi44LjK4AQPIAQD4AQHCAgoQABhHGNYEGLADwgINEC4YgAQYigUYQxiwA8ICDRAAGIAEGIoFGEMYsAPCAgsQLhiABBiKBRiRAsICCxAAGIAEGIoFGJECwgIUEC4YgAQYigUYsQMYgwEYxwEY0QPCAgsQLhiABBjHARjRA8ICERAuGIAEGLEDGIMBGMcBGNEDwgILEAAYgAQYsQMYgwHCAg4QLhiABBiKBRixAxiDAcICBRAuGIAEwgIaEC4YgAQYigUYkQIYlwUY3AQY3gQY3wTYAQHCAhAQABiABBiKBRiRAhhGGPsBwgILEC4YgAQYsQMYgwHCAg4QLhiABBixAxiDARjUAsICCBAuGIAEGLEDwgIXEC4YgAQYigUYkQIYsQMYgwEYxwEY0QPCAg4QLhiABBiKBRiRAhixA8ICDhAAGIAEGIoFGLEDGIMBwgImEC4YgAQYigUYkQIYsQMYgwEYxwEY0QMYlwUY3AQY3gQY4ATYAQHCAg4QLhiABBjHARivARiOBcICCBAAGIAEGLEDwgIdEC4YgAQYxwEYrwEYjgUYlwUY3AQY3gQY4ATYAQHiAwQYACBBiAYBkAYKugYGCAEQARgU&sclient=gws-wiz-serp#\"><span style=\"text-decoration:underline\">(323) 969-9129</span></a></p>"
+            }
+          },
+          "content_zd7yBi": {
+            "type": "content",
+            "settings": {
+              "content": "<h2>MEG TURNER</h2><p>6808 Melrose Ave</p><p>Los Angeles, CA 90038</p>"
+            }
+          },
+          "content_mXPaPt": {
+            "type": "content",
+            "settings": {
+              "content": "<h2>PARLIAMENT </h2><p>9431 Brighton Way</p><p>Beverly Hills, CA 90210</p>"
+            }
+          },
+          "content_6RXQ7R": {
+            "type": "content",
+            "settings": {
+              "content": "<h2>SETESS LAGUNA BEACH </h2><p>2944 S Coast Hwy</p><p>Laguna Beach, CA 92651</p>"
+            }
+          },
+          "content_wfC3NJ": {
+            "type": "content",
+            "settings": {
+              "content": "<h2>THE INN AT MATTEIS TAVERN (AUBERGE)</h2><p>2350 Railway Ave</p><p>Los Olivos, CA 93441</p>"
+            }
+          },
+          "content_KCrx7m": {
+            "type": "content",
+            "settings": {
+              "content": "<h2>WUNDERKIND</h2><p>525 San Ysidro Rd </p><p>Building B</p><p>Montecito, CA 93108</p>"
+            }
+          },
+          "f43d78fb-1e91-4352-b565-7a3210c26902": {
+            "type": "content",
+            "settings": {
+              "content": "<h2>TURPAN</h2><p>225 26th St</p><p>Santa Monica, CA 90402</p><p><a href=\"https://www.google.com/search?gs_ssp=eJzj4tZP1zcsSamyLMjINWC0UjWosDBINko0NjW1SLY0NU9MNrcyqEg2NzE3TTUzMTE3TjJJSTHxEigpLSpIzFNIKkrNKynPz08BAMhZFU0&q=turpan+brentwood&oq=turpan+&gs_lcrp=EgZjaHJvbWUqEAgBEC4YrwEYxwEYgAQYjgUyBggAEEUYOTIQCAEQLhivARjHARiABBiOBTIHCAIQLhiABDIHCAMQABiABDIHCAQQABiABDIHCAUQABiABDIJCAYQABgKGIAEMgcIBxAAGIAEMgcICBAAGIAE0gEJMTAxMDhqMGo5qAIAsAIA&sourceid=chrome&ie=UTF-8#\"><span style=\"text-decoration:underline\">(310) 899-6711</span></a></p>"
+            }
+          }
+        },
+        "block_order": [
+          "c8ea0175-07c2-4a48-90fd-a147bd6685ab",
+          "b3b868ce-98e9-4780-8828-4dab2f040785",
+          "content_qLTBpQ",
+          "83546180-022d-4e7f-bacf-c8e4d197c18e",
+          "content_7FG3Dg",
+          "content_k7K8pg",
+          "content_cYrejC",
+          "content_zd7yBi",
+          "content_mXPaPt",
+          "content_6RXQ7R",
+          "content_wfC3NJ",
+          "content_KCrx7m",
+          "f43d78fb-1e91-4352-b565-7a3210c26902"
+        ],
+        "settings": {
+          "mobile_layout": "column-reverse",
+          "desktop_layout": "row-reverse",
+          "padding_top": 0,
+          "padding_bottom": 36
+        }
+      },
+      "connecticut-image-with-text": {
+        "type": "connecticut-image-with-text",
+        "blocks": {
+          "c0839fdb-4a49-4457-bb0c-dd5ac36163e0": {
+            "type": "heading",
+            "settings": {
+              "heading": "CONNECTICUT"
+            }
+          },
+          "b2f30535-73c3-423b-9ab6-b49a9de019e0": {
+            "type": "content",
+            "settings": {
+              "content": "<h2>100 MAIN</h2><p>100 Main St</p><p>Falls Village, CT 06031</p><p><a href=\"https://www.google.com/search?q=100+main+CT&sca_esv=590341986&ei=Jvd4ZaqZLtnYkPIPv5SZgAU&ved=0ahUKEwiqxOzJkIuDAxVZLEQIHT9KBlAQ4dUDCBE&uact=5&oq=100+main+CT&gs_lp=Egxnd3Mtd2l6LXNlcnAiCzEwMCBtYWluIENUMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB5ItSdQxgtYhCZwBXgBkAEBmAGTA6ABmRKqAQkyLjQuMi4yLjG4AQPIAQD4AQHCAgoQABhHGNYEGLADwgILEC4YgAQYigUYkQLCAgsQABiABBiKBRiRAsICCxAAGIAEGLEDGIMBwgIIEAAYgAQYsQPCAgsQLhiABBixAxiDAcICBRAuGIAEwgIaEC4YgAQYigUYkQIYlwUY3AQY3gQY4ATYAQHCAgUQABiABMICCBAuGIAEGLEDwgIOEAAYgAQYigUYsQMYgwHCAhEQLhiABBixAxiDARjHARjRA8ICCxAuGIAEGMcBGK8BwgIIEAAYgAQYyQPCAgsQLhivARjHARiABMICAhAm4gMEGAAgQeIDBRIBMSBAiAYBkAYDugYGCAEQARgU&sclient=gws-wiz-serp#\"><span style=\"text-decoration:underline\">(860) 453-4356</span></a></p>"
+            }
+          },
+          "content_zJ6jF6": {
+            "type": "content",
+            "settings": {
+              "content": "<h2>MONC XIII</h2><p>5 Lewis Court</p><p>Greenwich, CT 06830</p><p>203-340-2275</p>"
+            }
+          }
+        },
+        "block_order": [
+          "c0839fdb-4a49-4457-bb0c-dd5ac36163e0",
+          "b2f30535-73c3-423b-9ab6-b49a9de019e0",
+          "content_zJ6jF6"
+        ],
+        "settings": {
+          "mobile_layout": "column-reverse",
+          "desktop_layout": "row-reverse",
+          "padding_top": 36,
+          "padding_bottom": 36
+        }
+      },
+      "florida-image-with-text": {
+        "type": "florida-image-with-text",
+        "blocks": {
+          "ec0433b5-2e4c-444f-a1a4-7f9024dd84ba": {
+            "type": "heading",
+            "settings": {
+              "heading": "FLORIDA"
+            }
+          },
+          "content_cGTJXX": {
+            "type": "content",
+            "settings": {
+              "content": "<p><strong>HAREMLIQUE À LA MER MIAMI</strong></p><p>Four Seasons Hotel at The Surf Club</p><p>9011 Collins Ave</p><p>Surfside, FL 33154</p><p><a href=\"https://www.google.com/search?q=neiman+marcus+bal+harbour&oq=neiman+marcus+bal+harbour&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQABiABDIQCAIQLhivARjHARiABBiOBTINCAMQABiDARixAxiABDINCAQQLhivARjHARiABDIHCAUQABiABDIHCAYQABiABDINCAcQABiDARixAxiABDIQCAgQLhivARjHARiABBiOBTIKCAkQABixAxiABNIBCDMxNjRqMGo5qAIAsAIA&sourceid=chrome&ie=UTF-8#\"><span style=\"text-decoration:underline\">(786) 482-2284</span></a></p>"
+            }
+          },
+          "content_NpPy3e": {
+            "type": "content",
+            "settings": {
+              "content": "<p><strong>CLAYTON GREY HOME</strong></p><p>1042 Water Street</p><p>Tampa, FL 33602</p>"
+            }
+          },
+          "content_bGcewY": {
+            "type": "content",
+            "settings": {
+              "content": "<h2>LIVING WITH IVY (COCONUT GROVE)</h2><p>3444 Main Highway Unit 5</p><p>Miami, FL 33133</p><p><a href=\"https://www.google.com/maps/place/3444+Main+Hwy,+Miami,+FL+33133/@25.7272265,-80.2460544,17z/data=!3m1!4b1!4m6!3m5!1s0x88d9b7c56391d1fd:0xc1ec0af78a12e508!8m2!3d25.7272217!4d-80.2434741!16s%2Fg%2F11b8v4swfm?entry=tts&g_ep=EgoyMDI0MDYyNS4wKgBIAVAD\"><span style=\"text-decoration:underline\">(786) 391-3812</span></a></p>"
+            }
+          },
+          "content_ytF3Gd": {
+            "type": "content",
+            "settings": {
+              "content": "<h2>LIVING WITH IVY (SUNSET HARBOR)</h2><p>1784 West Avenue</p><p>Miami Beach, FL 33139</p><p><a href=\"https://www.google.com/maps/place/Living+With+Ivey/@26.7198456,-80.0375119,15z/data=!4m6!3m5!1s0x88d8d77d84a5de85:0xc50d3219a6b64cf!8m2!3d26.7198456!4d-80.0375119!16s%2Fg%2F11vc7z8h91?sa=X&ved=2ahUKEwjPwpmOip2DAxVtkIkEHUxfCMMQ_BJ6BAhSEAA&entry=tts\"><span style=\"text-decoration:underline\">(561) 331-8028</span></a></p>"
+            }
+          },
+          "content_LQcF74": {
+            "type": "content",
+            "settings": {
+              "content": "<h2>LIVING WITH IVY (PALM BEACH)</h2><p>139 N County Rd</p><p>Palm Beach, FL 33480</p><p><a href=\"https://www.google.com/maps/place/Living+With+Ivey/@26.7198456,-80.0375119,15z/data=!4m6!3m5!1s0x88d8d77d84a5de85:0xc50d3219a6b64cf!8m2!3d26.7198456!4d-80.0375119!16s%2Fg%2F11vc7z8h91?sa=X&ved=2ahUKEwjPwpmOip2DAxVtkIkEHUxfCMMQ_BJ6BAhSEAA&entry=tts\"><span style=\"text-decoration:underline\">(561) 331-8028</span></a></p>"
+            }
+          },
+          "feacab83-59ab-4699-b954-37fa61cb3c95": {
+            "type": "content",
+            "settings": {
+              "content": "<h2>NEIMAN MARCUS </h2><p>Bal Harbour Shops </p><p>9700 Collins Ave</p><p>Bal Harbour, FL 33154</p><p><a href=\"https://www.google.com/search?q=neiman+marcus+bal+harbour&oq=neiman+marcus+bal+harbour&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQABiABDIQCAIQLhivARjHARiABBiOBTINCAMQABiDARixAxiABDINCAQQLhivARjHARiABDIHCAUQABiABDIHCAYQABiABDINCAcQABiDARixAxiABDIQCAgQLhivARjHARiABBiOBTIKCAkQABixAxiABNIBCDMxNjRqMGo5qAIAsAIA&sourceid=chrome&ie=UTF-8#\"><span style=\"text-decoration:underline\">(305) 865-6161</span></a></p>"
+            }
+          },
+          "content_EGHwaM": {
+            "type": "content",
+            "settings": {
+              "content": "<h2>THE CHARLOTTE </h2><p>354 S Cypress Dr #10</p><p>Tequesta, FL 33469</p>"
+            }
+          }
+        },
+        "block_order": [
+          "ec0433b5-2e4c-444f-a1a4-7f9024dd84ba",
+          "content_cGTJXX",
+          "content_NpPy3e",
+          "content_bGcewY",
+          "content_ytF3Gd",
+          "content_LQcF74",
+          "feacab83-59ab-4699-b954-37fa61cb3c95",
+          "content_EGHwaM"
+        ],
+        "settings": {
+          "mobile_layout": "column-reverse",
+          "desktop_layout": "row-reverse",
+          "padding_top": 36,
+          "padding_bottom": 36
+        }
+      },
+      "georgia-image-with-text": {
+        "type": "georgia-image-with-text",
+        "blocks": {
+          "9e64e21f-f435-4dcf-9a1f-2b9949c8ed71": {
+            "type": "heading",
+            "settings": {
+              "heading": "GEORGIA"
+            }
+          },
+          "153c3701-3343-4f33-bb49-459189d02832": {
+            "type": "content",
+            "settings": {
+              "content": "<h2>DIXON RYE</h2><p>1085 Howell Mill Rd NW</p><p>Atlanta, GA 30318</p><p><a href=\"https://www.google.com/search?q=dixon+rye&oq=Dixon+Rye&gs_lcrp=EgZjaHJvbWUqCggAEAAY4wIYgAQyCggAEAAY4wIYgAQyDQgBEC4YrwEYxwEYgAQyBwgCEAAYgAQyBwgDEAAYgAQyCAgEEAAYFhgeMggIBRAAGBYYHjIICAYQABgWGB4yCAgHEAAYFhgeMggICBAAGBYYHjIMCAkQABgKGA8YFhge0gEHOTcyajBqOagCALACAA&sourceid=chrome&ie=UTF-8#\"><span style=\"text-decoration:underline\">(404) 883-3939</span></a></p>"
+            }
+          },
+          "content_PgVJRM": {
+            "type": "content",
+            "settings": {
+              "content": "<h2>INDIEHOUSE</h2><p>1210 Howell Mill Rd NW</p><p>Suite 105B</p><p>Atlanta, GA 30318</p>"
+            }
+          }
+        },
+        "block_order": [
+          "9e64e21f-f435-4dcf-9a1f-2b9949c8ed71",
+          "153c3701-3343-4f33-bb49-459189d02832",
+          "content_PgVJRM"
+        ],
+        "settings": {
+          "mobile_layout": "column-reverse",
+          "desktop_layout": "row-reverse",
+          "padding_top": 36,
+          "padding_bottom": 36
+        }
+      },
+      "illinois-image-with-text": {
+        "type": "illinois-image-with-text",
+        "blocks": {
+          "668e06da-c48b-4804-af33-f79f6492bef7": {
+            "type": "heading",
+            "settings": {
+              "heading": "ILLINOIS"
+            }
+          },
+          "content_rPDfg3": {
+            "type": "content",
+            "settings": {
+              "content": "<p>ARCH GLOW</p><p>565 Chestnut Street</p><p>Winnetka, IL 60093</p>"
+            }
+          },
+          "content_ycKbjn": {
+            "type": "content",
+            "settings": {
+              "content": "<p>FIELD & FLORIST</p><p>312 S Dearborn Street</p><p>Chicago, IL 60604</p>"
+            }
+          },
+          "content_34Vqti": {
+            "type": "content",
+            "settings": {
+              "content": "<p>FIELD & FLORIST</p><p>1908 West Division Street</p><p>Chicago, IL 60622</p>"
+            }
+          },
+          "cca23852-64d5-43f5-a233-fb073f9be9f2": {
+            "type": "content",
+            "settings": {
+              "content": "<h2>ODALISQUE </h2><p>101 S 3rd St </p><p>Geneva, IL 60134</p><p><a href=\"https://www.google.com/search?q=doalisque+il&oq=doalisque+il&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIKCAEQABgIGA0YHtIBCDE5NTJqMWo3qAIAsAIA&sourceid=chrome&ie=UTF-8#\"><span style=\"text-decoration:underline\">(630) 232-2070</span></a></p>"
+            }
+          },
+          "content_ninyYm": {
+            "type": "content",
+            "settings": {
+              "content": "<h2>PATINA COLLECTION </h2><p>1359 N Wells St</p><p>Chicago, IL 60610</p>"
+            }
+          },
+          "content_GrfqLq": {
+            "type": "content",
+            "settings": {
+              "content": "<p>SPACE 519</p><p>200 E Chestnut St</p><p>Chicago, IL 60611</p><p>(312) 751-1519</p>"
+            }
+          },
+          "content_RVFrPU": {
+            "type": "content",
+            "settings": {
+              "content": "<p>SVRN</p><p>171 N Aberdeen St, #103</p><p>Chicago, IL 60607</p>"
+            }
+          }
+        },
+        "block_order": [
+          "668e06da-c48b-4804-af33-f79f6492bef7",
+          "content_rPDfg3",
+          "content_ycKbjn",
+          "content_34Vqti",
+          "cca23852-64d5-43f5-a233-fb073f9be9f2",
+          "content_ninyYm",
+          "content_GrfqLq",
+          "content_RVFrPU"
+        ],
+        "settings": {
+          "mobile_layout": "column-reverse",
+          "desktop_layout": "row-reverse",
+          "padding_top": 36,
+          "padding_bottom": 36
+        }
+      },
+      "new-york-image-with-text": {
+        "type": "new-york-image-with-text",
+        "blocks": {
+          "4d3de58f-80f1-4b95-92ca-640752f356ad": {
+            "type": "heading",
+            "settings": {
+              "heading": "NEW YORK"
+            }
+          },
+          "032a2c24-d939-4e4c-a672-30fd7753a932": {
+            "type": "content",
+            "settings": {
+              "content": "<h2>AEDES PERFUMERY</h2><p>16A Orchard St</p><p>New York, NY 10002</p><p><a href=\"https://www.google.com/search?q=aedes+perfumery&oq=aedes+perfumery&gs_lcrp=EgZjaHJvbWUqCggAEAAY4wIYgAQyCggAEAAY4wIYgAQyDQgBEC4YrwEYxwEYgAQyBwgCEAAYgAQyBwgDEAAYgAQyBwgEEAAYgAQyCAgFEAAYFhgeMgYIBhBFGDwyBggHEEUYPNIBCDM0NjFqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8#\"><span style=\"text-decoration:underline\">(212) 206-8674</span></a></p>"
+            }
+          },
+          "4fd71b8f-0b7d-4256-81af-4f5fb5609b31": {
+            "type": "content",
+            "settings": {
+              "content": "<h2>BERGDORF GOODMAN</h2><p>754 5th Ave</p><p>New York, NY 10019</p><p><a href=\"https://www.google.com/search?q=bergdorf+goodman+ny&sca_esv=590311830&ei=out4ZdjeDeOKkPIPsMiNoAg&ved=0ahUKEwjYt_DLhYuDAxVjBUQIHTBkA4QQ4dUDCBE&uact=5&oq=bergdorf+goodman+ny&gs_lp=Egxnd3Mtd2l6LXNlcnAiE2Jlcmdkb3JmIGdvb2RtYW4gbnkyFxAuGIMBGK8BGMcBGJECGLEDGIAEGIoFMgQQABgDMgsQLhivARjHARiABDIFEAAYgAQyBRAAGIAEMgUQABiABDILEC4YgAQYxwEYrwEyBRAAGIAEMgUQABiABDIFEAAYgAQyJhAuGIMBGK8BGMcBGJECGLEDGIAEGIoFGJcFGNwEGN4EGOAE2AEBSIgoULgJWNImcAN4AZABAJgBf6ABmA2qAQQxNi4zuAEDyAEA-AEBwgIKEAAYRxjWBBiwA8ICDRAAGIAEGIoFGEMYsAPCAhEQLhiABBiKBRiRAhjHARjRA8ICFxAuGIAEGIoFGJECGLEDGIMBGMcBGNEDwgIKEAAYgAQYigUYQ8ICERAuGIAEGLEDGIMBGMcBGNEDwgIOEC4YgAQYigUYsQMYgwHCAgUQLhiABMICCBAAGIAEGLEDwgILEAAYgAQYsQMYgwHCAiAQLhiABBiKBRiRAhjHARjRAxiXBRjcBBjeBBjgBNgBAcICExAuGIAEGIoFGEMYxwEYrwEYjgXCAgsQLhiABBiKBRiRAsICEBAuGIAEGIoFGEMYxwEYrwHCAiIQLhiABBiKBRhDGMcBGK8BGI4FGJcFGNwEGN4EGOAE2AEBwgIQEC4YQxivARjHARiABBiKBcICCxAAGIAEGIoFGJECwgIOEC4YgAQYxwEYrwEYjgXCAggQLhiABBixA8ICCxAuGIAEGLEDGIMBwgIfEC4YQxivARjHARiABBiKBRiXBRjcBBjeBBjgBNgBAcICFxAuGIMBGMcBGJECGLEDGNEDGIAEGIoFwgIREAAYgAQYigUYkQIYsQMYgwHCAhAQLhiABBiKBRhDGLEDGIMBwgILEC4YgwEYsQMYgATCAhEQLhiABBixAxiDARjHARivAcICJhAuGIMBGMcBGJECGLEDGNEDGIAEGIoFGJcFGNwEGN4EGOAE2AEBwgIREC4YgwEYrwEYxwEYsQMYgATCAg4QABiABBiKBRixAxiDAcICJhAuGIAEGIoFGJECGLEDGIMBGMcBGNEDGJcFGNwEGN4EGOAE2AEBwgIaEC4YgwEYrwEYxwEYkQIYsQMYyQMYgAQYigXCAikQLhiDARivARjHARiRAhixAxjJAxiABBiKBRiXBRjcBBjeBBjgBNgBAeIDBBgAIEGIBgGQBgq6BgYIARABGBQ&sclient=gws-wiz-serp#\"><span style=\"text-decoration:underline\">(212) 753-7300</span></a></p>"
+            }
+          },
+          "content_aNhbtG": {
+            "type": "content",
+            "settings": {
+              "content": "<h2>GALLE 49</h2><p>49 Main Street</p><p>Irvington, NY 10533</p>"
+            }
+          },
+          "content_ecMa9M": {
+            "type": "content",
+            "settings": {
+              "content": "<h2>HOTEL CHELSEA</h2><p>222 West 23rd Street</p><p>New York, NY 10011</p>"
+            }
+          },
+          "content_hpkwYa": {
+            "type": "content",
+            "settings": {
+              "content": "<h2>IPSUM</h2><p>345 Warren St</p><p>Hudson, NY 12534</p>"
+            }
+          },
+          "content_eDrBfn": {
+            "type": "content",
+            "settings": {
+              "content": "<h2>LEIGH KELLEY SKIN STUDIO</h2><p>149 Highland Ave</p><p>Kingston, NY 12401</p>"
+            }
+          },
+          "content_Bihm8h": {
+            "type": "content",
+            "settings": {
+              "content": "<h2>MONC XIII</h2><p>40 Madison Street</p><p>Sag Harbor, NY 11963 </p>"
+            }
+          },
+          "content_Xfhd8m": {
+            "type": "content",
+            "settings": {
+              "content": "<h2>ODEUM</h2><p>9 Railroad Avenue</p><p>East Hampton, NY 11937</p>"
+            }
+          },
+          "content_VFi8gd": {
+            "type": "content",
+            "settings": {
+              "content": "<h2>OHHO BOTANICALS</h2><p>34 Village Green</p><p>Bedford, NY 10506</p>"
+            }
+          },
+          "e5f15ded-5edf-45ee-842c-f3ce0355982f": {
+            "type": "content",
+            "settings": {
+              "content": "<h2>ONE/OF</h2><p>17 East 70th Street</p><p>New York, NY 10021</p>"
+            }
+          },
+          "content_ERWnxN": {
+            "type": "content",
+            "settings": {
+              "content": "<h2>OUTLINE</h2><p>365 Atlantic Ave</p><p>Brooklyn, NY 11217</p>"
+            }
+          },
+          "813f2769-52ff-4d89-b09b-5591e14ae7b2": {
+            "type": "content",
+            "settings": {
+              "content": "<h2>THE CONSERVATORY</h2><p>20 Hudson Yards </p><p>Suite 106</p><p>New York, NY 10001</p><p><a href=\"https://www.google.com/search?q=the+conservatory+nyc&sca_esv=590341986&ei=SOx4ZbLiNP36kPIPw96TqAc&ved=0ahUKEwiypqubhouDAxV9PUQIHUPvBHUQ4dUDCBE&uact=5&oq=the+conservatory+nyc&gs_lp=Egxnd3Mtd2l6LXNlcnAiFHRoZSBjb25zZXJ2YXRvcnkgbnljMgsQLhiABBjHARivATIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIaEC4YgAQYxwEYrwEYlwUY3AQY3gQY4ATYAQFIihpQ_ghYmxlwAHgFkAEAmAF-oAGUDqoBBDEzLja4AQPIAQD4AQHCAgQQABhHwgIREAAYgAQYigUYkQIYsQMYgwHCAgsQABiABBiKBRiRAsICERAuGIAEGLEDGIMBGMcBGNEDwgIREC4YgAQYigUYsQMYgwEY1ALCAg4QLhiABBiKBRixAxiDAcICCxAuGIAEGLEDGIMBwgILEAAYgAQYsQMYgwHCAgoQLhiABBiKBRhDwgIQEC4YgAQYigUYQxjHARivAcICDhAAGIAEGIoFGLEDGIMBwgIFEC4YgATCAgoQABiABBiKBRhDwgIIEC4YsQMYgATCAg4QLhiABBixAxiDARjUAsICDhAuGIMBGNQCGLEDGIAEwgILEC4YgAQYsQMY1ALCAhQQLhiABBiKBRiRAhixAxjHARjRA8ICDhAAGIAEGIoFGJECGLEDwgIIEC4YgAQYsQPCAiMQLhiABBiKBRiRAhixAxjHARjRAxiXBRjcBBjeBBjgBNgBAcICHRAuGIAEGIoFGJECGMcBGK8BGJgFGJ4FGJkFGI4FwgIOEC4YgAQYxwEYrwEYjgXCAggQABiABBixA8ICBRAAGIAEwgIOEC4YrwEYxwEYgAQYjgXCAgsQLhiABBjHARjRA8ICHRAuGK8BGMcBGIAEGI4FGJcFGNwEGN4EGOAE2AEBwgIREC4YgAQYxwEYrwEYmAUYmQXCAhQQLhiABBjHARivARiYBRiZBRiOBcICCxAuGK8BGMcBGIAEwgIaEC4YrwEYxwEYgAQYlwUY3AQY3gQY4ATYAQHiAwQYACBBiAYBkAYIugYGCAEQARgU&sclient=gws-wiz-serp#\"><span style=\"text-decoration:underline\">(212) 473-1333</span></a></p>"
+            }
+          }
+        },
+        "block_order": [
+          "4d3de58f-80f1-4b95-92ca-640752f356ad",
+          "032a2c24-d939-4e4c-a672-30fd7753a932",
+          "4fd71b8f-0b7d-4256-81af-4f5fb5609b31",
+          "content_aNhbtG",
+          "content_ecMa9M",
+          "content_hpkwYa",
+          "content_eDrBfn",
+          "content_Bihm8h",
+          "content_Xfhd8m",
+          "content_VFi8gd",
+          "e5f15ded-5edf-45ee-842c-f3ce0355982f",
+          "content_ERWnxN",
+          "813f2769-52ff-4d89-b09b-5591e14ae7b2"
+        ],
+        "settings": {
+          "mobile_layout": "column-reverse",
+          "desktop_layout": "row-reverse",
+          "padding_top": 36,
+          "padding_bottom": 36
+        }
+      },
+      "heading-north-america": {
+        "type": "heading-north-america",
+        "settings": {
+          "heading": "<p>North America</p>",
+          "padding_top": 0,
+          "padding_bottom": 32
+        }
+      },
+      "north-carolina-image-with-text": {
+        "type": "north-carolina-image-with-text",
+        "blocks": {
+          "7092f12a-6877-4e8e-88f3-e61922b2636d": {
+            "type": "heading",
+            "settings": {
+              "heading": "NORTH CAROLINA"
+            }
+          },
+          "d47c0d32-6753-4d55-a2e0-75c9e43473a1": {
+            "type": "content",
+            "settings": {
+              "content": "<h2>VERMILLION</h2><p>4350 Lassiter at North Hills Ave </p><p>STE 110</p><p>Raleigh, NC 27609</p><p><a href=\"https://www.google.com/search?q=vermillion+north+carolina&oq=vermillion+north+carolina&gs_lcrp=EgZjaHJvbWUqCggAEAAY4wIYgAQyCggAEAAY4wIYgAQyDQgBEC4YrwEYxwEYgAQyCAgCEAAYFhge0gEIMjk4OGowajSoAgCwAgA&sourceid=chrome&ie=UTF-8#\"><span style=\"text-decoration:underline\">(919) 787-9780</span></a></p>"
+            }
+          }
+        },
+        "block_order": [
+          "7092f12a-6877-4e8e-88f3-e61922b2636d",
+          "d47c0d32-6753-4d55-a2e0-75c9e43473a1"
+        ],
+        "settings": {
+          "mobile_layout": "column-reverse",
+          "desktop_layout": "row-reverse",
+          "padding_top": 36,
+          "padding_bottom": 36
+        }
+      },
+      "south-carolina-image-with-text": {
+        "type": "south-carolina-image-with-text",
+        "blocks": {
+          "766789bd-771d-420e-92ea-93a980d79ef1": {
+            "type": "heading",
+            "settings": {
+              "heading": "SOUTH CAROLINA"
+            }
+          },
+          "1e6c81db-4ade-4a09-9c0e-325e8e11d6ed": {
+            "type": "content",
+            "settings": {
+              "content": "<h2>WENTWORTH</h2><p>162 Wentworth Street</p><p>Charleston, SC 29401</p><p>843-737-0512</p>"
+            }
+          }
+        },
+        "block_order": [
+          "766789bd-771d-420e-92ea-93a980d79ef1",
+          "1e6c81db-4ade-4a09-9c0e-325e8e11d6ed"
+        ],
+        "settings": {
+          "mobile_layout": "column-reverse",
+          "desktop_layout": "row-reverse",
+          "padding_top": 36,
+          "padding_bottom": 36
+        }
+      },
+      "texas-image-with-text": {
+        "type": "texas-image-with-text",
+        "blocks": {
+          "162b1a42-7445-4ddf-ab09-625031309570": {
+            "type": "heading",
+            "settings": {
+              "heading": "TEXAS"
+            }
+          },
+          "dfe9a21f-6544-4ca6-b63d-9e82aafd310c": {
+            "type": "content",
+            "settings": {
+              "content": "<h2>BYGEORGE</h2><p>524 N Lamar Blvd </p><p>#103</p><p>Austin, TX 78703</p><p><a href=\"https://www.google.com/search?q=by+george+austin&oq=by+george+austin&gs_lcrp=EgZjaHJvbWUyCQgAEEUYORiABDINCAEQABiDARixAxiABDIHCAIQABiABDIHCAMQLhiABDINCAQQLhivARjHARiABDIHCAUQABiABDIHCAYQABiABDIGCAcQRRg80gEIMzI1NWowajSoAgCwAgA&sourceid=chrome&ie=UTF-8#\"><span style=\"text-decoration:underline\">(512) 472-5951</span></a></p>"
+            }
+          },
+          "content_PLYEaY": {
+            "type": "content",
+            "settings": {
+              "content": "<h2>BOWIE HOUSE - AUBERGE</h2><p>3700 Camp Bowie Blvd</p><p>Fort Worth, TX 76107</p><p><a href=\"https://www.google.com/search?q=by+george+austin&oq=by+george+austin&gs_lcrp=EgZjaHJvbWUyCQgAEEUYORiABDINCAEQABiDARixAxiABDIHCAIQABiABDIHCAMQLhiABDINCAQQLhivARjHARiABDIHCAUQABiABDIHCAYQABiABDIGCAcQRRg80gEIMzI1NWowajSoAgCwAgA&sourceid=chrome&ie=UTF-8#\"><span style=\"text-decoration:underline\">(512) 472-5951</span></a></p>"
+            }
+          },
+          "a4e0e4d3-47b1-4453-8766-dbef2051e9ab": {
+            "type": "content",
+            "settings": {
+              "content": "<h2>LEGRAND</h2><p>3300 Bee Caves Rd </p><p>Suite 420</p><p>Austin, TX 78746</p>"
+            }
+          },
+          "content_iaam3T": {
+            "type": "content",
+            "settings": {
+              "content": "<h2>SAINT BERNARD - AUSTIN</h2><p>3201 Bee Caves Road, STE 142</p><p>Austin, TX 78746</p>"
+            }
+          },
+          "content_rxVE9C": {
+            "type": "content",
+            "settings": {
+              "content": "<h2>SAINT BERNARD - HOUSTON</h2><p>4444 Westheimer Road, G100</p><p>Houston, TX 77027</p>"
+            }
+          },
+          "content_xBeQDC": {
+            "type": "content",
+            "settings": {
+              "content": "<h2>SAINT BERNARD - SAN ANTONIO</h2><p>999 E Basse Road</p><p>Suite 157</p><p>San Antonio, TX 78209</p>"
+            }
+          },
+          "content_XVQtah": {
+            "type": "content",
+            "settings": {
+              "content": "<h2>SAINT BERNARD - SOUTH LAKE</h2><p>1275 East South Lake Blvd</p><p>Suite 401 </p><p>South Lake, TX 76092</p>"
+            }
+          },
+          "content_YHPCFQ": {
+            "type": "content",
+            "settings": {
+              "content": "<h2>THE CONSERVATORY</h2><p>100 Highland Park Village</p><p>Second Floor</p><p>Dallas, TX 75205</p><p>972-863-8590</p>"
+            }
+          },
+          "content_LUaEgR": {
+            "type": "content",
+            "settings": {
+              "content": "<h2>THE HEIGHTS GROCER</h2><p>4525 N Main St</p><p>Houston, TX 77009</p>"
+            }
+          },
+          "content_kNY7k4": {
+            "type": "content",
+            "settings": {
+              "content": "<h2>THE TINY FINCH</h2><p>302 Pearl Pkwy, #116</p><p>San Antonio, TX 78215</p>"
+            }
+          }
+        },
+        "block_order": [
+          "162b1a42-7445-4ddf-ab09-625031309570",
+          "dfe9a21f-6544-4ca6-b63d-9e82aafd310c",
+          "content_PLYEaY",
+          "a4e0e4d3-47b1-4453-8766-dbef2051e9ab",
+          "content_iaam3T",
+          "content_rxVE9C",
+          "content_xBeQDC",
+          "content_XVQtah",
+          "content_YHPCFQ",
+          "content_LUaEgR",
+          "content_kNY7k4"
+        ],
+        "settings": {
+          "mobile_layout": "column-reverse",
+          "desktop_layout": "row-reverse",
+          "padding_top": 36,
+          "padding_bottom": 36
+        }
+      },
+      "tenesse-image-with-text": {
+        "type": "tenesse-image-with-text",
+        "blocks": {
+          "eb1ba293-11eb-41c7-9613-a2b5ff3104a6": {
+            "type": "heading",
+            "settings": {
+              "heading": "TENNESSEE"
+            }
+          },
+          "ef162069-e7f1-4d6d-9711-59380b234164": {
+            "type": "content",
+            "settings": {
+              "content": "<h2>20 TWELVE DESIGN</h2><p>6150 Poplar Ave </p><p>Memphis, TN 38119</p><p>901.275.8784</p>"
+            }
+          },
+          "43e75f96-44dd-467e-b7ac-83d16ac3c384": {
+            "type": "content",
+            "settings": {
+              "content": "<h2>DEPARTMENT</h2><p>2201 Bandywood Drive, Suite G</p><p>Nashville, TN 37215</p><p>615.730.9962</p>"
+            }
+          },
+          "content_4nFcQ4": {
+            "type": "content",
+            "settings": {
+              "content": "<h2>THE GREEN RAY</h2><p>3237B Gallatin Pk</p><p>Nashville, TN 37216</p>"
+            }
+          }
+        },
+        "block_order": [
+          "eb1ba293-11eb-41c7-9613-a2b5ff3104a6",
+          "ef162069-e7f1-4d6d-9711-59380b234164",
+          "43e75f96-44dd-467e-b7ac-83d16ac3c384",
+          "content_4nFcQ4"
+        ],
+        "settings": {
+          "mobile_layout": "column-reverse",
+          "desktop_layout": "row-reverse",
+          "padding_top": 36,
+          "padding_bottom": 36
+        }
+      },
+      "canada-heading": {
+        "type": "canada-heading",
+        "settings": {
+          "heading": "<p>CANADA</p>",
+          "padding_top": 36,
+          "padding_bottom": 36
+        }
+      },
+      "europe-heading": {
+        "type": "europe-heading",
+        "settings": {
+          "heading": "<p>EUROPE</p>",
+          "padding_top": 36,
+          "padding_bottom": 36
+        }
+      },
+      "online-retailers-heading": {
+        "type": "online-retailers-heading",
+        "settings": {
+          "heading": "<p>ONLINE RETAILERS</p>",
+          "padding_top": 36,
+          "padding_bottom": 20
+        }
+      },
+      "rich-text-retailers": {
+        "type": "rich-text-retailers",
+        "settings": {
+          "heading": "",
+          "content__rich-text": "<p>AirMail </p><p>Bergdorf Goodman </p><p>Moda Operandi </p><p>Neiman Marcus</p>",
+          "padding_top": 0,
+          "padding_bottom": 36
+        }
+      },
+      "mde-holiday-custom-content-block": {
+        "type": "mde-holiday-custom-content-block",
+        "blocks": {
+          "hero_VAfmCB": {
+            "type": "hero",
+            "settings": {
+              "hidem": false,
+              "image": "shopify://shop_images/MAISON_DETTO_SM_6754.jpg",
+              "imagem": "shopify://shop_images/MAISON_DETTO_SM_6754.jpg",
+              "htd": 800,
+              "htt": 800,
+              "htm": 300,
+              "ovr": "#242424",
+              "ovropt": 0.2,
+              "title": "2026: THE YEAR OF THE HORSE",
+              "tcl": "#f3f2ee",
+              "tfs": 36,
+              "tfsm": 20,
+              "tfw": "400",
+              "to": 1,
+              "tlh": 1.2,
+              "tmb": 10,
+              "tmbm": 10,
+              "hd3": "The Language of the Unspoken.",
+              "hideh3": false,
+              "cl": "#f3f2ee",
+              "fs": 18,
+              "fsm": 12,
+              "fw": "400",
+              "lh": 1.2,
+              "mb": 25,
+              "mbm": 15,
+              "txtpos": "f-aie-md f-jcs-md",
+              "width": "w_100"
+            }
+          },
+          "text_tkb9kD": {
+            "type": "text",
+            "settings": {
+              "hidem": false,
+              "dis_img": false,
+              "adjust_img": false,
+              "image_width": 660,
+              "img_position": "above",
+              "image_crop": "default",
+              "image_crop_location": "center",
+              "title": "Fragrance is the invisible bridge between who we are and who we are becoming.",
+              "all_caps_heading": false,
+              "fs": 16,
+              "fsm": 16,
+              "lh": 1.2,
+              "adjust_text_ls": true,
+              "text_ls": 1.2,
+              "tbm": 30,
+              "text": "<p>There is a red thread that runs through the dust of the arena, the damp morning air, and the silence of the stable. It is the pulse of the horse—a life force that mirrors our own.<br/><br/>I have always found that horses bring a profound understanding to our lives without the need for words. They do not speak, yet they tell us everything. They are the ultimate mirrors; they see us before we see ourselves, reflecting our energy back to us with startling clarity.<br/><br/>At Maison d’Etto, this connection is my source. I do not paint with colors; I paint memories and lived experiences with these animals into our fragrances. We do not simply compose scents; we transcribe moments of profound connection into olfactive storytelling.<br/><br/>As we enter the Year of the Horse, we are returning to this source.</p>",
+              "text_override": true,
+              "text_fs": 12,
+              "text_fsm": 12,
+              "text_lh": 1.7,
+              "btntxt": "Shop Now",
+              "btnurl": "",
+              "btn-style": "btn1",
+              "btn-size": "btn-md",
+              "adjust_maxwd": false,
+              "maxwd": 80,
+              "bg": false,
+              "clbg": "#f3f2ee",
+              "cl": "#626950",
+              "boxrad": 0,
+              "brad": 0,
+              "add_divider": false,
+              "divider_location": "below",
+              "divider_color": "#626950",
+              "align_text": "tc",
+              "alignment": "f-asc",
+              "width": "w_100"
+            }
+          },
+          "text_Qr7bi8": {
+            "type": "text",
+            "settings": {
+              "hidem": false,
+              "dis_img": true,
+              "image": "shopify://shop_images/MAISON_DETTO_SM_6632.jpg",
+              "adjust_img": true,
+              "image_width": 500,
+              "img_position": "above",
+              "image_crop": "square",
+              "image_crop_location": "top",
+              "title": "",
+              "all_caps_heading": false,
+              "fs": 17,
+              "fsm": 17,
+              "lh": 1.2,
+              "adjust_text_ls": true,
+              "text_ls": 2,
+              "tbm": 14,
+              "text": "",
+              "text_override": false,
+              "text_fs": 16,
+              "text_fsm": 12,
+              "text_lh": 1.6,
+              "btntxt": "Shop Now",
+              "btnurl": "",
+              "btn-style": "btn1",
+              "btn-size": "btn-md",
+              "adjust_maxwd": false,
+              "maxwd": 50,
+              "bg": false,
+              "clbg": "#f3f2ee",
+              "cl": "#626950",
+              "boxrad": 0,
+              "brad": 0,
+              "add_divider": false,
+              "divider_location": "below",
+              "divider_color": "#626950",
+              "align_text": "tc",
+              "alignment": "f-ass",
+              "width": "wd50"
+            }
+          },
+          "text_z6FJCx": {
+            "type": "text",
+            "settings": {
+              "hidem": false,
+              "dis_img": false,
+              "adjust_img": false,
+              "image_width": 660,
+              "img_position": "above",
+              "image_crop": "default",
+              "image_crop_location": "center",
+              "title": "A MAP OF INNER LANDSCAPES",
+              "all_caps_heading": false,
+              "fs": 17,
+              "fsm": 17,
+              "lh": 1.2,
+              "adjust_text_ls": true,
+              "text_ls": 2,
+              "tbm": 14,
+              "text": "<p>THE ARCHETYPES OF THE SPIRIT</p><p><strong>EIGHT MUSES. EIGHT INTENTIONS. WHICH REFLECTION IS YOURS?</strong></p><p>To choose a fragrance is to choose an intention. In the stillness before a single note is composed, there is a frequency—an energy held by our muses. These spirits do not demand our attention; they simply wait for us to recognize ourselves in them.We invite you to look past the scent profiles and listen to the metaphors. Forget the notes. Close your eyes and see which olfactive narrative leads you home.</p>",
+              "text_override": false,
+              "text_fs": 16,
+              "text_fsm": 12,
+              "text_lh": 1.6,
+              "btntxt": "Shop Now",
+              "btnurl": "",
+              "btn-style": "btn1",
+              "btn-size": "btn-md",
+              "adjust_maxwd": false,
+              "maxwd": 50,
+              "bg": false,
+              "clbg": "#f3f2ee",
+              "cl": "#626950",
+              "boxrad": 0,
+              "brad": 0,
+              "add_divider": false,
+              "divider_location": "below",
+              "divider_color": "#626950",
+              "align_text": "tc",
+              "alignment": "f-asc",
+              "width": "wd50"
+            }
+          },
+          "text_yL6mCY": {
+            "type": "text",
+            "disabled": true,
+            "settings": {
+              "hidem": false,
+              "dis_img": true,
+              "image": "shopify://shop_images/3757-09F_LCM_MEO_RGB_ECOM_ROTANO_GREY_72c5b4f5-5384-4ab7-b62a-9b97a09d7987.jpg",
+              "adjust_img": true,
+              "image_width": 200,
+              "img_position": "above",
+              "image_crop": "square",
+              "image_crop_location": "center",
+              "title": "",
+              "all_caps_heading": false,
+              "fs": 17,
+              "fsm": 17,
+              "lh": 1.2,
+              "adjust_text_ls": true,
+              "text_ls": 2,
+              "tbm": 14,
+              "text": "",
+              "text_override": false,
+              "text_fs": 16,
+              "text_fsm": 12,
+              "text_lh": 1.6,
+              "btntxt": "Shop Now",
+              "btnurl": "",
+              "btn-style": "btn1",
+              "btn-size": "btn-sm",
+              "adjust_maxwd": false,
+              "maxwd": 50,
+              "bg": false,
+              "clbg": "#f3f2ee",
+              "cl": "#626950",
+              "boxrad": 0,
+              "brad": 0,
+              "add_divider": false,
+              "divider_location": "below",
+              "divider_color": "#626950",
+              "align_text": "tc",
+              "alignment": "f-asc",
+              "width": "wd50"
+            }
+          },
+          "text_DUT8Ub": {
+            "type": "text",
+            "disabled": true,
+            "settings": {
+              "hidem": false,
+              "dis_img": false,
+              "adjust_img": false,
+              "image_width": 660,
+              "img_position": "above",
+              "image_crop": "default",
+              "image_crop_location": "center",
+              "title": "ROTANO",
+              "all_caps_heading": false,
+              "fs": 17,
+              "fsm": 17,
+              "lh": 1.2,
+              "adjust_text_ls": true,
+              "text_ls": 2,
+              "tbm": 14,
+              "text": "<p>The Sovereign Pivot</p><p>A certain, bold inner power. The weight of the moment that changes everything—the grace found in the turn.</p>",
+              "text_override": true,
+              "text_fs": 12,
+              "text_fsm": 12,
+              "text_lh": 1.6,
+              "btntxt": "Shop Now",
+              "btnurl": "shopify://products/rotano-60ml-edp",
+              "btn-style": "btn1",
+              "btn-size": "btn-sm",
+              "adjust_maxwd": false,
+              "maxwd": 100,
+              "bg": false,
+              "clbg": "#f3f2ee",
+              "cl": "#626950",
+              "boxrad": 0,
+              "brad": 0,
+              "add_divider": false,
+              "divider_location": "both",
+              "divider_color": "#626950",
+              "align_text": "tc",
+              "alignment": "f-asc",
+              "width": "wd50"
+            }
+          },
+          "text_9mLRCC": {
+            "type": "text",
+            "settings": {
+              "hidem": false,
+              "dis_img": true,
+              "image": "shopify://shop_images/3757-09F_LCM_MEO_RGB_ECOM_ROTANO_GREY_72c5b4f5-5384-4ab7-b62a-9b97a09d7987.jpg",
+              "adjust_img": true,
+              "image_width": 250,
+              "img_position": "above",
+              "image_crop": "square",
+              "image_crop_location": "center",
+              "title": "ROTANO",
+              "all_caps_heading": false,
+              "fs": 17,
+              "fsm": 17,
+              "lh": 1.2,
+              "adjust_text_ls": true,
+              "text_ls": 2,
+              "tbm": 14,
+              "text": "<p>The Sovereign Pivot</p><p>A certain, bold inner power. The weight of the moment that changes everything—the grace found in the turn.</p>",
+              "text_override": true,
+              "text_fs": 12,
+              "text_fsm": 12,
+              "text_lh": 1.6,
+              "btntxt": "Shop Now",
+              "btnurl": "shopify://products/rotano-60ml-edp",
+              "btn-style": "btn1",
+              "btn-size": "btn-sm",
+              "adjust_maxwd": false,
+              "maxwd": 100,
+              "bg": false,
+              "clbg": "#f3f2ee",
+              "cl": "#626950",
+              "boxrad": 0,
+              "brad": 0,
+              "add_divider": false,
+              "divider_location": "below",
+              "divider_color": "#626950",
+              "align_text": "tc",
+              "alignment": "f-asc",
+              "width": "wd50"
+            }
+          },
+          "text_AwzHJb": {
+            "type": "text",
+            "settings": {
+              "hidem": false,
+              "dis_img": true,
+              "image": "shopify://shop_images/3757-07E_LCM_MEO_RGB_ECOM_KARAT_GREY.jpg",
+              "adjust_img": true,
+              "image_width": 250,
+              "img_position": "above",
+              "image_crop": "square",
+              "image_crop_location": "center",
+              "title": "KARAT EG",
+              "all_caps_heading": false,
+              "fs": 17,
+              "fsm": 17,
+              "lh": 1.2,
+              "adjust_text_ls": true,
+              "text_ls": 2,
+              "tbm": 14,
+              "text": "<p>The Emergent Soul</p><p>A tribute to rebirth and renewal. The addictive first breath of a new chapter and the light of a fresh horizon.</p>",
+              "text_override": true,
+              "text_fs": 12,
+              "text_fsm": 12,
+              "text_lh": 1.6,
+              "btntxt": "Shop Now",
+              "btnurl": "shopify://products/karat-eg-60ml-edp",
+              "btn-style": "btn1",
+              "btn-size": "btn-sm",
+              "adjust_maxwd": false,
+              "maxwd": 100,
+              "bg": false,
+              "clbg": "#f3f2ee",
+              "cl": "#626950",
+              "boxrad": 0,
+              "brad": 0,
+              "add_divider": false,
+              "divider_location": "below",
+              "divider_color": "#626950",
+              "align_text": "tc",
+              "alignment": "f-ass",
+              "width": "wd50"
+            }
+          },
+          "text_UMV8qm": {
+            "type": "text",
+            "settings": {
+              "hidem": false,
+              "dis_img": true,
+              "image": "shopify://shop_images/3757-05G_LCM_MEO_RGB_ECOM_DURBAN_JANE_GREY.jpg",
+              "adjust_img": true,
+              "image_width": 250,
+              "img_position": "above",
+              "image_crop": "square",
+              "image_crop_location": "center",
+              "title": "DURBAN JANE",
+              "all_caps_heading": false,
+              "fs": 17,
+              "fsm": 17,
+              "lh": 1.2,
+              "adjust_text_ls": true,
+              "text_ls": 2,
+              "tbm": 14,
+              "text": "<p>The Sacred Connection</p><p>Born from an unspoken soul-dialogue to capture the profound peace of being truly seen. The architecture of a shared heart.</p>",
+              "text_override": true,
+              "text_fs": 12,
+              "text_fsm": 12,
+              "text_lh": 1.6,
+              "btntxt": "Shop Now",
+              "btnurl": "shopify://products/durban-jane",
+              "btn-style": "btn1",
+              "btn-size": "btn-sm",
+              "adjust_maxwd": true,
+              "maxwd": 100,
+              "bg": false,
+              "clbg": "#f3f2ee",
+              "cl": "#626950",
+              "boxrad": 0,
+              "brad": 0,
+              "add_divider": false,
+              "divider_location": "both",
+              "divider_color": "#626950",
+              "align_text": "tc",
+              "alignment": "f-ass",
+              "width": "wd50"
+            }
+          },
+          "text_rgxiRn": {
+            "type": "text",
+            "settings": {
+              "hidem": false,
+              "dis_img": true,
+              "image": "shopify://shop_images/3757-01E_LCM_MEO_RGB_ECOM_MACANUDO_GREY.jpg",
+              "adjust_img": true,
+              "image_width": 250,
+              "img_position": "above",
+              "image_crop": "square",
+              "image_crop_location": "center",
+              "title": "Macanudo",
+              "all_caps_heading": true,
+              "fs": 17,
+              "fsm": 17,
+              "lh": 1.2,
+              "adjust_text_ls": true,
+              "text_ls": 2,
+              "tbm": 14,
+              "text": "<p>The Grounded Grace</p><p>A study of tenderness. This essence acts as an anchor, allowing one to root deeply so they may reach higher.</p>",
+              "text_override": true,
+              "text_fs": 12,
+              "text_fsm": 12,
+              "text_lh": 1.6,
+              "btntxt": "Shop Now",
+              "btnurl": "shopify://products/macanudo-60ml-edp",
+              "btn-style": "btn1",
+              "btn-size": "btn-sm",
+              "adjust_maxwd": true,
+              "maxwd": 100,
+              "bg": false,
+              "clbg": "#f3f2ee",
+              "cl": "#626950",
+              "boxrad": 0,
+              "brad": 0,
+              "add_divider": false,
+              "divider_location": "both",
+              "divider_color": "#626950",
+              "align_text": "tc",
+              "alignment": "f-ass",
+              "width": "wd50"
+            }
+          },
+          "text_VYfBq3": {
+            "type": "text",
+            "settings": {
+              "hidem": false,
+              "dis_img": true,
+              "image": "shopify://shop_images/3757-03E_LCM_MEO_RGB_ECOM_CANAAN_GREY.jpg",
+              "adjust_img": true,
+              "image_width": 250,
+              "img_position": "above",
+              "image_crop": "square",
+              "image_crop_location": "center",
+              "title": "Canaan",
+              "all_caps_heading": true,
+              "fs": 17,
+              "fsm": 17,
+              "lh": 1.2,
+              "adjust_text_ls": true,
+              "text_ls": 2,
+              "tbm": 14,
+              "text": "<p>The Magnetic Pulse</p><p>A hypnotic momentum toward passion and freedom. The scent of a drive that refuses to stay still.</p>",
+              "text_override": true,
+              "text_fs": 12,
+              "text_fsm": 12,
+              "text_lh": 1.6,
+              "btntxt": "Shop Now",
+              "btnurl": "shopify://products/canaan",
+              "btn-style": "btn1",
+              "btn-size": "btn-sm",
+              "adjust_maxwd": true,
+              "maxwd": 100,
+              "bg": false,
+              "clbg": "#f3f2ee",
+              "cl": "#626950",
+              "boxrad": 0,
+              "brad": 0,
+              "add_divider": false,
+              "divider_location": "both",
+              "divider_color": "#626950",
+              "align_text": "tc",
+              "alignment": "f-ass",
+              "width": "wd50"
+            }
+          },
+          "text_m7Thxn": {
+            "type": "text",
+            "settings": {
+              "hidem": false,
+              "dis_img": true,
+              "image": "shopify://shop_images/4071-01B_LCM_MEO_SRG_NOISETTE_HERO_GREY_LO_RES.jpg",
+              "adjust_img": true,
+              "image_width": 250,
+              "img_position": "above",
+              "image_crop": "square",
+              "image_crop_location": "center",
+              "title": "Noisette",
+              "all_caps_heading": true,
+              "fs": 17,
+              "fsm": 17,
+              "lh": 1.2,
+              "adjust_text_ls": true,
+              "text_ls": 2,
+              "tbm": 14,
+              "text": "<p>The Internal Horizon</p><p>An invitation to turn inward. A peaceful, inquisitive space where silence speaks the loudest.</p>",
+              "text_override": true,
+              "text_fs": 12,
+              "text_fsm": 12,
+              "text_lh": 1.6,
+              "btntxt": "Shop Now",
+              "btnurl": "shopify://products/noisette",
+              "btn-style": "btn1",
+              "btn-size": "btn-sm",
+              "adjust_maxwd": true,
+              "maxwd": 100,
+              "bg": false,
+              "clbg": "#f3f2ee",
+              "cl": "#626950",
+              "boxrad": 0,
+              "brad": 0,
+              "add_divider": false,
+              "divider_location": "both",
+              "divider_color": "#626950",
+              "align_text": "tc",
+              "alignment": "f-ass",
+              "width": "wd50"
+            }
+          },
+          "text_UNkTUK": {
+            "type": "text",
+            "settings": {
+              "hidem": false,
+              "dis_img": true,
+              "image": "shopify://shop_images/5187-01C_LCM_MEO_VERDADES_GREY.jpg",
+              "adjust_img": true,
+              "image_width": 250,
+              "img_position": "above",
+              "image_crop": "square",
+              "image_crop_location": "center",
+              "title": "Verdades",
+              "all_caps_heading": true,
+              "fs": 17,
+              "fsm": 17,
+              "lh": 1.2,
+              "adjust_text_ls": true,
+              "text_ls": 2,
+              "tbm": 14,
+              "text": "<p>The Unwavering Bloom</p><p>A bold challenge to the expected. The strength found in staying steady, resilient, and graceful against the wind.</p>",
+              "text_override": true,
+              "text_fs": 12,
+              "text_fsm": 12,
+              "text_lh": 1.6,
+              "btntxt": "Shop Now",
+              "btnurl": "shopify://products/verdades",
+              "btn-style": "btn1",
+              "btn-size": "btn-sm",
+              "adjust_maxwd": true,
+              "maxwd": 100,
+              "bg": false,
+              "clbg": "#f3f2ee",
+              "cl": "#626950",
+              "boxrad": 0,
+              "brad": 0,
+              "add_divider": false,
+              "divider_location": "both",
+              "divider_color": "#626950",
+              "align_text": "tc",
+              "alignment": "f-ass",
+              "width": "wd50"
+            }
+          },
+          "text_6wzhdL": {
+            "type": "text",
+            "settings": {
+              "hidem": false,
+              "dis_img": true,
+              "image": "shopify://shop_images/5475-01C_LCM_MEO_I-DREAM_GREY.jpg",
+              "adjust_img": true,
+              "image_width": 250,
+              "img_position": "above",
+              "image_crop": "square",
+              "image_crop_location": "center",
+              "title": "I—Dream",
+              "all_caps_heading": true,
+              "fs": 17,
+              "fsm": 17,
+              "lh": 1.2,
+              "adjust_text_ls": true,
+              "text_ls": 2,
+              "tbm": 14,
+              "text": "<p>The Luminous Echo</p><p>A vessel for beauty found within loss. The sweetness of a memory that transforms into a lingering hope.</p>",
+              "text_override": true,
+              "text_fs": 12,
+              "text_fsm": 12,
+              "text_lh": 1.6,
+              "btntxt": "Shop Now",
+              "btnurl": "shopify://products/i-dream",
+              "btn-style": "btn1",
+              "btn-size": "btn-sm",
+              "adjust_maxwd": true,
+              "maxwd": 100,
+              "bg": false,
+              "clbg": "#f3f2ee",
+              "cl": "#626950",
+              "boxrad": 0,
+              "brad": 0,
+              "add_divider": false,
+              "divider_location": "both",
+              "divider_color": "#626950",
+              "align_text": "tc",
+              "alignment": "f-ass",
+              "width": "wd50"
+            }
+          },
+          "hero_MHatDd": {
+            "type": "hero",
+            "settings": {
+              "hidem": false,
+              "image": "shopify://shop_images/MAISON_DETTO_SM_6601.jpg",
+              "imagem": "shopify://shop_images/MAISON_DETTO_SM_6601.jpg",
+              "htd": 700,
+              "htt": 450,
+              "htm": 350,
+              "ovr": "#3d4246",
+              "ovropt": 0,
+              "title": "",
+              "tcl": "#f3f2ee",
+              "tfs": 36,
+              "tfsm": 20,
+              "tfw": "400",
+              "to": 1,
+              "tlh": 1.2,
+              "tmb": 25,
+              "tmbm": 10,
+              "hd3": "ETTO | EACH TO THEIR OWN",
+              "hideh3": false,
+              "cl": "#f3f2ee",
+              "fs": 16,
+              "fsm": 14,
+              "fw": "400",
+              "lh": 1.2,
+              "mb": 20,
+              "mbm": 15,
+              "txtpos": "f-aie-md f-jcs-md",
+              "width": "w_100"
+            }
+          },
+          "image_G76CCr": {
+            "type": "image",
+            "settings": {
+              "hidem": false,
+              "image": "shopify://shop_images/MAISON_DETTO_SM_6601.jpg",
+              "adjust_img": true,
+              "image_width": 200,
+              "image_crop": "default",
+              "image_crop_location": "center",
+              "imgurl": "",
+              "alignment": "f-ass",
+              "brad": 0,
+              "width": "wd33"
+            }
+          },
+          "text_aj9DyT": {
+            "type": "text",
+            "settings": {
+              "hidem": false,
+              "dis_img": false,
+              "adjust_img": false,
+              "image_width": 660,
+              "img_position": "above",
+              "image_crop": "default",
+              "image_crop_location": "center",
+              "title": "ETTO | EACH TO THEIR OWN",
+              "all_caps_heading": true,
+              "fs": 17,
+              "fsm": 17,
+              "lh": 1.2,
+              "adjust_text_ls": true,
+              "text_ls": 2,
+              "tbm": 14,
+              "text": "<p>There is no singular way to inhabit these scents. At the heart of Maison d’Etto is <em>Etto</em>—the belief that your experience is your own, a unique imprint born from your own lived moments.<br/><br/>There is no right or wrong; there is only resonance. We encourage you to explore, and then to return. Our perspectives shift with each passing day, month, and year. You may be surprised by what resonates when the light, the perspective, or the seasons change.<br/><br/>Let your intuition be your guide, and allow your preference to evolve as you do.</p>",
+              "text_override": false,
+              "text_fs": 16,
+              "text_fsm": 12,
+              "text_lh": 1.6,
+              "btntxt": "Shop Now",
+              "btnurl": "",
+              "btn-style": "btn1",
+              "btn-size": "btn-md",
+              "adjust_maxwd": true,
+              "maxwd": 70,
+              "bg": true,
+              "clbg": "#f3f2ee",
+              "cl": "#626950",
+              "boxrad": 0,
+              "brad": 0,
+              "add_divider": false,
+              "divider_location": "below",
+              "divider_color": "#626950",
+              "align_text": "tl",
+              "alignment": "f-ase",
+              "width": "wd66"
+            }
+          },
+          "product_C3bBdc": {
+            "type": "product",
+            "disabled": true,
+            "settings": {
+              "hidem": false,
+              "image": "shopify://shop_images/HERO-Editorial-01_c3463237-84ac-4b8b-ab03-2b04f9ffe20b.jpg",
+              "imgurl": "shopify://products/noisette",
+              "image_location": "left",
+              "collection_handle": "vintage-sample-sale-edp",
+              "hide_volume": true,
+              "hide_details": false,
+              "alignment": "f-asc",
+              "link_position": "center",
+              "link_text": "",
+              "link_url": "shopify://products/vintage-karat-eg",
+              "width": "w_100"
+            }
+          },
+          "text_p4XeGF": {
+            "type": "text",
+            "disabled": true,
+            "settings": {
+              "hidem": false,
+              "dis_img": true,
+              "image": "shopify://shop_images/DC_MDE_AUG241059_copy_3.jpg",
+              "adjust_img": true,
+              "image_width": 200,
+              "img_position": "above",
+              "image_crop": "square",
+              "image_crop_location": "center",
+              "title": "Verdades — First Run Collection of our Newest Scent",
+              "all_caps_heading": true,
+              "fs": 17,
+              "fsm": 17,
+              "lh": 1.2,
+              "adjust_text_ls": true,
+              "text_ls": 2,
+              "tbm": 14,
+              "text": "<p>A luminous white floral reveals the indolic nature of orange blossom. Gentle petals of jasmine are kissed by an ozonic dew. From the heart, the warmth of a comforting vanilla radiates like embers of a golden flame.</p><p>Verdades represents the splendor of the present. It reminds us to keep ablaze the glow of our inner radiance. Experience this inaugural release at an exclusive value.</p>",
+              "text_override": true,
+              "text_fs": 12,
+              "text_fsm": 12,
+              "text_lh": 1.6,
+              "btntxt": "SHOP VERDADES",
+              "btnurl": "shopify://products/discovery-set-collection-i",
+              "btn-style": "btn1",
+              "btn-size": "btn-sm",
+              "adjust_maxwd": true,
+              "maxwd": 50,
+              "bg": false,
+              "clbg": "#f3f2ee",
+              "cl": "#626950",
+              "boxrad": 0,
+              "brad": 0,
+              "add_divider": false,
+              "divider_location": "below",
+              "divider_color": "#626950",
+              "align_text": "tc",
+              "alignment": "f-asc",
+              "width": "w_100"
+            }
+          },
+          "text_XMwBYw": {
+            "type": "text",
+            "disabled": true,
+            "settings": {
+              "hidem": false,
+              "dis_img": false,
+              "image": "shopify://shop_images/Screen_Shot_2025-02-04_at_3.05.01_PM.png",
+              "adjust_img": false,
+              "image_width": 660,
+              "img_position": "above",
+              "image_crop": "default",
+              "image_crop_location": "center",
+              "title": "VINTAGE SAMPLE SETS",
+              "all_caps_heading": true,
+              "fs": 17,
+              "fsm": 17,
+              "lh": 1.2,
+              "adjust_text_ls": true,
+              "text_ls": 2,
+              "tbm": 15,
+              "text": "<p>For a limited time, shop Vintage Samples. Available in a set of five for $40.</p>",
+              "text_override": true,
+              "text_fs": 12,
+              "text_fsm": 12,
+              "text_lh": 1.6,
+              "btntxt": "Shop Now",
+              "btnurl": "",
+              "btn-style": "btn1",
+              "btn-size": "btn-md",
+              "adjust_maxwd": true,
+              "maxwd": 50,
+              "bg": false,
+              "clbg": "#f3f2ee",
+              "cl": "#626950",
+              "boxrad": 0,
+              "brad": 0,
+              "add_divider": false,
+              "divider_location": "below",
+              "divider_color": "#626950",
+              "align_text": "tc",
+              "alignment": "f-ass",
+              "width": "w_100"
+            }
+          },
+          "product_KeCPdM": {
+            "type": "product",
+            "disabled": true,
+            "settings": {
+              "hidem": false,
+              "image": "shopify://shop_images/studio-r-creative-maison-detto-11_2.jpg",
+              "imgurl": "shopify://products/noisette",
+              "image_location": "left",
+              "collection_handle": "vintage-sample-sale-samples",
+              "hide_volume": true,
+              "hide_details": false,
+              "alignment": "f-asc",
+              "link_position": "center",
+              "link_text": "",
+              "link_url": "shopify://collections/vintage-sample-sale-samples",
+              "width": "w_100"
+            }
+          },
+          "text_dQX6YQ": {
+            "type": "text",
+            "disabled": true,
+            "settings": {
+              "hidem": false,
+              "dis_img": false,
+              "adjust_img": false,
+              "image_width": 660,
+              "img_position": "above",
+              "image_crop": "default",
+              "image_crop_location": "center",
+              "title": "",
+              "all_caps_heading": true,
+              "fs": 17,
+              "fsm": 17,
+              "lh": 1.2,
+              "adjust_text_ls": true,
+              "text_ls": 2,
+              "tbm": 15,
+              "text": "<p><em>*Free gift will be automatically added to cart with a qualifying purchase of a 60ML fragrance or candle. Gift is available through May 15, while supplies last. Offer subject to change. </em></p><p><em>**Offer valid through May 15, 2025. $25 credit will be delivered via email after Discovery Set purchase. Credit will expire August 15, 2025</em></p>",
+              "text_override": true,
+              "text_fs": 10,
+              "text_fsm": 10,
+              "text_lh": 1.7,
+              "btntxt": "Shop Now",
+              "btnurl": "",
+              "btn-style": "btn1",
+              "btn-size": "btn-md",
+              "adjust_maxwd": true,
+              "maxwd": 50,
+              "bg": false,
+              "clbg": "#f3f2ee",
+              "cl": "#626950",
+              "boxrad": 0,
+              "brad": 0,
+              "add_divider": false,
+              "divider_location": "below",
+              "divider_color": "#626950",
+              "align_text": "tc",
+              "alignment": "f-ass",
+              "width": "w_100"
+            }
+          }
+        },
+        "block_order": [
+          "hero_VAfmCB",
+          "text_tkb9kD",
+          "text_Qr7bi8",
+          "text_z6FJCx",
+          "text_yL6mCY",
+          "text_DUT8Ub",
+          "text_9mLRCC",
+          "text_AwzHJb",
+          "text_UMV8qm",
+          "text_rgxiRn",
+          "text_VYfBq3",
+          "text_m7Thxn",
+          "text_UNkTUK",
+          "text_6wzhdL",
+          "hero_MHatDd",
+          "image_G76CCr",
+          "text_aj9DyT",
+          "product_C3bBdc",
+          "text_p4XeGF",
+          "text_XMwBYw",
+          "product_KeCPdM",
+          "text_dQX6YQ"
+        ],
+        "settings": {
+          "title": "",
+          "subtitle": "",
+          "change_title_text_color": false,
+          "title_text_color": "#626950",
+          "change_subtitle_text_color": false,
+          "subtitle_text_color": "#626950",
+          "change_title_size": false,
+          "title_ts": 24,
+          "title_ts_mb": 18,
+          "change_subtitle_size": false,
+          "subtitle_ts": 16,
+          "subtitle_ts_mb": 14,
+          "section_title_align": "default",
+          "gspace": 0,
+          "gspacem": 0,
+          "sst": 0,
+          "ssb": 0,
+          "sstm": 15,
+          "ssbm": 0,
+          "bg": "",
+          "bgg": "",
+          "sw": true,
+          "hidem": false,
+          "hided": false
+        }
+      },
+      "bundle-product-candles": {
+        "type": "bundle-product-candles",
+        "settings": {
+          "candle_collection": "bundles-candles",
+          "add_bundle_price": true,
+          "bundle_price": "*** Please add price ***",
+          "select_heading": "Please Make Your Selection",
+          "enable_add_on_product": true,
+          "add_on_product": "discovery-set-collection-i",
+          "add_on_product_label": "",
+          "add_on_product_text": "DIscovery sets will be added <br>to your cart automatically."
+        }
+      },
+      "bundle-product-candles-price": {
+        "type": "bundle-product-candles-price",
+        "settings": {
+          "add_bundle_price": true,
+          "bundle_price": "$500"
+        }
+      },
+      "bundle-product-samples3-price": {
+        "type": "bundle-product-samples3-price",
+        "settings": {
+          "add_bundle_price": true,
+          "bundle_price": "$65"
+        }
+      },
+      "bundle-product-samples-three": {
+        "type": "bundle-product-samples-three",
+        "settings": {
+          "sample_collection": "bundles-samples-three-pack",
+          "add_bundle_price": true,
+          "bundle_price": "*** Please add price ***",
+          "select_heading": "Please Make Your Selection",
+          "enable_add_on_product": false,
+          "add_on_product": "",
+          "add_on_product_label": "Would you like to add this product?",
+          "add_on_product_text": ""
+        }
+      },
+      "bundle-product-samples5-price": {
+        "type": "bundle-product-samples5-price",
+        "settings": {
+          "add_bundle_price": true,
+          "bundle_price": "$85"
+        }
+      },
+      "bundle-product-samples-five": {
+        "type": "bundle-product-samples-five",
+        "settings": {
+          "sample_collection": "bundles-samples-three-pack",
+          "add_bundle_price": true,
+          "bundle_price": "*** Please add price ***",
+          "select_heading": "Please Make Your Selection",
+          "enable_add_on_product": false,
+          "add_on_product": "",
+          "add_on_product_label": "Would you like to add this product?",
+          "add_on_product_text": ""
+        }
+      },
+      "catalog-product-info": {
+        "type": "catalog-product-info",
+        "settings": {
+          "catalog_product_info": "<p>Item not for sale individually. Please see our discovery set options <a href=\"/products/discovery-set-collection-i\" title=\"Perfume Discovery Set\">here</a>.</p>"
+        }
+      },
+      "colorado-image-with-text": {
+        "type": "colorado-image-with-text",
+        "blocks": {
+          "heading_QkQyhK": {
+            "type": "heading",
+            "settings": {
+              "heading": "COLORADO"
+            }
+          },
+          "content_RTbzfh": {
+            "type": "content",
+            "settings": {
+              "content": "<h2>JONES + CO</h2><p>1949 Pearl Street </p><p>Boulder, CO 80302</p>"
+            }
+          },
+          "content_8wcnHb": {
+            "type": "content",
+            "settings": {
+              "content": "<h2>SMITH AND DRAKE</h2><p>1875 S Broadway</p><p>Denver, CO 80210</p>"
+            }
+          }
+        },
+        "block_order": [
+          "heading_QkQyhK",
+          "content_RTbzfh",
+          "content_8wcnHb"
+        ],
+        "settings": {
+          "mobile_layout": "column-reverse",
+          "desktop_layout": "row-reverse",
+          "padding_top": 36,
+          "padding_bottom": 36
+        }
+      },
+      "pennsylvania-image-with-text": {
+        "type": "pennsylvania-image-with-text",
+        "blocks": {
+          "heading_WrMmXQ": {
+            "type": "heading",
+            "settings": {
+              "heading": "PENNSYLVANIA"
+            }
+          },
+          "content_EG4bBn": {
+            "type": "content",
+            "settings": {
+              "content": "<h2>VESTIGE</h2><p>2041 Frankford Ave</p><p>Philadelphia, PA 19125</p>"
+            }
+          }
+        },
+        "block_order": [
+          "heading_WrMmXQ",
+          "content_EG4bBn"
+        ],
+        "settings": {
+          "mobile_layout": "column-reverse",
+          "desktop_layout": "row-reverse",
+          "padding_top": 36,
+          "padding_bottom": 36
+        }
+      },
+      "foxsell-bundle-builder-3": {
+        "type": "foxsell-bundle-builder-3",
+        "settings": {
+          "select_heading": "Please Make Your Selection",
+          "product": "",
+          "show_all_tab": true,
+          "all_label": "All",
+          "columns_desktop": 3,
+          "columns_mobile": 2,
+          "variant_selector_label": "Select [option]",
+          "hide_single_variant_selector": false,
+          "hide_unavailable_products": true,
+          "atk_label": "Add",
+          "atk_class": "",
+          "blank_button_label": "Unavailable",
+          "added_toast_message": "Product added to bundle",
+          "split_option": "",
+          "price_label": "Price:",
+          "bundle_selection_count_text": "Products Selected",
+          "percentage_discount_suffix": "% off",
+          "select_your_box": "Select Your Box",
+          "bundle_option_label": "Choose bundle size",
+          "dropdown_threshold": 3,
+          "bundle_items_heading": "Selected Products",
+          "addon_heading": "Selected Gift Card",
+          "addons_text": "Selected [selected]/[qty] add-ons",
+          "addons_text_different": "Selected [selected] from [min] to [max] add-ons",
+          "free_label": "Free",
+          "show_personalization": true,
+          "personalization_title": "Add Your Personalized Message",
+          "personalization_placeholder": "Type your message here...",
+          "personalization_char": 100,
+          "personalization_char_limit": "characters",
+          "personalization_cancel": "Cancel",
+          "personalization_add": "Update",
+          "personalization_property_name": "Gift Card Message",
+          "view_message_button_text": "View Message",
+          "personalization_max_error": "Maximum add-on quantity reached",
+          "randomize_button": "Randomize",
+          "randomize_notification": "Randomizing your bundle...",
+          "next_button": "Continue",
+          "back_button": "Back",
+          "add_to_cart_button": "Select All Items to Add",
+          "section_background": "#f3f3f3",
+          "text_color": "",
+          "cards_background": "#ffffff",
+          "summary_color": "#000000",
+          "summary_background": "#ffffff",
+          "highlight_color": "#000000",
+          "highlight_text_color": "#ffffff",
+          "highlight_color_2": "#ffd54c",
+          "highlight_text_color_2": "#000000",
+          "color_swatch_options": "",
+          "color_swatch_config": ""
+        }
+      },
+      "foxsell-bundle-builder-5": {
+        "type": "foxsell-bundle-builder-5",
+        "settings": {
+          "select_heading": "Please Make Your Selection",
+          "product": "",
+          "show_all_tab": true,
+          "all_label": "All",
+          "columns_desktop": 3,
+          "columns_mobile": 2,
+          "variant_selector_label": "Select [option]",
+          "hide_single_variant_selector": false,
+          "hide_unavailable_products": true,
+          "atk_label": "Add",
+          "atk_class": "",
+          "blank_button_label": "Unavailable",
+          "added_toast_message": "Product added to bundle",
+          "split_option": "",
+          "price_label": "Price:",
+          "bundle_selection_count_text": "Products Selected",
+          "percentage_discount_suffix": "% off",
+          "select_your_box": "Select Your Box",
+          "bundle_option_label": "Choose bundle size",
+          "dropdown_threshold": 3,
+          "bundle_items_heading": "Selected Products",
+          "addon_heading": "Selected Gift Card",
+          "addons_text": "Selected [selected]/[qty] add-ons",
+          "addons_text_different": "Selected [selected] from [min] to [max] add-ons",
+          "free_label": "Free",
+          "show_personalization": true,
+          "personalization_title": "Add Your Personalized Message",
+          "personalization_placeholder": "Type your message here...",
+          "personalization_char": 100,
+          "personalization_char_limit": "characters",
+          "personalization_cancel": "Cancel",
+          "personalization_add": "Update",
+          "personalization_property_name": "Gift Card Message",
+          "view_message_button_text": "View Message",
+          "personalization_max_error": "Maximum add-on quantity reached",
+          "randomize_button": "Randomize",
+          "randomize_notification": "Randomizing your bundle...",
+          "next_button": "Continue",
+          "back_button": "Back",
+          "add_to_cart_button": "Select All Items to Add",
+          "section_background": "#f3f3f3",
+          "text_color": "",
+          "cards_background": "#ffffff",
+          "summary_color": "#000000",
+          "summary_background": "#ffffff",
+          "highlight_color": "#000000",
+          "highlight_text_color": "#ffffff",
+          "highlight_color_2": "#ffd54c",
+          "highlight_text_color_2": "#000000",
+          "color_swatch_options": "",
+          "color_swatch_config": ""
+        }
+      },
+      "mde-year-of-the-horse-block": {
+        "type": "mde-year-of-the-horse-block",
+        "blocks": {
+          "hero_3m3H7X": {
+            "type": "hero",
+            "settings": {
+              "hidem": false,
+              "image": "shopify://shop_images/MAISON_DETTO_SM_6754.jpg",
+              "imagem": "shopify://shop_images/MAISON_DETTO_SM_6754.jpg",
+              "htd": 800,
+              "htt": 800,
+              "htm": 300,
+              "ovr": "#242424",
+              "ovropt": 0,
+              "title": "2026: THE YEAR OF THE HORSE",
+              "tcl": "#f3f2ee",
+              "tfs": 36,
+              "tfsm": 20,
+              "tfw": "500",
+              "to": 1,
+              "tlh": 1.2,
+              "tmb": 10,
+              "tmbm": 10,
+              "hd3": "The Language of the Unspoken.",
+              "hideh3": false,
+              "cl": "#f3f2ee",
+              "fs": 18,
+              "fsm": 12,
+              "fw": "400",
+              "lh": 1.2,
+              "mb": 25,
+              "mbm": 15,
+              "txtpos": "f-aie-md f-jcs-md",
+              "width": "w_100"
+            }
+          },
+          "text_H3nHTx": {
+            "type": "text",
+            "settings": {
+              "hidem": false,
+              "dis_img": false,
+              "adjust_img": false,
+              "image_width": 660,
+              "img_position": "above",
+              "image_crop": "default",
+              "image_crop_location": "center",
+              "title": "Fragrance is the invisible bridge between who we are and who we are becoming.",
+              "all_caps_heading": false,
+              "fs": 16,
+              "fsm": 16,
+              "lh": 1.2,
+              "adjust_text_ls": true,
+              "text_ls": 1.2,
+              "tbm": 30,
+              "text": "<p>There is a red thread that runs through the dust of the arena, the damp morning air, and the silence of the stable. It is the pulse of the horse—a life force that mirrors our own.</p><p>I have always found that horses bring a profound understanding to our lives without the need for words. They do not speak, yet they tell us everything. They are the ultimate mirrors; they see us before we see ourselves, reflecting our energy back to us with startling clarity.</p><p>At Maison d’Etto, this connection is my source. I do not paint with colors; I paint memories and lived experiences with these animals into our fragrances. We do not simply compose scents; we transcribe moments of profound connection into olfactive storytelling.</p><p>As we enter the Year of the Horse, we are returning to this source.</p>",
+              "text_override": true,
+              "text_fs": 12,
+              "text_fsm": 12,
+              "text_lh": 1.6,
+              "btntxt": "",
+              "btnurl": "",
+              "btn-style": "btn1",
+              "btn-size": "btn-md",
+              "adjust_maxwd": true,
+              "maxwd": 70,
+              "bg": false,
+              "clbg": "#f3f2ee",
+              "cl": "#626950",
+              "boxrad": 0,
+              "brad": 0,
+              "add_divider": false,
+              "divider_location": "below",
+              "divider_color": "#626950",
+              "align_text": "tc",
+              "alignment": "f-asc",
+              "width": "w_100"
+            }
+          },
+          "text_FxQcm7": {
+            "type": "text",
+            "settings": {
+              "hidem": false,
+              "dis_img": true,
+              "image": "shopify://shop_images/MAISON_DETTO_SM_6632.jpg",
+              "adjust_img": true,
+              "image_width": 400,
+              "img_position": "above",
+              "image_crop": "default",
+              "image_crop_location": "center",
+              "title": "",
+              "all_caps_heading": false,
+              "fs": 16,
+              "fsm": 16,
+              "lh": 1.2,
+              "adjust_text_ls": true,
+              "text_ls": 1.2,
+              "tbm": 30,
+              "text": "",
+              "text_override": false,
+              "text_fs": 12,
+              "text_fsm": 12,
+              "text_lh": 1.6,
+              "btntxt": "",
+              "btnurl": "",
+              "btn-style": "btn1",
+              "btn-size": "btn-md",
+              "adjust_maxwd": false,
+              "maxwd": 100,
+              "bg": false,
+              "clbg": "#626950",
+              "cl": "#626950",
+              "boxrad": 0,
+              "brad": 0,
+              "add_divider": false,
+              "divider_location": "below",
+              "divider_color": "#626950",
+              "align_text": "tc",
+              "alignment": "f-asc",
+              "width": "wd50"
+            }
+          },
+          "text_QzdLkz": {
+            "type": "text",
+            "settings": {
+              "hidem": false,
+              "dis_img": false,
+              "adjust_img": false,
+              "image_width": 660,
+              "img_position": "above",
+              "image_crop": "default",
+              "image_crop_location": "center",
+              "title": "A MAP OF INNER LANDSCAPES",
+              "all_caps_heading": false,
+              "fs": 16,
+              "fsm": 16,
+              "lh": 1.2,
+              "adjust_text_ls": true,
+              "text_ls": 1.2,
+              "tbm": 30,
+              "text": "<p>THE ARCHETYPES OF THE SPIRIT</p><p><strong>EIGHT MUSES. EIGHT INTENTIONS. WHICH REFLECTION IS YOURS?</strong></p><p>To choose a fragrance is to choose an intention. In the stillness before a single note is composed, there is a frequency—an energy held by our muses. These spirits do not demand our attention; they simply wait for us to recognize ourselves in them.We invite you to look past the scent profiles and listen to the metaphors. Forget the notes. Close your eyes and see which olfactive narrative leads you home.</p>",
+              "text_override": true,
+              "text_fs": 12,
+              "text_fsm": 12,
+              "text_lh": 1.6,
+              "btntxt": "",
+              "btnurl": "",
+              "btn-style": "btn1",
+              "btn-size": "btn-md",
+              "adjust_maxwd": true,
+              "maxwd": 100,
+              "bg": false,
+              "clbg": "#626950",
+              "cl": "#626950",
+              "boxrad": 0,
+              "brad": 0,
+              "add_divider": false,
+              "divider_location": "below",
+              "divider_color": "#626950",
+              "align_text": "tc",
+              "alignment": "f-asc",
+              "width": "wd50"
+            }
+          },
+          "text_9zf8cc": {
+            "type": "text",
+            "settings": {
+              "hidem": false,
+              "dis_img": true,
+              "image": "shopify://shop_images/3757-09F_LCM_MEO_RGB_ECOM_ROTANO_GREY.jpg",
+              "adjust_img": true,
+              "image_width": 250,
+              "img_position": "above",
+              "image_crop": "square",
+              "image_crop_location": "center",
+              "title": "ROTANO",
+              "all_caps_heading": false,
+              "fs": 17,
+              "fsm": 17,
+              "lh": 1.2,
+              "adjust_text_ls": true,
+              "text_ls": 2,
+              "tbm": 14,
+              "text": "<p>The Sovereign Pivot</p><p>A certain, bold inner power. The weight of the moment that changes everything—the grace found in the turn.</p>",
+              "text_override": true,
+              "text_fs": 12,
+              "text_fsm": 12,
+              "text_lh": 1.6,
+              "btntxt": "Shop Now",
+              "btnurl": "shopify://products/rotano-60ml-edp",
+              "btn-style": "btn1",
+              "btn-size": "btn-md",
+              "adjust_maxwd": true,
+              "maxwd": 90,
+              "bg": false,
+              "clbg": "#f3f2ee",
+              "cl": "#626950",
+              "boxrad": 0,
+              "brad": 0,
+              "add_divider": false,
+              "divider_location": "below",
+              "divider_color": "#626950",
+              "align_text": "tc",
+              "alignment": "f-ass",
+              "width": "wd50"
+            }
+          },
+          "text_tiKker": {
+            "type": "text",
+            "settings": {
+              "hidem": false,
+              "dis_img": true,
+              "image": "shopify://shop_images/3757-07E_LCM_MEO_RGB_ECOM_KARAT_GREY.jpg",
+              "adjust_img": true,
+              "image_width": 250,
+              "img_position": "above",
+              "image_crop": "square",
+              "image_crop_location": "center",
+              "title": "KARAT EG",
+              "all_caps_heading": false,
+              "fs": 17,
+              "fsm": 17,
+              "lh": 1.2,
+              "adjust_text_ls": true,
+              "text_ls": 2,
+              "tbm": 14,
+              "text": "<p>The Emergent Soul</p><p>A tribute to rebirth and renewal. The addictive first breath of a new chapter and the light of a fresh horizon.</p>",
+              "text_override": true,
+              "text_fs": 12,
+              "text_fsm": 12,
+              "text_lh": 1.6,
+              "btntxt": "Shop Now",
+              "btnurl": "shopify://products/karat-eg-60ml-edp",
+              "btn-style": "btn1",
+              "btn-size": "btn-md",
+              "adjust_maxwd": true,
+              "maxwd": 90,
+              "bg": false,
+              "clbg": "#f3f2ee",
+              "cl": "#626950",
+              "boxrad": 0,
+              "brad": 0,
+              "add_divider": false,
+              "divider_location": "below",
+              "divider_color": "#626950",
+              "align_text": "tc",
+              "alignment": "f-ass",
+              "width": "wd50"
+            }
+          },
+          "text_UBiNBC": {
+            "type": "text",
+            "settings": {
+              "hidem": false,
+              "dis_img": true,
+              "image": "shopify://shop_images/3757-05G_LCM_MEO_RGB_ECOM_DURBAN_JANE_GREY.jpg",
+              "adjust_img": true,
+              "image_width": 250,
+              "img_position": "above",
+              "image_crop": "square",
+              "image_crop_location": "center",
+              "title": "DURBAN JANE",
+              "all_caps_heading": false,
+              "fs": 17,
+              "fsm": 17,
+              "lh": 1.2,
+              "adjust_text_ls": true,
+              "text_ls": 2,
+              "tbm": 14,
+              "text": "<p>The Sacred Connection</p><p>Born from an unspoken soul-dialogue to capture the profound peace of being truly seen. The architecture of a shared heart.</p>",
+              "text_override": true,
+              "text_fs": 12,
+              "text_fsm": 12,
+              "text_lh": 1.6,
+              "btntxt": "Shop Now",
+              "btnurl": "shopify://products/durban-jane",
+              "btn-style": "btn1",
+              "btn-size": "btn-md",
+              "adjust_maxwd": true,
+              "maxwd": 90,
+              "bg": false,
+              "clbg": "#f3f2ee",
+              "cl": "#626950",
+              "boxrad": 0,
+              "brad": 0,
+              "add_divider": false,
+              "divider_location": "below",
+              "divider_color": "#626950",
+              "align_text": "tc",
+              "alignment": "f-ass",
+              "width": "wd50"
+            }
+          },
+          "text_h8RFbA": {
+            "type": "text",
+            "settings": {
+              "hidem": false,
+              "dis_img": true,
+              "image": "shopify://shop_images/3757-01E_LCM_MEO_RGB_ECOM_MACANUDO_GREY.jpg",
+              "adjust_img": true,
+              "image_width": 250,
+              "img_position": "above",
+              "image_crop": "square",
+              "image_crop_location": "center",
+              "title": "MACANUDO",
+              "all_caps_heading": false,
+              "fs": 17,
+              "fsm": 17,
+              "lh": 1.2,
+              "adjust_text_ls": true,
+              "text_ls": 2,
+              "tbm": 14,
+              "text": "<p>The Grounded Grace</p><p>A study of tenderness. This essence acts as an anchor, allowing one to root deeply so they may reach higher.</p>",
+              "text_override": true,
+              "text_fs": 12,
+              "text_fsm": 12,
+              "text_lh": 1.6,
+              "btntxt": "Shop Now",
+              "btnurl": "shopify://products/macanudo-60ml-edp",
+              "btn-style": "btn1",
+              "btn-size": "btn-md",
+              "adjust_maxwd": true,
+              "maxwd": 90,
+              "bg": false,
+              "clbg": "#f3f2ee",
+              "cl": "#626950",
+              "boxrad": 0,
+              "brad": 0,
+              "add_divider": false,
+              "divider_location": "below",
+              "divider_color": "#626950",
+              "align_text": "tc",
+              "alignment": "f-ass",
+              "width": "wd50"
+            }
+          },
+          "text_gap7iA": {
+            "type": "text",
+            "settings": {
+              "hidem": false,
+              "dis_img": true,
+              "image": "shopify://shop_images/3757-03E_LCM_MEO_RGB_ECOM_CANAAN_GREY.jpg",
+              "adjust_img": true,
+              "image_width": 250,
+              "img_position": "above",
+              "image_crop": "square",
+              "image_crop_location": "center",
+              "title": "CANAAN",
+              "all_caps_heading": false,
+              "fs": 17,
+              "fsm": 17,
+              "lh": 1.2,
+              "adjust_text_ls": true,
+              "text_ls": 2,
+              "tbm": 14,
+              "text": "<p>The Magnetic Pulse</p><p>A hypnotic momentum toward passion and freedom. The scent of a drive that refuses to stay still.</p>",
+              "text_override": true,
+              "text_fs": 12,
+              "text_fsm": 12,
+              "text_lh": 1.6,
+              "btntxt": "Shop Now",
+              "btnurl": "shopify://products/canaan",
+              "btn-style": "btn1",
+              "btn-size": "btn-md",
+              "adjust_maxwd": true,
+              "maxwd": 90,
+              "bg": false,
+              "clbg": "#f3f2ee",
+              "cl": "#626950",
+              "boxrad": 0,
+              "brad": 0,
+              "add_divider": false,
+              "divider_location": "below",
+              "divider_color": "#626950",
+              "align_text": "tc",
+              "alignment": "f-ass",
+              "width": "wd50"
+            }
+          },
+          "text_fmCH7Q": {
+            "type": "text",
+            "settings": {
+              "hidem": false,
+              "dis_img": true,
+              "image": "shopify://shop_images/4071-01B_LCM_MEO_SRG_NOISETTE_HERO_GREY_LO_RES.jpg",
+              "adjust_img": true,
+              "image_width": 250,
+              "img_position": "above",
+              "image_crop": "square",
+              "image_crop_location": "center",
+              "title": "NOISETTE",
+              "all_caps_heading": false,
+              "fs": 17,
+              "fsm": 17,
+              "lh": 1.2,
+              "adjust_text_ls": true,
+              "text_ls": 2,
+              "tbm": 14,
+              "text": "<p>The Internal Horizon</p><p>An invitation to turn inward. A peaceful, inquisitive space where silence speaks the loudest.</p>",
+              "text_override": true,
+              "text_fs": 12,
+              "text_fsm": 12,
+              "text_lh": 1.6,
+              "btntxt": "Shop Now",
+              "btnurl": "shopify://products/canaan",
+              "btn-style": "btn1",
+              "btn-size": "btn-md",
+              "adjust_maxwd": true,
+              "maxwd": 90,
+              "bg": false,
+              "clbg": "#f3f2ee",
+              "cl": "#626950",
+              "boxrad": 0,
+              "brad": 0,
+              "add_divider": false,
+              "divider_location": "below",
+              "divider_color": "#626950",
+              "align_text": "tc",
+              "alignment": "f-ass",
+              "width": "wd50"
+            }
+          },
+          "text_EjBFYN": {
+            "type": "text",
+            "settings": {
+              "hidem": false,
+              "dis_img": true,
+              "image": "shopify://shop_images/5187-01C_LCM_MEO_VERDADES_GREY.jpg",
+              "adjust_img": true,
+              "image_width": 250,
+              "img_position": "above",
+              "image_crop": "square",
+              "image_crop_location": "center",
+              "title": "VERDADES",
+              "all_caps_heading": false,
+              "fs": 17,
+              "fsm": 17,
+              "lh": 1.2,
+              "adjust_text_ls": true,
+              "text_ls": 2,
+              "tbm": 14,
+              "text": "<p>The Unwavering Bloom</p><p>A bold challenge to the expected. The strength found in staying steady, resilient, and graceful against the wind.</p>",
+              "text_override": true,
+              "text_fs": 12,
+              "text_fsm": 12,
+              "text_lh": 1.6,
+              "btntxt": "Shop Now",
+              "btnurl": "shopify://products/verdades",
+              "btn-style": "btn1",
+              "btn-size": "btn-md",
+              "adjust_maxwd": true,
+              "maxwd": 90,
+              "bg": false,
+              "clbg": "#f3f2ee",
+              "cl": "#626950",
+              "boxrad": 0,
+              "brad": 0,
+              "add_divider": false,
+              "divider_location": "below",
+              "divider_color": "#626950",
+              "align_text": "tc",
+              "alignment": "f-ass",
+              "width": "wd50"
+            }
+          },
+          "text_GwUUGT": {
+            "type": "text",
+            "settings": {
+              "hidem": false,
+              "dis_img": true,
+              "image": "shopify://shop_images/5475-01C_LCM_MEO_I-DREAM_GREY.jpg",
+              "adjust_img": true,
+              "image_width": 250,
+              "img_position": "above",
+              "image_crop": "square",
+              "image_crop_location": "center",
+              "title": "I—Dream",
+              "all_caps_heading": false,
+              "fs": 17,
+              "fsm": 17,
+              "lh": 1.2,
+              "adjust_text_ls": true,
+              "text_ls": 2,
+              "tbm": 14,
+              "text": "<p>The Luminous Echo</p><p>A vessel for beauty found within loss. The sweetness of a memory that transforms into a lingering hope.</p>",
+              "text_override": true,
+              "text_fs": 12,
+              "text_fsm": 12,
+              "text_lh": 1.6,
+              "btntxt": "Shop Now",
+              "btnurl": "shopify://products/i-dream",
+              "btn-style": "btn1",
+              "btn-size": "btn-md",
+              "adjust_maxwd": true,
+              "maxwd": 90,
+              "bg": false,
+              "clbg": "#f3f2ee",
+              "cl": "#626950",
+              "boxrad": 0,
+              "brad": 0,
+              "add_divider": false,
+              "divider_location": "below",
+              "divider_color": "#626950",
+              "align_text": "tc",
+              "alignment": "f-ass",
+              "width": "wd50"
+            }
+          },
+          "hero_pzqHLw": {
+            "type": "hero",
+            "settings": {
+              "hidem": false,
+              "image": "shopify://shop_images/MAISON_DETTO_SM_6601.jpg",
+              "imagem": "shopify://shop_images/MAISON_DETTO_SM_6601.jpg",
+              "htd": 700,
+              "htt": 450,
+              "htm": 350,
+              "ovr": "#3d4246",
+              "ovropt": 0,
+              "title": "",
+              "tcl": "#000000",
+              "tfs": 60,
+              "tfsm": 25,
+              "tfw": "600",
+              "to": 1,
+              "tlh": 1.2,
+              "tmb": 10,
+              "tmbm": 5,
+              "hd3": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod",
+              "hideh3": true,
+              "cl": "#000000",
+              "fs": 16,
+              "fsm": 14,
+              "fw": "400",
+              "lh": 1.2,
+              "mb": 25,
+              "mbm": 15,
+              "txtpos": "f-aic-md f-jcs-md",
+              "width": "w_100"
+            }
+          },
+          "text_YpPFKX": {
+            "type": "text",
+            "settings": {
+              "hidem": false,
+              "dis_img": false,
+              "adjust_img": false,
+              "image_width": 660,
+              "img_position": "above",
+              "image_crop": "default",
+              "image_crop_location": "center",
+              "title": "ETTO | EACH TO THEIR OWN",
+              "all_caps_heading": false,
+              "fs": 18,
+              "fsm": 18,
+              "lh": 1.2,
+              "adjust_text_ls": true,
+              "text_ls": 2,
+              "tbm": 0,
+              "text": "",
+              "text_override": false,
+              "text_fs": 16,
+              "text_fsm": 12,
+              "text_lh": 1.6,
+              "btntxt": "Shop Now",
+              "btnurl": "",
+              "btn-style": "btn1",
+              "btn-size": "btn-md",
+              "adjust_maxwd": false,
+              "maxwd": 50,
+              "bg": false,
+              "clbg": "#f3f2ee",
+              "cl": "#626950",
+              "boxrad": 0,
+              "brad": 0,
+              "add_divider": false,
+              "divider_location": "below",
+              "divider_color": "#626950",
+              "align_text": "tl",
+              "alignment": "f-ass",
+              "width": "wd50"
+            }
+          },
+          "text_HzJjYP": {
+            "type": "text",
+            "settings": {
+              "hidem": false,
+              "dis_img": false,
+              "adjust_img": false,
+              "image_width": 660,
+              "img_position": "above",
+              "image_crop": "default",
+              "image_crop_location": "center",
+              "title": "",
+              "all_caps_heading": false,
+              "fs": 17,
+              "fsm": 17,
+              "lh": 1.2,
+              "adjust_text_ls": true,
+              "text_ls": 2,
+              "tbm": 0,
+              "text": "<p>There is no singular way to inhabit these scents. At the heart of Maison d’Etto is <em>Etto</em>—the belief that your experience is your own, a unique imprint born from your own lived moments.</p><p>There is no right or wrong; there is only resonance. We encourage you to explore, and then to return. Our perspectives shift with each passing day, month, and year. You may be surprised by what resonates when the light, the perspective, or the seasons change.</p><p>Let your intuition be your guide, and allow your preference to evolve as you do.</p>",
+              "text_override": true,
+              "text_fs": 12,
+              "text_fsm": 12,
+              "text_lh": 1.6,
+              "btntxt": "Shop Now",
+              "btnurl": "",
+              "btn-style": "btn1",
+              "btn-size": "btn-md",
+              "adjust_maxwd": true,
+              "maxwd": 100,
+              "bg": false,
+              "clbg": "#f3f2ee",
+              "cl": "#626950",
+              "boxrad": 0,
+              "brad": 0,
+              "add_divider": false,
+              "divider_location": "below",
+              "divider_color": "#626950",
+              "align_text": "tl",
+              "alignment": "f-ass",
+              "width": "wd50"
+            }
+          },
+          "text_9PTBkr": {
+            "type": "text",
+            "disabled": true,
+            "settings": {
+              "hidem": false,
+              "dis_img": true,
+              "image": "shopify://shop_images/HeroBeanWhiteHorse_2_1500x1200_6d708f38-1766-43f7-acfe-05e25c8b20f5.jpg",
+              "adjust_img": true,
+              "image_width": 100,
+              "img_position": "below",
+              "image_crop": "default",
+              "image_crop_location": "center",
+              "title": "",
+              "all_caps_heading": false,
+              "fs": 17,
+              "fsm": 17,
+              "lh": 1.2,
+              "adjust_text_ls": true,
+              "text_ls": 2,
+              "tbm": 14,
+              "text": "",
+              "text_override": false,
+              "text_fs": 16,
+              "text_fsm": 12,
+              "text_lh": 1.6,
+              "btntxt": "",
+              "btnurl": "shopify://collections/fragrance",
+              "btn-style": "btn1",
+              "btn-size": "btn-md",
+              "adjust_maxwd": false,
+              "maxwd": 50,
+              "bg": false,
+              "clbg": "#f3f2ee",
+              "cl": "#626950",
+              "boxrad": 0,
+              "brad": 0,
+              "add_divider": false,
+              "divider_location": "below",
+              "divider_color": "#626950",
+              "align_text": "tc",
+              "alignment": "f-ass",
+              "width": "wd50"
+            }
+          },
+          "text_c6xtaw": {
+            "type": "text",
+            "disabled": true,
+            "settings": {
+              "hidem": false,
+              "dis_img": false,
+              "adjust_img": false,
+              "image_width": 660,
+              "img_position": "above",
+              "image_crop": "default",
+              "image_crop_location": "center",
+              "title": "",
+              "all_caps_heading": false,
+              "fs": 17,
+              "fsm": 17,
+              "lh": 1.2,
+              "adjust_text_ls": true,
+              "text_ls": 2,
+              "tbm": 14,
+              "text": "<p>Which fragrance is calling to you? What intention do you wish to welcome into your life this year, and what are you ready to leave behind?</p><p>Step toward the mirror. Find your resonance.</p><p></p><p><em>Brianna Lipovsky<br/>Founder, Maison d’Etto</em></p><p></p>",
+              "text_override": true,
+              "text_fs": 12,
+              "text_fsm": 12,
+              "text_lh": 1.6,
+              "btntxt": "",
+              "btnurl": "shopify://collections/fragrance",
+              "btn-style": "btn1",
+              "btn-size": "btn-md",
+              "adjust_maxwd": false,
+              "maxwd": 50,
+              "bg": false,
+              "clbg": "#f3f2ee",
+              "cl": "#626950",
+              "boxrad": 0,
+              "brad": 0,
+              "add_divider": false,
+              "divider_location": "above",
+              "divider_color": "#626950",
+              "align_text": "tl",
+              "alignment": "f-ass",
+              "width": "wd50"
+            }
+          },
+          "text_6zfMkD": {
+            "type": "text",
+            "settings": {
+              "hidem": false,
+              "dis_img": true,
+              "image": "shopify://shop_images/97720008_horizontal.jpg",
+              "adjust_img": false,
+              "image_width": 660,
+              "img_position": "above",
+              "image_crop": "default",
+              "image_crop_location": "center",
+              "title": "",
+              "all_caps_heading": false,
+              "fs": 17,
+              "fsm": 17,
+              "lh": 1.2,
+              "adjust_text_ls": true,
+              "text_ls": 2,
+              "tbm": 14,
+              "text": "<p>Which fragrance is calling to you? What intention do you wish to welcome into your life this year, and what are you ready to leave behind?</p><p><em>Step toward the mirror. Find your resonance.</em></p><p></p>",
+              "text_override": true,
+              "text_fs": 12,
+              "text_fsm": 12,
+              "text_lh": 1.6,
+              "btntxt": "Explore the Collection",
+              "btnurl": "shopify://collections/fragrance",
+              "btn-style": "btn1",
+              "btn-size": "btn-md",
+              "adjust_maxwd": true,
+              "maxwd": 50,
+              "bg": false,
+              "clbg": "#f3f2ee",
+              "cl": "#626950",
+              "boxrad": 0,
+              "brad": 0,
+              "add_divider": false,
+              "divider_location": "below",
+              "divider_color": "#626950",
+              "align_text": "tc",
+              "alignment": "f-ass",
+              "width": "w_100"
+            }
+          },
+          "text_DHWaCN": {
+            "type": "text",
+            "settings": {
+              "hidem": false,
+              "dis_img": false,
+              "adjust_img": false,
+              "image_width": 660,
+              "img_position": "above",
+              "image_crop": "default",
+              "image_crop_location": "center",
+              "title": "",
+              "all_caps_heading": false,
+              "fs": 17,
+              "fsm": 17,
+              "lh": 1.2,
+              "adjust_text_ls": true,
+              "text_ls": 2,
+              "tbm": 0,
+              "text": "<p><strong>Photography Credit:</strong> <em>Photography by Su Müstecaplıoğlu, Captured in Oman.</em> </p>",
+              "text_override": true,
+              "text_fs": 10,
+              "text_fsm": 10,
+              "text_lh": 1.1,
+              "btntxt": "",
+              "btnurl": "shopify://collections/fragrance",
+              "btn-style": "btn1",
+              "btn-size": "btn-md",
+              "adjust_maxwd": false,
+              "maxwd": 50,
+              "bg": false,
+              "clbg": "#f3f2ee",
+              "cl": "#626950",
+              "boxrad": 0,
+              "brad": 0,
+              "add_divider": false,
+              "divider_location": "above",
+              "divider_color": "#626950",
+              "align_text": "tl",
+              "alignment": "f-ass",
+              "width": "w_100"
+            }
+          }
+        },
+        "block_order": [
+          "hero_3m3H7X",
+          "text_H3nHTx",
+          "text_FxQcm7",
+          "text_QzdLkz",
+          "text_9zf8cc",
+          "text_tiKker",
+          "text_UBiNBC",
+          "text_h8RFbA",
+          "text_gap7iA",
+          "text_fmCH7Q",
+          "text_EjBFYN",
+          "text_GwUUGT",
+          "hero_pzqHLw",
+          "text_YpPFKX",
+          "text_HzJjYP",
+          "text_9PTBkr",
+          "text_c6xtaw",
+          "text_6zfMkD",
+          "text_DHWaCN"
+        ],
+        "settings": {
+          "title": "",
+          "subtitle": "",
+          "change_title_text_color": false,
+          "title_text_color": "#626950",
+          "change_subtitle_text_color": false,
+          "subtitle_text_color": "#626950",
+          "change_title_size": true,
+          "title_ts": 24,
+          "title_ts_mb": 18,
+          "change_subtitle_size": true,
+          "subtitle_ts": 16,
+          "subtitle_ts_mb": 14,
+          "section_title_align": "default",
+          "gspace": 0,
+          "gspacem": 0,
+          "sst": 0,
+          "ssb": 0,
+          "sstm": 15,
+          "ssbm": 0,
+          "bg": "",
+          "bgg": "",
+          "sw": false,
+          "hidem": false,
+          "hided": false
+        }
+      }
+    },
+    "content_for_index": [
+      "1569424912417",
+      "1569428918320",
+      "1569427181722",
+      "16117592347a467f05",
+      "e9735541-f972-4bd4-809f-d93ea75b97e4",
+      "1573226106221",
+      "1569427951573",
+      "16117584650662abe0",
+      "1569425852619",
+      "1569841775800"
+    ],
+    "blocks": {
+      "855628211100114053": {
+        "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507",
+        "disabled": false,
+        "settings": {}
+      },
+      "8605505498557855500": {
+        "type": "shopify://apps/bogos-io-free-gift/blocks/app-embed/0432bba6-720a-4e95-be5a-b868386f7aa6",
+        "disabled": false,
+        "settings": {}
+      }
+    }
+  },
+  "presets": {
+    "Default": {
+      "color_text": "#3d4246",
+      "color_body_text": "#69727b",
+      "color_sale_text": "#557B97",
+      "color_borders": "#e8e9eb",
+      "color_button": "#557B97",
+      "color_button_text": "#fff",
+      "color_small_button_text_border": "#3d4246",
+      "color_text_field": "#fff",
+      "color_text_field_text": "#000",
+      "color_text_field_border": "#949494",
+      "color_image_overlay_text": "#fff",
+      "color_image_overlay": "#3d4246",
+      "image_overlay_opacity": 40,
+      "color_body_bg": "#fff",
+      "type_header_font": "work_sans_n6",
+      "type_header_base_size": 26,
+      "type_base_font": "work_sans_n4",
+      "type_base_size": 16,
+      "type_bold_product_titles": false,
+      "share_facebook": true,
+      "share_twitter": true,
+      "share_pinterest": true,
+      "sections": {
+        "hero": {
+          "type": "hero",
+          "settings": {}
+        }
+      },
+      "content_for_index": [
+        "hero"
+      ]
+    },
+    "Light": {
+      "color_text": "#162950",
+      "color_body_text": "#6d6d6d",
+      "color_sale_text": "#DA2F0C",
+      "color_borders": "#e4e4e4",
+      "color_button": "#DA2F0C",
+      "color_button_text": "#ffffff",
+      "color_small_button_text_border": "#162950",
+      "color_text_field": "#ffffff",
+      "color_text_field_text": "#162950",
+      "color_text_field_border": "#909090",
+      "color_image_overlay_text": "#ffffff",
+      "color_image_overlay": "#3d3d3d",
+      "image_overlay_opacity": 40,
+      "color_body_bg": "#f8f8f8",
+      "type_header_font": "muli_n6",
+      "type_header_base_size": 26,
+      "type_base_font": "muli_n4",
+      "type_base_size": 18,
+      "type_bold_product_titles": true,
+      "share_facebook": true,
+      "share_twitter": true,
+      "share_pinterest": true,
+      "social_twitter_link": "",
+      "social_facebook_link": "",
+      "social_pinterest_link": "",
+      "social_instagram_link": "",
+      "social_tumblr_link": "",
+      "social_snapchat_link": "",
+      "social_youtube_link": "",
+      "social_vimeo_link": "",
+      "favicon": "",
+      "checkout_header_image": "",
+      "checkout_logo_image": "",
+      "checkout_logo_position": "left",
+      "checkout_logo_size": "small",
+      "checkout_body_background_image": "",
+      "checkout_body_background_color": "#ffffff",
+      "checkout_input_background_color_mode": "white",
+      "checkout_sidebar_background_image": "",
+      "checkout_sidebar_background_color": "#e8f3f6",
+      "checkout_heading_font": "Roboto",
+      "checkout_body_font": "Source Sans Pro",
+      "checkout_accent_color": "#1990c6",
+      "checkout_button_color": "#23314e",
+      "checkout_error_color": "#ff6d6d",
+      "sections": {
+        "hero": {
+          "type": "hero",
+          "settings": {}
+        }
+      },
+      "content_for_index": [
+        "hero"
+      ]
+    }
+  },
+  "platform_customizations": {
+    "custom_css": [
+      ".needsclick [data-testid=\"form-row\"] {border-bottom: none;}",
+      ".cart-drawer__message .checkbox {cursor: pointer; display: flex; line-height: 12px;}",
+      ".cart-drawer__message .checkbox {display: none;}",
+      ".needsclick.klaviyo-form {width: auto !important;}",
+      "input.kl-private-reset-css-Xuajs1 {padding-left: 16px !important;}"
+    ]
+  }
+}

@@ -1,0 +1,35 @@
+{% if fromMetafields == true %}
+  <picture>
+    <source media="(min-width: 1281px)"
+            srcset="{%- render 'img-url', image: image, size: '1400x852' -%} 1x, {%- render 'img-url', image: image, size: '2100x1278' -%} 2x"/>
+
+    <source media="(min-width: 769px) and (max-width: 1280px)"
+            srcset="{%- render 'img-url', image: image, size: '1280x779' -%} 1x, {%- render 'img-url', image: image, size: '1920x1169' -%} 2x"/>
+
+    <source media="(min-width: 701px) and (max-width: 768px)"
+            srcset="{%- render 'img-url', image: image, size: '768x468' -%} 1x, {%- render 'img-url', image: image, size: '1152x702' -%} 2x"/>
+
+    <source media="(min-width: 376px) and (max-width: 700px)"
+            srcset="{%- render 'img-url', image: image, size: '700x849' -%} 1x, {%- render 'img-url', image: image, size: '1050x1274' -%} 2x"/>
+
+    <source srcset="{%- render 'img-url', image: imageMobile, size: '700x849' -%}" media="(max-width: 375px)"/>
+    <img src="{%- render 'img-url', image: imageMobile, size: '750x910' -%}" alt="" class="is-loading" loading="lazy" width="1440" height="1920"/>
+  </picture>
+{% else %}
+<picture>
+  <source media="(min-width: 1281px)"
+          srcset="{{ image | image_url: width: 1400, height: 852, crop: 'top' }} 1x, {{ image | image_url: width: 2800, height: 1704, crop: 'top' }} 2x"/>
+
+  <source media="(min-width: 769px) and (max-width: 1280px)"
+          srcset="{{ image | image_url: width: 1280, height: 779, crop: 'top' }} 1x, {{ image | image_url: width: 2560, height: 1558, crop: 'top' }} 2x"/>
+
+  <source media="(min-width: 701px) and (max-width: 768px)"
+          srcset="{{ image | image_url: width: 768, height: 468, crop: 'top' }} 1x, {{ image | image_url: width: 1536, height: 936, crop: 'top' }} 2x"/>
+
+  <source media="(min-width: 376px) and (max-width: 700px)"
+          srcset="{{ image | image_url: width: 700, height: 849, crop: 'top' }} 1x, {{ image | image_url: width: 1400, height: 1698, crop: 'top' }} 2x"/>
+
+  <source srcset="{{ imageMobile | image_url: width: 750, height: 910, crop: 'top' }}" media="(max-width: 375px)"/>
+  <img src="{{ imageMobile | image_url: width: 750, height: 910, crop: 'top' }}" alt="" class="is-loading" loading="lazy" width="800" height="1024"/>
+</picture>
+{% endif %}

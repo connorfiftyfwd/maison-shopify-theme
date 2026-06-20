@@ -1,0 +1,31 @@
+<div class="bundle-selection">
+  <h2>{{ section.settings.select_heading }}</h2>  
+</div>
+<div class="add-to-cart">
+<form id="bundle-add-to-cart">
+{% if section.settings.enable_bundle_app %}
+ <div id="infiniteoptions-container"></div>
+{% endif %}
+{% render 'product-add-to-cart', product: product %}
+</form>
+</div>
+{% schema %}
+{
+  "name": "Bundle Settings",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "enable_bundle_app",
+      "label": "Enable Bundle App",
+      "default": true,
+      "info":"This overrides the below option to manually create bundle options and use an app instead. Infinite Options is the app currently used to create bundles. Manage options within that app."
+    },
+    {
+      "type": "text",
+      "id": "select_heading",
+      "label": "Select Heading",
+      "default": "Please Make Your Selection"
+    }
+  ]
+}
+{% endschema %}

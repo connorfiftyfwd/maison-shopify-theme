@@ -1,0 +1,79 @@
+{% schema %}
+{
+  "name": "F.A.Q.",
+  "settings": [
+    {
+      "id": "heading",
+      "type": "text",
+      "label": "Heading for Desktop"
+    },
+    {
+      "id": "headingMobile",
+      "type": "text",
+      "label": "heading for Mobile",
+      "info": "If different from the desktop"
+    },
+    {
+      "type": "checkbox",
+      "id": "isFaqEnable",
+      "label": "Enable",
+      "default": true
+    }
+  ],
+  "blocks": [
+    {
+      "type": "section",
+      "name": "QA",
+      "settings": [
+        {
+          "id": "question",
+          "type": "text",
+          "label": "Question"
+        },
+        {
+          "id": "answer",
+          "type": "textarea",
+          "label": "Answer"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
+
+{% if section.settings.isFaqEnable %}
+  <div class="utility__content js-toggleContent js-toggleContentTablet" id="{{ section.settings.heading | downcase | handleize }}">
+    <h3 class="utility-content__header js-sideNavTabMobile" data-hash="{{ section.settings.heading | downcase | handleize }}">
+      {% if section.settings.headingMobile != blank %}
+        {{ section.settings.headingMobile }}
+      {% else %}
+        {{ section.settings.heading }}
+      {% endif %}
+      <span class="utility__arrow utility__arrow--padding"></span>
+    </h3>
+    <div class="utility-content js-sectionNav js-sideNavPanelMobile">
+      <div class="utility-content__wrapper">
+        <h3 class="utility-content__title">
+          {{ section.settings.heading }}
+        </h3>
+
+        <div class="utility-content--tabs" role="tablist">
+          {% for block in section.blocks %}
+            <div class="utility-tab js-toggleContent js-toggleContent--hiding">
+              <div class="utility-tab__heading js-toggleContent--hiding" role="tab" aria-expanded="false">
+                  {{ block.settings.question }}
+                  <span class="utility__arrow"></span>
+              </div>
+              <div class="js-toggleContent--hiding" role="tabpanel" aria-hidden="true">
+                <div class="utility-tab__copy">
+                {{ block.settings.answer }}
+                </div>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+
+      </div>
+    </div>
+  </div>
+{% endif %}

@@ -1,0 +1,58 @@
+<div class="add-to-cart">
+  <form id="bundle-add-to-cart">
+    <div class="add-to-cart__inputs">
+      {% if product.has_only_default_variant %}
+        {% render 'fake-variant-selector' %}
+      {% else %}
+        {% if product.variants.size > 1 %}
+          {% render 'variant-selector' %}
+        {% endif %}
+      {% endif %}
+      <div class="add-to-cart__qty">
+        <div class="qty">
+          <label for="qtyInput" class="visually-hidden">Quantity</label>
+          <input id="qtyInput" class="qty__input js-qtyInput" type="text" name="quantity" value="1" readonly>
+          <button class="qty__btn qty__minus js-qtyMinus" disabled>
+            <span class="visually-hidden">Decrease quantity</span>
+            <svg class="icon-minus" viewBox="0 0 9 9">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-minus"></use>
+            </svg>
+          </button>
+          <button class="qty__btn qty__plus js-qtyPlus">
+            <span class="visually-hidden">Increase quantity</span>
+            <svg class="icon-plus" viewBox="0 0 9 9">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-plus"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main product -->
+    <input type="hidden" id="main-product-id" value="{{ product.selected_or_first_available_variant.id }}">
+    
+    <!-- Add hidden inputs for selected candles -->
+    <input type="hidden" id="hidden-candle1" value="">
+    <input type="hidden" id="hidden-candle2" value="">
+    <input type="hidden" id="hidden-candle3" value="">
+    
+    <!-- Add-On Product -->
+    {% if section.settings.enable_add_on_product %}
+      <input type="hidden" id="hidden-add-on-product" value="{{ section.settings.add_on_product }}">
+    {% endif %}
+
+    {% if product.selected_or_first_available_variant.available %}
+      <button
+          type="button"
+          id="bundle-add-to-cart-button"
+          class="js-addToCart add-to-cart__btn button bundle-add-to-cart"
+          data-id="{{ product.selected_or_first_available_variant.id }}">
+          Add Bundle to Cart
+      </button>
+    {% else %}
+      <button class="klaviyo add-to-cart__btn button">
+        <a class="klaviyo-bis-trigger" href="#">Notify Me When Available</a>
+      </button>
+    {% endif %}
+  </form>
+</div>

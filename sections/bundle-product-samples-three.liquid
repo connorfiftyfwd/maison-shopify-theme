@@ -1,0 +1,107 @@
+<div class="bundle-selection">
+  <h2>{{ section.settings.select_heading }}</h2>
+  <div class="bundle-select-wrap sample-bundle-select-wrap">
+  {% if section.settings.sample_collection %}
+    {% assign sample_collection = section.settings.sample_collection %}
+    {% assign sample = collections[sample_collection] %}
+    {% if sample.products.size > 0 %}
+      <!-- Dropdown 1 -->
+      <div class="select-option-wrap">
+        <label for="sample1" class="visually-hidden">Sample 1:</label>
+        <select id="sample1" name="bundle_sample_1" aria-label="Sample 1">
+          <option value="">Select Sample 1</option>
+          {% for product in sample.products %}
+            {% for variant in product.variants %}
+              <option value="{{ variant.id }}">{{ product.title }} - {{ variant.title }}</option>
+            {% endfor %}
+          {% endfor %}
+        </select>
+      </div>
+      <!-- Dropdown 2 -->
+      <div class="select-option-wrap">
+        <label for="sample2" class="visually-hidden">Sample 2:</label>
+        <select id="sample2" name="bundle_sample_2" aria-label="Sample 2">
+          <option value="">Select Sample 2</option>
+          {% for product in sample.products %}
+            {% for variant in product.variants %}
+              <option value="{{ variant.id }}">{{ product.title }} - {{ variant.title }}</option>
+            {% endfor %}
+          {% endfor %}
+        </select>
+      </div>
+      <!-- Dropdown 3 -->
+      <div class="select-option-wrap">
+        <label for="sample3" class="visually-hidden">Sample 3:</label>
+        <select id="sample3" name="bundle_sample_3" aria-label="Sample 3">
+          <option value="">Select Sample 3</option>
+          {% for product in sample.products %}
+            {% for variant in product.variants %}
+              <option value="{{ variant.id }}">{{ product.title }} - {{ variant.title }}</option>
+            {% endfor %}
+          {% endfor %}
+        </select>
+      </div>
+    {% else %}
+      <p>No products found in the selected collection.</p>
+    {% endif %}
+  {% else %}
+    <p>Please select a collection in the section settings.</p>
+  {% endif %}
+  </div>
+</div>
+{% schema %}
+{
+  "name": "Bundle Settings",
+  "settings": [
+    {
+      "type": "collection",
+      "id": "sample_collection",
+      "label": "Select Collection",
+      "info": "Select the collection to populate the drop down options."
+    },
+    {
+      "type": "checkbox",
+      "id": "add_bundle_price",
+      "label": "Set Bundle Price",
+      "default": true,
+      "info":"This overrides the default product price which is set from the product admin page."
+    },
+    {
+      "type": "text",
+      "id": "bundle_price",
+      "label": "Bundle Price",
+      "default": "*** Please add price ***"
+    },
+    {
+      "type": "text",
+      "id": "select_heading",
+      "label": "Select Heading",
+      "default": "Please Make Your Selection"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_add_on_product",
+      "label": "Enable Add-On Product",
+      "default": false
+    },
+    {
+      "type": "product",
+      "id": "add_on_product",
+      "label": "Add-On Product",
+      "info": "Select the product for the optional add-on."
+    },
+    {
+      "type": "text",
+      "id": "add_on_product_label",
+      "label": "Add-On Product Label",
+      "default": "Would you like to add this product?"
+    },
+    {
+      "type": "textarea",
+      "id": "add_on_product_text",
+      "label": "Add-On Product Description",
+      "info": "Options text to describe add on product"
+    }
+  ]
+}
+{% endschema %}

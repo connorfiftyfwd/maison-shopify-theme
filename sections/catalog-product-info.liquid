@@ -1,0 +1,14 @@
+<div class="catalog-product-info-wrap">{% if section.settings.catalog_product_info != blank %}{{ section.settings.catalog_product_info }}{% endif %}</div>
+{% schema %}
+{
+  "name": "Catalog Product Info",
+  "settings": [
+    {
+      "type": "richtext",
+      "id": "catalog_product_info",
+      "label": "Catalog Product Info",
+      "info": "Provide info about this item. THIS REPLACES THE ADD TO CART BUTTON seen on regular product templates."
+    }
+  ]
+}
+{% endschema %}

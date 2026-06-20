@@ -1,0 +1,12 @@
+{{ img | image_url: width: 650 | image_tag: alt: img.alt }}
+{% comment %} <picture>
+  <source media="(max-width: 375px)"
+          srcset="{{ img | image_url: width: 375, height: 451 }} 1x, {{ img | image_url: width: 750, height: 902 }} 2x"/>
+  <source media="(min-width: 376px) and (max-width: 700px)"
+          srcset="{{ img | image_url: width: 700, height: 850 }} 1x, {{ img | image_url: width: 1400, height: 1700 }} 2x"/>
+  <source media="(min-width: 701px) and (max-width: 1023)"
+          srcset="{{ img | image_url: width: 1024, height: 1242 }} 1x, {{ img | image_url: width: 2048, height: 2484 }} 2x"/>
+  <source media="(min-width: 1024px)"
+          srcset="{{ img | image_url: width: 830, height: 1000 }} 1x, {{ img | image_url: width: 1660, height: 2000 }} 2x"/>
+  <img src="{{ img | image_url: width: 375, height: 451 }}" alt="{{ alt }}" class="is-loading" height="1024" width="1242" loading="eager">
+</picture> {% endcomment %}

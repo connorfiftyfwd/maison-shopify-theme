@@ -1,0 +1,43 @@
+{% schema %}
+{
+  "name": "Video",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image",
+      "info": "min: 1240x755px"
+    },
+    {
+      "type": "image_picker",
+      "id": "imageMobile",
+      "label": "Image Mobile",
+      "info": "min: 375x455px"
+    },
+    {
+      "id": "video",
+      "type": "text",
+      "label": "Video URL"
+    },
+    {
+      "id": "videoMobile",
+      "type": "text",
+      "label": "Video URL Mobile",
+      "info": "optional"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Video",
+      "category": "Content"
+    }
+  ]
+}
+{% endschema %}
+
+{% render 'video-module',
+  image: section.settings.image
+  imageMobile: section.settings.imageMobile
+  video: section.settings.video
+  videoMobile: section.settings.videoMobile,
+  fromMetafields: false %}

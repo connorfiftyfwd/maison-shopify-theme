@@ -1,0 +1,45 @@
+{% assign notes = "top,heart,base" | split: ',' %}
+{% unless product.metafields["global"]["ingredients"] == blank %}
+  <div class="product__panel smells-like js-scroll js-scroll--fade" id="smells-like">
+    <div class="smells-like__content">
+      {% unless product.metafields["global"]["notes-top"] == blank %}
+      <p>
+        <em>Smells like:</em>
+        {%- for note in notes -%}
+          {% assign key = "notes-" | append: note %}
+          {{ product.metafields["global"][key] }}&nbsp;<sup>(&nbsp;{{ note }}&nbsp;)</sup>;<br/>
+        {%- endfor -%}
+      </p>
+      {% endunless %}
+      {%- if product.metafields["global"]["ingredients"] -%}
+      <button class="smells-like__ingredients-toggle js-ingredientsToggle">
+        Ingredients
+      </button>
+      <div class="smells-like__ingredients">
+        {{ product.metafields["global"]["ingredients"] | strip_html }}
+        <button class="smells-like__ingredients-toggle js-ingredientsToggle">
+          Hide
+        </button>
+      </div>
+      {%- endif -%}
+    </div>
+  </div>
+  <div class="product__panel smells-like__illustrations">
+    {%- for note in notes -%}
+      {% assign key = "notes-" | append: note | append: "-img" %}
+      {% assign img = product.metafields["global"][key] %}
+      {% if img %}
+      <div class="smells-like__illustration">
+        {% render 'thumbnail',
+          img: img,
+          hideForMobile: false,
+          fromMetafields: true
+        %}
+
+        <span>{{ note }}</span>
+
+      </div>
+      {% endif %}
+    {%- endfor -%}
+  </div>
+{% endunless %}

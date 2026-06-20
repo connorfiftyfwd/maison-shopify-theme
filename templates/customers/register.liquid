@@ -1,0 +1,71 @@
+<div class="login js-login" data-view="login">
+  <div class="login__content">
+    <ul class="login__nav">
+      <li><a href="/account/login">Log in</a></li>
+      <li><a href="/account/register">Sign up</a></li>
+    </ul>
+    <div class="login__form login__form--register js-formValidation">
+      {% form 'create_customer' %}
+        <div class="form form--darker">
+          <div class="login__errors">
+            {{ form.errors | default_errors }}
+          </div>
+          <div class="form__cell">
+            <label for="FirstName" class="visually-hidden">First Name</label>
+            <input type="text"
+                   name="customer[first_name]"
+                   id="FirstName"
+                   placeholder="First Name"
+                   autofocus
+                   required>
+          </div>
+          <div class="form__cell">
+            <label for="LastName" class="visually-hidden">Last Name</label>
+            <input type="text"
+                   name="customer[last_name]"
+                   id="LastName"
+                   placeholder="Last Name"
+                   required>
+          </div>
+          <div class="form__cell">
+            <label for="Email" class="visually-hidden">Email</label>
+            <input type="email"
+                   name="customer[email]"
+                   id="Email"
+                   class=""
+                   placeholder="Email"
+                   value=""
+                   spellcheck="false"
+                   autocomplete="off"
+                   autocapitalize="off"
+                   required>
+          </div>
+          <div class="form__cell">
+            <label for="CreatePassword" class="visually-hidden">Password</label>
+            <input type="password"
+                   name="customer[password]"
+                   id="CreatePassword"
+                   placeholder="Password"
+                   required>
+          </div>
+          <div class="form__cell">
+            <label for="register-confirm-password" class="visually-hidden">Confirm Password</label>
+            <input type="password"
+                   data-validate-match="CreatePassword"
+                   placeholder="Confirm Password *"
+                   id="register-confirm-password"
+                   name="custom[confirm_password]"
+                   required/>
+          </div>
+          <hr class="form__space">
+          <div class="form__cell">
+            <button type="submit" name="commit" class="button button--wide">
+              Sign Up
+            </button>
+          </div>
+        </div>
+      {% endform %}
+    </div>
+  </div>
+
+</div>

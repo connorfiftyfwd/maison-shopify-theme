@@ -1,0 +1,5 @@
+{% assign ext = image | slice: -4, 4 %}
+{%- capture resized -%}
+_{{ size }}_crop_center{{ ext }}
+{%- endcapture -%}
+{{ image | replace: ext, resized }}

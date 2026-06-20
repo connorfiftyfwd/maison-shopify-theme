@@ -1,0 +1,21 @@
+<header class="header js-scroll" role="banner" data-callback="nav">
+  {% render 'nav' %}
+</header>
+
+<style>
+  .header:after {
+    height: 90px !important;
+  }
+
+  @media (max-width: 767px) {
+    .state--sticky-nav .header:after {
+        height: 115px !important;
+    }
+    
+    .state--sticky-nav .main-nav__list {
+      top: 114px;
+    }
+  }
+
+</style>
+ 

@@ -1,0 +1,68 @@
+<div class="account__wrapper">
+  <div class="account account--centered js-scroll" data-view="account">
+    {% render 'account-nav' %}
+
+    <div class="account__content">
+      <div class="account-content__wrapper">
+        <h1 class="account-content__title">
+          My Orders
+        </h1>
+        <div class="account-content--orders">
+        {% if customer.orders.size > 0 %}
+          <table>
+            <thead>
+              <tr>
+                <th>Order #</th>
+                <th>Date</th>
+                <th>Payment</th>
+                <th>Fullfilment</th>
+                <th>Total</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for order in customer.orders %}
+                <tr>
+                  <td>
+                    <span class="mobile-visible">Order#</span>
+                    {{ order.name }}
+                  </td>
+                  <td>
+                    <span class="mobile-visible">Date</span>
+                    <time datetime="{{ order.created_at | date: "%Y-%m-%d" }}">
+                      {{ order.created_at | date: "%b %d, %Y" }}
+                    </time>
+                  </td>
+                  <td>
+                    <span class="mobile-visible">Payment</span>
+                    {{ order.financial_status }}
+                  </td>
+                  <td>
+                    <span class="mobile-visible">Fullfilment</span>
+                    {{ order.fulfillment_status_label }}
+                  </td>
+                  <td>
+                    <span class="mobile-visible">Total</span>
+                    {{ order.total_price | money }}
+                  </td>
+                  <td>
+                  {% assign link = order.customer_url | split: '/account' %}
+                    <a href="/account{{ link[1] }}" class="account__arrow">
+                      <span class="visually-hidden">View details</span>
+                    </a>
+                  </td>
+                </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        {% else %}
+          <p>You have not placed any orders yet.</p>
+          <br />
+          <br />
+          <a href="{% if settings.continue_shopping_link != blank %}settings.continue_shopping_link{% else %}/{% endif %}" class="button button--wide">Start Shopping</a>
+        {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

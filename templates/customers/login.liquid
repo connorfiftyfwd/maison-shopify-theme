@@ -1,0 +1,75 @@
+<div class="login js-login" data-view="login">
+  <div class="login__content">
+    <ul class="login__nav">
+      <li><a href="/account/login">Log in</a></li>
+      <li><a href="/account/register">Sign up</a></li>
+    </ul>
+    <div class="login__form login__form--login js-formValidation">
+      {% form 'customer_login' %}
+        <div class="form form--darker">
+          <div class="login__errors">{{ form.errors | default_errors }}</div>
+          <div class="form__cell">
+            <label class="visually-hidden" for="CustomerEmail">Email</label>
+            <input type="email"
+                   name="customer[email]"
+                   id="CustomerEmail"
+                   placeholder="Email"
+                   spellcheck="false"
+                   autocomplete="off"
+                   autocapitalize="off"
+                   autofocus
+                   required>
+          </div>
+          <div class="form__cell">
+            <label class="visually-hidden" for="CustomerPassword">Password</label>
+            <input type="password"
+                   name="customer[password]"
+                   id="CustomerPassword"
+                   placeholder="Password"
+                   required>
+          </div>
+          <hr class="form__space">
+          <div class="form__cell">
+            <button type="submit" name="commit" class="button button--wide">
+              Sign in
+            </button>
+            <div class="login__links">
+              Have you forgotten your password?
+              <a href="/account/login#recover" class="button-link js-loginRecoverToggle">Retrive</a>
+            </div>
+          </div>
+        </div>
+      {% endform %}
+    </div>
+
+    <div class="login__form login__form--reset js-formValidation js-loginRecover">
+      {% form 'recover_customer_password' %}
+        <div class="form form--darker">
+          <div class="login__errors js-loginRecoverErrors"></div>
+          <div class="form__cell">
+            <label class="visually-hidden" for="ResetEmail">Email</label>
+            <input type="email"
+                   name="email"
+                   id="ResetEmail"
+                   placeholder="Email"
+                   spellcheck="false"
+                   autocomplete="off"
+                   autocapitalize="off"
+                   autofocus
+                   required>
+          </div>
+          <div class="login__info js-loginRecoverSuccess">
+          </div>
+          <hr class="form__space">
+          <div class="form__cell">
+            <input type="submit" class="button button--wide" value="Recover password"/>
+            <div class="login__links">
+              <a href="/account/login" class="button-link js-loginRecoverToggle">Back</a>
+            </div>
+          </div>
+        </div>
+      {% endform %}
+    </div>
+  </div>
+
+</div>

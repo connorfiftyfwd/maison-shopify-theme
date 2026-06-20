@@ -1,0 +1,2020 @@
+{%- capture customContent -%}
+{% assign secSt = section.settings %}
+<div class="sec_cov mde-section-{{ section.id }}{% if secSt.hidem %} hide-sm{% endif %}{% if secSt.hided %} hide-md hide-lg{% endif %}" style="--sbg:{% if secSt.bgg != blank %}{{ secSt.bgg }}{% else %}{{ secSt.bg }}{% endif %};--sst:{{ secSt.sst }}px;--ssb:{{ secSt.ssb }}px;--sstm:{{ secSt.sstm }}px;--ssbm:{{ secSt.ssbm }}px">  
+    <div class="page-width fullwidth custom-block {{section.settings.style }}">  
+        {%- if section.settings.title != blank or section.settings.subtitle != blank -%}
+        <div class="sec-ttl{% if section.settings.section_title_align != "default" %} {{ section.settings.section_title_align }}{% else %} {{ settings.title_align }}{% endif %}">
+          {%- if section.settings.title != blank -%}
+            <h2 class="sttl"{% if section.settings.change_title_text_color %} style="color:{{ section.settings.title_text_color }};"{% endif %}><span class="dbi pr">{{ section.settings.title }}</span></h2>
+            {%- if section.settings.subtitle != blank -%}<div class="sbttl"{% if section.settings.change_subtitle_text_color %}{%- endif -%} style="color:{{ section.settings.subtitle_text_color }};"{% endif %}>{{ section.settings.subtitle }}</div>{%- endif -%}
+        </div>
+        {%- endif -%}
+        <div class="grid custom-cnt gspace" style="--grsp:0 -{{ section.settings.gspace | divided_by: 2.0 }}px;--grspi:0 {{ section.settings.gspace | divided_by: 2.0 }}px {{ section.settings.gspace }}px;--grspm:0 -{{ section.settings.gspacem | divided_by: 2.0 }}px;--grspim:0 {{ section.settings.gspacem | divided_by: 2.0 }}px {{ section.settings.gspacem }}px;">
+                {% for block in section.blocks %}
+                    {% assign blkSt = block.settings %}
+                    <div class="gitem ct_item cti{{ block.id }} {{ blkSt.width }}-md {{ blkSt.alignment }}{% if block.type == "text" or block.type == "image" or block.type == "product" %} page-width-content{% endif %}{% if blkSt.hidem %} hide-sm{% endif %}" {{ block.shopify_attributes }}>
+                        <div class="of_hidden ct_item_in ct_item_{{ block.type }} w_100" style="--bg:{{ blkSt.clbg }};--brad:{{ blkSt.brad }}px;">                           
+                        {% case block.type %}
+                            {% when 'hero' %}
+                            <div class="cti{{ block.id }}">
+                              <div class="hero-section">
+                                {% assign desktop_image = block.settings.image %}
+                                {% assign mobile_image = block.settings.imagem %}
+                                {% assign overlay_color = block.settings.ovr %}
+                                {% assign overlay_opacity = block.settings.ovropt %}
+                                {% assign text_position = block.settings.txtpos %}
+                            
+                                <div class="hero-wrapper">
+                                  <div class="hero-overlay" style="background-color: {{ overlay_color }}; opacity: {{ overlay_opacity }};"></div>
+                                  <div class="hero-content {{ text_position }}">
+                                    {% if block.settings.title != blank %}
+                                      <h1 class="hero-title" style="
+                                        color: {{ block.settings.tcl }};
+                                        font-size: {{ block.settings.tfs }}px;
+                                        font-weight: {{ block.settings.tfw }};
+                                        opacity: {{ block.settings.to }};
+                                        line-height: {{ block.settings.tlh }};
+                                        margin-bottom: {{ block.settings.tmb }}px;
+                                      ">{{ block.settings.title | escape }}</h1>
+                                    {% endif %}
+                            
+                                    {% if block.settings.hd3 != blank %}
+                                      {% unless block.settings.hideh3 %}
+                                        <p class="hero-detail" style="
+                                          color: {{ block.settings.cl }};
+                                          font-size: {{ block.settings.fs }}px;
+                                          font-weight: {{ block.settings.fw }};
+                                          line-height: {{ block.settings.lh }};
+                                          margin-bottom: {{ block.settings.mb }}px;
+                                        ">{{ block.settings.hd3 | escape }}</p>
+                                      {% endunless %}
+                                    {% endif %}
+                                  </div>
+                                </div>
+                              </div>
+                            
+                              <style>
+                                .cti{{ block.id }} .hero-section {
+                                  height: {{ block.settings.htd }}px;
+                                  background-image: url({{ desktop_image | img_url: '2000x' }}); /* Default to desktop image */
+                                  background-size: cover;
+                                  background-position: center;
+                                  background-repeat: no-repeat;
+                                }
+                            
+                                @media (max-width: 1024px) {
+                                  .cti{{ block.id }} .hero-section {
+                                    height: {{ block.settings.htt }}px;
+                                    {% if mobile_image != blank %}background-image: url({{ mobile_image | img_url: '800x' }});{% endif %}
+                                  }
+                                }
+                            
+                                @media (max-width: 768px) {
+                                  .cti{{ block.id }} .hero-section {
+                                    height: {{ block.settings.htm }}px;
+                                  }
+                            
+                                  .cti{{ block.id }} .hero-content {
+                                    width: 100%;
+                                    padding: 0 15px;
+                                  }
+                                }
+                              </style>
+                            </div>
+                            
+                            {% when 'image' %}
+                                {% if blkSt.image != blank %}
+                                    {% if blkSt.imgurl != blank %}<a href="{{ blkSt.imgurl }}">{% endif %}
+                                    <div class="imgWrapper" style="max-width:{% if blkSt.adjust_img %}{{ blkSt.image_width }}{% else %}{{ blkSt.image.width }}{% endif %}px;--brad:{{ blkSt.brad }}px;">
+                                        
+                                        {% assign crop_location = block.settings.image_crop_location | default: 'center' %}
+                                        
+                                        {% if block.settings.image_crop == 'square' %}
+                                            <!-- Square image crop -->
+                                            <img class="imgFl ctimg wow zoomIn" 
+                                                 src="{{ blkSt.image | img_url: '800x800', crop: crop_location }}" 
+                                                 width="800" 
+                                                 height="800"
+                                                 data-srcset="{{ blkSt.image | img_url: '800x800', crop: crop_location }} 800w, {{ blkSt.image | img_url: '1600x1600', crop: crop_location }} 1600w, {{ blkSt.image | img_url: 'master', crop: crop_location }}" 
+                                                 data-sizes="auto" 
+                                                 alt="{{ blkSt.image.alt | escape }}">
+                                        
+                                        {% elsif block.settings.image_crop == 'portrait' %}
+                                            <!-- Portrait image crop -->
+                                            <img class="imgFl ctimg wow zoomIn" 
+                                                 src="{{ blkSt.image | img_url: '800x1200', crop: crop_location }}" 
+                                                 width="800" 
+                                                 height="1200"
+                                                 data-srcset="{{ blkSt.image | img_url: '800x1200', crop: crop_location }} 800w, {{ blkSt.image | img_url: '1600x2400', crop: crop_location }} 1600w, {{ blkSt.image | img_url: 'master', crop: crop_location }}" 
+                                                 data-sizes="auto" 
+                                                 alt="{{ blkSt.image.alt | escape }}">
+                                
+                                        {% else %}
+                                            <!-- Default image handling (untouched original code) -->
+                                            <img class="imgFl ctimg wow zoomIn" 
+                                                 src="{{ blkSt.image | img_url: '1200x' }}" 
+                                                 width="{{ blkSt.image.width }}" 
+                                                 height="{{ blkSt.image.height }}"
+                                                 data-srcset="{{ blkSt.image | img_url: '1200x' }}" 
+                                                 data-sizes="auto" 
+                                                 alt="{{ blkSt.image.alt | escape }}">
+                                        {% endif %}
+                                        
+                                    </div>
+                                    {% if blkSt.imgurl != blank %}</a>{% endif %}
+                                {% else %}
+                                    {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+                                {% endif %}
+                            {% when 'text' %}								
+                                <div class="{{ blkSt.align_text }}" style="--ttcl:{{ blkSt.cl }};--ttfs:{{ blkSt.fs }}px;--ttfsm:{{ blkSt.fsm }}px;--ttfw:{{ blkSt.fw }};--ttlh:{{blkSt.lh }}">
+                                    {% if blkSt.img_position == "above" %}
+                                    {% if blkSt.dis_img %}
+                                    {% if blkSt.image != blank  %}
+                                        {% if blkSt.btnurl != blank %}<a href="{{ blkSt.btnurl }}">{% endif %}
+                                            <div class="imgWrapper" style="max-width:{% if blkSt.adjust_img %}{{ blkSt.image_width }}{% else %}{{ blkSt.image.width }}{% endif %}px;--brad:{{ blkSt.brad }}px;margin-bottom:15px;"">
+                                              
+                                              {% assign crop_location = block.settings.image_crop_location | default: 'center' %}
+                                                {% if block.settings.image_crop == 'square' %}
+                                                    <!-- Square image crop -->
+                                                    <img class="imgFl ctimg wow zoomIn" 
+                                                         src="{{ blkSt.image | img_url: '800x800', crop: crop_location }}" 
+                                                         width="800" 
+                                                         height="800"
+                                                         alt="{{ blkSt.image.alt | escape }}">
+                                                
+                                                {% elsif block.settings.image_crop == 'portrait' %}
+                                                    <!-- Portrait image crop -->
+                                                    <img class="imgFl ctimg wow zoomIn" 
+                                                         src="{{ blkSt.image | img_url: '800x1200', crop: crop_location }}" 
+                                                         width="800" 
+                                                         height="1200"
+                                                         alt="{{ blkSt.image.alt | escape }}">
+                                                
+                                                {% else %}
+                                                    <!-- Default image handling (untouched original code) -->
+                                                    <img class="imgFl ctimg wow zoomIn" 
+                                                       src="{{ blkSt.image | img_url: '1200x' }}" 
+                                                       width="{{ blkSt.image.width }}" 
+                                                       height="{{ blkSt.image.height }}"
+                                                       data-srcset="{{ blkSt.image | img_url: '1200x' }}" 
+                                                       data-sizes="auto" 
+                                                       alt="{{ blkSt.image.alt | escape }}">
+                                                {% endif %}
+                                            </div>
+                                        {% if blkSt.btnurl != blank %}</a>{% endif %}
+                                    {% else %}
+                                     <p> {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}</p>
+                                    {% endif %}
+                                    {% endif %}
+                                    {% endif %}
+                                    <div class="custom-text">
+                                        {% if blkSt.title != blank %}<h3 class="ttlTxt" style="margin-bottom:{{ blkSt.tbm }}px;{% if blkSt.all_caps_heading %}text-transform:uppercase;{% endif %}{% if blkSt.adjust_text_ls %}letter-spacing:{{ blkSt.text_ls }}px{% endif %}">{{ blkSt.title }}</h3>{% endif %}
+                                        {% if blkSt.text != blank %}<div class="rgTxt rte-setting mb20" style="--cl:{{ blkSt.cl }};">{{ blkSt.text }}</div>{% endif %}
+                                        {% if blkSt.btntxt != blank and blkSt.btnurl != blank %}
+                                            <a class="btn mb20 {{ blkSt.btn-size }} {{ blkSt.btn-style }}" href="{{ blkSt.btnurl }}">{{ blkSt.btntxt }}</a>
+                                        {% endif %}
+                                    </div>
+                                    {% if blkSt.img_position == "below" %}
+                                    {% if blkSt.dis_img %}
+                                    {% if blkSt.image != blank  %}
+                                        {% if blkSt.btnurl != blank %}<a href="{{ blkSt.btnurl }}">{% endif %}
+                                            <div class="imgWrapper" style="max-width:{% if blkSt.adjust_img %}{{ blkSt.image_width }}{% else %}{{ blkSt.image.width }}{% endif %}px;--brad:{{ blkSt.brad }}px;margin-top:15px;">
+                                              {% assign crop_location = block.settings.image_crop_location | default: 'center' %}
+                                                {% if block.settings.image_crop == 'square' %}
+                                                    <!-- Square image crop -->
+                                                    <img class="imgFl ctimg wow zoomIn" 
+                                                         src="{{ blkSt.image | img_url: '800x800', crop: crop_location }}" 
+                                                         width="800" 
+                                                         height="800"
+                                                         alt="{{ blkSt.image.alt | escape }}">
+                                                
+                                                {% elsif block.settings.image_crop == 'portrait' %}
+                                                    <!-- Portrait image crop -->
+                                                    <img class="imgFl ctimg wow zoomIn" 
+                                                         src="{{ blkSt.image | img_url: '800x1200', crop: crop_location }}" 
+                                                         width="800" 
+                                                         height="1200"
+                                                         alt="{{ blkSt.image.alt | escape }}">
+                                                
+                                                {% else %}
+                                                    <!-- Default image handling (untouched original code) -->
+                                                    <img class="imgFl ctimg wow zoomIn" 
+                                                       src="{{ blkSt.image | img_url: '1200x' }}" 
+                                                       width="{{ blkSt.image.width }}" 
+                                                       height="{{ blkSt.image.height }}"
+                                                       data-srcset="{{ blkSt.image | img_url: '1200x' }}" 
+                                                       data-sizes="auto" 
+                                                       alt="{{ blkSt.image.alt | escape }}">
+                                                {% endif %}
+                                            </div>
+                                        {% if blkSt.btnurl != blank %}</a>{% endif %}
+                                    {% else %}
+                                     <div class="imgWrapper" style="max-width:{% if blkSt.adjust_img %}{{ blkSt.image_width }}{% else %}{{ blkSt.image.width }}{% endif %}px;--brad:{{ blkSt.brad }}px;margin-top:15px;">{{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}</div>
+                                    {% endif %}
+                                    {% endif %}
+                                    {% endif %}
+                                    <style>                                       
+                                        {% if blkSt.bg %}    										      
+                                        .cti{{ block.id }} { align-self:stretch; display:flex;} 
+                                        .cti{{ block.id }} .ct_item_in {display: flex; align-items: center; padding:35px;  background:{{ blkSt.clbg }}; border-radius:{{blkSt.boxrad}}px;}     
+                                        .cti{{ block.id }}.f-ass .ct_item_in {align-items: start; }
+                                        .cti{{ block.id }}.f-ase .ct_item_in {align-items: end;}  
+                                        .cti{{ block.id }} .ct_item_in > div { width:100%;} 
+                                        {% endif %}
+                                          
+                                        {% if block.settings.text_override == true %}
+                                        .cti{{ block.id }} .rte-setting * {font-size:{{ block.settings.text_fs }}px;font-weight:{{ block.settings.text_fw }};line-height:{{ block.settings.text_lh }};{% if block.settings.text_override_family != "default" %}font-family:var(--{{ block.settings.text_override_family}});{% endif %}}
+                                        @media only screen and (max-width:767px){.cti{{ block.id }} .rte-setting * {font-size:{{ block.settings.text_fsm }}px;}}	
+                                        {% endif %} 
+                                        {% if blkSt.adjust_maxwd %}@media only screen and (min-width: 1024px) {.cti{{ block.id }} .custom-text{ max-width:{{ blkSt.maxwd }}%;margin:0 auto;}}{% endif %}
+                                        {% if blkSt.add_divider %}
+                                        {% if blkSt.divider_location == "above" or blkSt.divider_location == "both" %}
+                                        .cti{{ block.id }} .custom-text:before {content: "";position: relative;display: block;border-top: 1px solid {{ blkSt.divider_color }};margin: 15px 0;}
+                                        {% endif %}
+                                        {% if blkSt.divider_location == "below" or blkSt.divider_location == "both" %}
+                                        .cti{{ block.id }} .custom-text:after {content: "";position: relative;display: block;border-top: 1px solid {{ blkSt.divider_color }};margin: 15px 0;}
+                                        {% endif %}
+                                        {% endif %}     	
+                                    </style>             
+                                </div>                                                  
+                            
+                            {% when 'product' %}
+                            <div class="product-section product-section-{{ block.id }}">
+                              {% assign image = block.settings.image %}
+                              {% assign image_location = block.settings.image_location %}
+                              {% assign collection = collections[block.settings.collection_handle] %}
+                              
+                              <div class="product-layout {% if image_location == 'right' %}reverse{% endif %}">
+                                {% if image != blank %}
+                                  <div class="large-image">
+                                    <picture>
+                                      <source media="(max-width: 1023px)" srcset="{{ image | image_url: width: 800 }}">
+                                      {% if blkSt.imgurl != blank %}
+                                        <a href="{{ blkSt.imgurl }}">
+                                      {% endif %}
+                                        <img src="{{ image | image_url: width: 1600 }}" alt="Large image" class="large-product-image" />
+                                      {% if blkSt.imgurl != blank %}
+                                        </a>
+                                      {% endif %}
+                                    </picture>
+                                
+                                    {% if blkSt.imgurl != blank %}
+                                      <a href="{{ blkSt.imgurl }}" class="image-overlay-link"></a>
+                                    {% endif %}
+                                  </div>
+                                
+                                  <style>
+                                  @media screen and (min-width: 1024px) {
+                                    .product-section-{{ block.id }} .large-image {
+                                      width: calc(50% - 0.5px);
+                                      flex-shrink: 0; 
+                                      background-size: cover; 
+                                      background-position: center; 
+                                      background-repeat: no-repeat;
+                                      background-image: url('{{ image | image_url: width: 1600 }}');
+                                      position: relative;
+                                    }
+                                    
+                                    .image-overlay-link {
+                                      position: absolute;
+                                      top: 0;
+                                      left: 0;
+                                      width: 100%;
+                                      height: 100%;
+                                      display: block;
+                                      z-index: 10;
+                                    }
+                                  }
+                                  </style>
+                                {% endif %}
+                              
+                                {% if collection != blank and collection.products.size > 0 %}
+                                  <div class="plp__items">
+                                    {% for product in collection.products %}
+                                      <div class="plp__item">
+                                        {% render 'plp-product', product: product, rx_position: forloop.index, block: block.settings %}
+                                      </div>
+                                    {% endfor %}
+                                  </div>
+                                {% else %}
+                                  <p>No products found in the selected collection.</p>
+                                {% endif %}
+                              </div>
+                              
+                              {% if block.settings.link_text != blank and block.settings.link_url != blank %}
+                              <div class="product-link" style="text-align: {{ block.settings.link_position }};">
+                                <a href="{{ block.settings.link_url }}" class="custom-link">{{ block.settings.link_text }}</a>
+                              </div>
+                              {% endif %}
+                            </div>
+                        
+                            {% endcase %}
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>  
+</div>
+{% if secSt.change_title_size == true or secSt.change_subtitle_size == true %}
+<style>
+  {% if secSt.change_title_size == true %}.mde-section-{{ section.id }} .sec-ttl {{ settings.sttltag }} {font-size: {{ secSt.title_ts_mb }}px;}{% endif %}
+  {% if secSt.change_subtitle_size == true %}.mde-section-{{ section.id }} .sbttl {font-size: {{ secSt.subtitle_ts_mb }}px;}{% endif %}
+  {% if secSt.change_title_size == true or secSt.change_subtitle_size == true %}
+  @media only screen and (min-width:768px){
+   {% if secSt.change_title_size == true %}.mde-section-{{ section.id }} .sec-ttl {{ settings.sttltag }} {font-size: {{ secSt.title_ts }}px;}{% endif %}
+   {% if secSt.change_subtitle_size == true %}.mde-section-{{ section.id }} .sbttl {font-size: {{ secSt.subtitle_ts }}px;}{% endif %}}
+  {% endif %}
+</style>
+{% endif %}
+{% render 'mde-head-css' %}
+
+<style>
+.mde-custom-section-block {
+  font-family: PlantinMT,Times New Roman,serif;
+}
+
+.mde-custom-section-block .rte-setting * {
+  font-family: GT America,Arial,sans-serif;
+  letter-spacing: .5px;
+}
+
+.sec_cov { padding-top:var(--sstm); padding-bottom:var(--ssbm); background:var(--sbg); }
+.sec-ttl {
+  margin-bottom: 30px;
+}
+.sec-ttl h2 {
+  margin-bottom: 10px;
+}
+
+.gitem.page-width-content {
+  padding: 40px 40px;
+}
+
+@media only screen and (min-width:1025px){
+    .gitem.page-width-content {
+      padding: 40px 90px;
+    }
+}
+
+@media only screen and (min-width:768px){  
+  .sec_cov { padding-top:var(--sst); padding-bottom:var(--ssb);}	 
+}
+  {% comment %} /* Custom Block and Custom Template */ {% endcomment %}
+  .ct_item .grid_bx { margin:0; }
+  .ct_item .custom-text > *:last-child { margin-bottom:0; }
+  .ct_item .custom-text a:not(.btn) { text-decoration:underline; }
+  .ct_item .custom-text a:hover { text-decoration:none; }
+    
+  .ct_item_collection .details { position:absolute; left:15px; right:15px; text-align:center; bottom:15px; background-color:var(--bg);  border-radius:{{settings.btn_rad}}px;}
+  @media only screen and (min-width:766px){
+      .ct_item_collection .details { bottom:30px; left:50%; transform: translate(-50%); right:auto; }      
+  }       
+  @media only screen and (max-width:767px){ 
+    .ct_item .custom-text br{ display: none;}
+  }
+  
+  /* .gspace { margin:var(--grspm); }
+  .gspace .gitem { padding:var(--grspim); }
+  @media only screen and (min-width:768px) {
+      .gspace { margin:var(--grsp); }
+      .gspace .gitem { padding:var(--grspi); }
+  } */
+  
+  .rte h1, .rte h2, .rte h3, .rte h4, .rte h5, .rte h6 { margin-top:15px; margin-bottom:7.5px }
+  .rte h1:first-child, .rte h2:first-child, .rte h3:first-child, .rte h4:first-child, .rte h5:first-child, .rte h6:first-child { margin-top:0 }
+  .rte li { margin-bottom:4px; list-style:inherit }
+  .rte li:last-child { margin-bottom:0 }
+  .rte blockquote { padding:30px; margin-bottom:20px }
+  .rte img { height:auto }
+  .rte table { table-layout:fixed }
+  .rte ol, .rte ul { margin:{% if settings.rtl %}20px 30px 30px 0{% else %}20px 0 30px 15px{% endif %} }
+  .rte ul { list-style:disc outside }
+  .rte ul ul { list-style:circle outside }
+  .rte ul ul ul { list-style:square outside }
+  .rte a:not(.btn) { padding-bottom:1px }
+  .tc .rte ol, .tc .rte ul, .tc.rte ol, .tc.rte ul { margin-left:0; list-style-position:inside }
+  
+  .product-section {
+        width: 100%;
+        max-width: 1280px;
+        margin: 0 auto;
+    }
+  
+  .product-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .large-image {
+    width: 100%;
+  }
+  
+  .large-product-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  .plp__items {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .plp__item {
+    width: calc(100% - 0px);
+  }
+  
+  .product-layout.reverse .large-image {
+    order: 1; 
+  }
+  
+  .product-layout.reverse .plp__items {
+    order: 2;
+  }
+  
+  .plp-product__add-to-cart.tc {
+    text-align: center;
+  }
+  
+  @media screen and (min-width: 1024px) {
+    .product-layout {
+      flex-direction: row;
+      gap: 2px;
+      align-items: stretch;
+    }
+  
+    .large-product-image {
+      display: none;
+    }
+  
+    .plp__items {
+      width: calc(50% - 1px);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2px;
+    }
+  
+    .plp__item {
+      width: calc(50% - 1px);
+    }
+  
+    .product-layout.reverse .large-image {
+      order: 2;
+    }
+  
+    .product-layout.reverse .plp__items {
+      order: 1;
+    }
+  }
+  
+  .product-link {
+      margin-top: 60px;
+  }
+  
+  .custom-link {
+      position: relative;
+      font-family: GT America,Arial,sans-serif;
+      font-size: 12px;
+      font-weight: 400;
+      letter-spacing: .5px;
+      text-decoration: none;
+      display: inline-block;
+      padding-bottom: 2px;
+  }
+  
+  .custom-link::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 1px; 
+      background-color: #626950;
+      transition: width 0.3s ease; 
+  }
+  
+  .custom-link:hover::after {
+      width: 100%; 
+  }
+  
+  
+  .hero-section {
+      position: relative;
+      width: 100%;
+      max-width: 2000px; /* Adjust as needed */
+      margin: 0 auto;
+      overflow: hidden;
+      height: 700px; /* Default desktop height */
+  }
+  
+  .hero-wrapper {
+      position: relative;
+      background-size: cover;
+      background-position: center;
+      width: 100%;
+      height: 100%; /* Matches section height */
+  }
+  
+  .hero-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+  }
+  
+  .hero-content {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      margin: 0 15px;
+  }
+  
+  .hero-content.f-ais-md.f-jcs-md { /* Top Left */
+      top: 0;
+      left: 0;
+      align-items: flex-start;
+      justify-content: flex-start;
+  }
+  
+  .hero-content.f-jcc-md.f-ais-md { /* Top Center */
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      align-items: center;
+      justify-content: flex-start;
+  }
+  
+  .hero-content.f-jce-md.f-ais-md { /* Top Right */
+      top: 0;
+      right: 0;
+      align-items: flex-end;
+      justify-content: flex-start;
+  }
+  
+  .hero-content.f-aic-md.f-jcs-md { /* Middle Left */
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      align-items: flex-start;
+      justify-content: center;
+  }
+  
+  .hero-content.f-jcc-md.f-aic-md { /* Center */
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      align-items: center;
+      justify-content: center;
+  }
+  
+  .hero-content.f-jce-md.f-aic-md { /* Middle Right */
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+      align-items: flex-end;
+      justify-content: center;
+  }
+  
+  .hero-content.f-aie-md.f-jcs-md { /* Bottom Left */
+      bottom: 0;
+      left: 0;
+      align-items: flex-start;
+      justify-content: flex-end;
+  }
+  
+  .hero-content.f-jcc-md.f-aie-md { /* Bottom Center */
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      align-items: center;
+      justify-content: flex-end;
+  }
+  
+  .hero-content.f-jce-md.f-aie-md { /* Bottom Right */
+      bottom: 0;
+      right: 0;
+      align-items: flex-end;
+      justify-content: flex-end;
+  }
+  
+  .hero-title {
+      margin: 0;
+  }
+  
+  .hero-detail {
+      margin: 0;
+  }
+  
+  /* Responsive Heights */
+  @media (max-width: 1024px) {
+      .hero-section {
+          height: 450px; /* Tablet height */
+      }
+  }
+  
+  @media (max-width: 768px) {
+      .hero-section {
+          height: 350px; /* Mobile height */
+      }
+  }
+</style>
+{%- endcapture -%}
+{{ customContent | strip_newlines | remove: "	" }}
+{% schema %}
+{
+  "name":"MdE Holiday Page Block",
+  "class":"index-section mde-custom-section-block",
+  "disabled_on":{
+    "groups":[
+      "header",
+      "footer"
+    ]
+  },
+  "settings":[
+    {
+      "type":"text",
+      "id":"title",
+      "label":"Heading",
+      "default":"Section Block Heading"
+    },
+    {
+      "type":"textarea",
+      "id":"subtitle",
+      "label":"Sub-Heading",
+      "default":"Describe your products, collection, content etc..."
+    },
+    {
+      "type":"checkbox",
+      "id":"change_title_text_color",
+      "label":"Change Heading Text Color?",
+      "info":"Check box to change heading text color.",
+      "default":false
+    },
+    {
+      "type":"color",
+      "id":"title_text_color",
+      "label":"Heading Text Color",
+      "default":"#626950"
+    },
+    {
+      "type":"checkbox",
+      "id":"change_subtitle_text_color",
+      "label":"Change Sub-Heading Text Color?",
+      "info":"Check box to change sub-heading text color.",
+      "default":false
+    },
+    {
+      "type":"color",
+      "id":"subtitle_text_color",
+      "label":"Sub-Heading Text Color",
+      "default":"#626950"
+    },
+    {
+      "type":"checkbox",
+      "id":"change_title_size",
+      "label":"Change Heading Text Size?",
+      "default":false
+    },
+    {
+      "type":"range",
+      "id":"title_ts",
+      "label":"Heading Size",
+      "default":24,
+      "min":14,
+      "max":64,
+      "step":1,
+      "unit":"px"
+    },
+    {
+      "type":"range",
+      "id":"title_ts_mb",
+      "label":"Heading Size - Mobile",
+      "default":18,
+      "min":14,
+      "max":54,
+      "step":1,
+      "unit":"px"
+    },
+    {
+      "type":"checkbox",
+      "id":"change_subtitle_size",
+      "label":"Change Sub-Heading Text Size?",
+      "default":false
+    },
+    {
+      "type":"range",
+      "id":"subtitle_ts",
+      "label":"Sub-Heading Size",
+      "default":16,
+      "min":12,
+      "max":28,
+      "step":1,
+      "unit":"px"
+    },
+    {
+      "type":"range",
+      "id":"subtitle_ts_mb",
+      "label":"Sub-Heading Size - Mobile",
+      "default":14,
+      "min":12,
+      "max":24,
+      "step":1,
+      "unit":"px"
+    },
+    {
+      "type": "select",
+      "id": "section_title_align",
+      "label": "Headings Alignment",
+      "default": "default",
+      "options": [
+        {
+          "value": "default",
+          "label": "Default"
+        },
+        {
+          "value": "tl",
+          "label": "Left"
+        },
+        {
+          "value": "tc",
+          "label": "Center"
+        }
+      ]
+    },
+    {
+      "type":"header",
+      "content":"Grid ==="
+    },
+    {
+      "type":"range",
+      "id":"gspace",
+      "label":"Grid Spacing",
+      "default":30,
+      "min":0,
+      "max":100,
+      "step":1,
+      "unit":"px"
+    },
+    {
+      "type":"range",
+      "id":"gspacem",
+      "label":"Grid Spacing (mobile)",
+      "default":15,
+      "min":0,
+      "max":15,
+      "step":1,
+      "unit":"px"
+    },
+    {
+      "type":"header",
+      "content":"Section"
+    },
+    {
+      "type":"paragraph",
+      "content":"Spacing ===="
+    },
+    {
+      "type":"range",
+      "id":"sst",
+      "min":0,
+      "max":100,
+      "step":5,
+      "label":"Top",
+      "unit":"px",
+      "default":30
+    },
+    {
+      "type":"range",
+      "id":"ssb",
+      "min":0,
+      "max":100,
+      "step":5,
+      "label":"Bottom",
+      "unit":"px",
+      "default":0
+    },
+    {
+      "type":"paragraph",
+      "content":"Spacing (mobile) ===="
+    },
+    {
+      "type":"range",
+      "id":"sstm",
+      "min":0,
+      "max":100,
+      "step":5,
+      "label":"Top",
+      "unit":"px",
+      "default":15
+    },
+    {
+      "type":"range",
+      "id":"ssbm",
+      "min":0,
+      "max":100,
+      "step":5,
+      "label":"Bottom",
+      "unit":"px",
+      "default":0
+    },
+    {
+      "type":"color",
+      "id":"bg",
+      "label":"Background",
+      "info":"select light color"
+    },
+    {
+      "type":"color_background",
+      "id":"bgg",
+      "label":"Gradient Background"
+    },
+    {
+      "type":"checkbox",
+      "id":"sw",
+      "label":"Fullwidth?",
+      "default":false,
+      "info":"Manage fullwidth padding from Theme Settings -> Layout Style"
+    },
+    {
+      "type":"checkbox",
+      "id":"hidem",
+      "label":"Hide on Mobile?",
+      "default":false
+    },
+    {
+      "type":"checkbox",
+      "id":"hided",
+      "label":"Hide on Desktop?",
+      "default":false
+    }
+  ],
+  "blocks":[
+    {
+      "type":"hero",
+      "name":"Hero",
+      "settings":[
+        {
+          "type":"checkbox",
+          "id":"hidem",
+          "label":"Hide in mobile?",
+          "default":false
+        },
+        {
+          "type":"image_picker",
+          "id":"image",
+          "label":"Desktop Image",
+          "info":"Recommended width 2000px and height as per section height if selected custom height."
+        },
+        {
+          "type":"image_picker",
+          "id":"imagem",
+          "label":"Mobile Image",
+          "info":"Recommended width 780px and height as per section height if selected custom height. If mobile image is blank, dekstop image will be show."
+        },
+        {
+          "type":"range",
+          "id":"htd",
+          "label":"Desktop",
+          "default":700,
+          "min":200,
+          "max":1000,
+          "step":10
+        },
+        {
+          "type":"range",
+          "id":"htt",
+          "label":"Tablet",
+          "default":450,
+          "min":200,
+          "max":1000,
+          "step":10
+        },
+        {
+          "type":"range",
+          "id":"htm",
+          "label":"Mobile",
+          "default":350,
+          "min":100,
+          "max":800,
+          "step":10
+        },
+        {
+          "type":"color",
+          "id":"ovr",
+          "label":"Image Overlay",
+          "default":"#3d4246"
+        },
+        {
+          "type":"range",
+          "id":"ovropt",
+          "min":0,
+          "max":1,
+          "step":0.1,
+          "label":"Overlay Opacity",
+          "unit":"%",
+          "default":0
+        },
+        {
+          "type":"header",
+          "content":"Big Heading"
+        },
+        {
+          "type":"textarea",
+          "id":"title",
+          "label":"Text",
+          "default":"Headline",
+          "info":"add <span>BRAND</span> tag for outline text"
+        },
+        {
+          "type":"color",
+          "id":"tcl",
+          "label":"Title",
+          "default":"#000"
+        },
+        {
+          "type":"range",
+          "id":"tfs",
+          "label":"Font Size",
+          "default":60,
+          "min":10,
+          "max":100,
+          "step":1,
+          "unit":"px"
+        },
+        {
+          "type":"range",
+          "id":"tfsm",
+          "label":"Font Size (mobile)",
+          "default":25,
+          "min":10,
+          "max":100,
+          "step":1,
+          "unit":"px"
+        },
+        {
+          "type":"select",
+          "id":"tfw",
+          "label":"Font Weight",
+          "default":"600",
+          "options":[
+            {
+              "value":"300",
+              "label":"Light"
+            },
+            {
+              "value":"400",
+              "label":"Regular"
+            },
+            {
+              "value":"500",
+              "label":"Medium"
+            },
+            {
+              "value":"600",
+              "label":"Semi Bold"
+            },
+            {
+              "value":"700",
+              "label":"Bold"
+            }
+          ]
+        },
+        {
+          "type":"range",
+          "id":"to",
+          "label":"Text Opacity",
+          "default":1,
+          "min":0,
+          "max":1,
+          "step":0.1
+        },
+        {
+          "type":"range",
+          "id":"tlh",
+          "label":"Line Height",
+          "default":1.2,
+          "min":0.7,
+          "max":2.0,
+          "step":0.1,
+          "info":"Space between text lines. Default is set to 1.2"
+        },
+        {
+          "type":"range",
+          "id":"tmb",
+          "label":"Margin Bottom",
+          "default":10,
+          "min":0,
+          "max":50,
+          "step":5,
+          "unit":"px"
+        },
+        {
+          "type":"range",
+          "id":"tmbm",
+          "label":"Margin Bottom (mobile)",
+          "default":5,
+          "min":0,
+          "max":50,
+          "step":5,
+          "unit":"px"
+        },
+        {
+          "type":"header",
+          "content":"Detail"
+        },
+        {
+          "type":"textarea",
+          "id":"hd3",
+          "label":"Text",
+          "default":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod"
+        },
+        {
+          "type":"checkbox",
+          "id":"hideh3",
+          "label":"Hide in mobile?",
+          "default":true
+        },
+        {
+          "type":"color",
+          "id":"cl",
+          "label":"Color",
+          "default":"#000"
+        },
+        {
+          "type":"range",
+          "id":"fs",
+          "label":"Font Size",
+          "default":16,
+          "min":10,
+          "max":100,
+          "step":1,
+          "unit":"px"
+        },
+        {
+          "type":"range",
+          "id":"fsm",
+          "label":"Font Size (mobile)",
+          "default":14,
+          "min":10,
+          "max":100,
+          "step":1,
+          "unit":"px"
+        },
+        {
+          "type":"select",
+          "id":"fw",
+          "label":"Font Weight",
+          "default":"400",
+          "options":[
+            {
+              "value":"300",
+              "label":"Light"
+            },
+            {
+              "value":"400",
+              "label":"Regular"
+            },
+            {
+              "value":"500",
+              "label":"Medium"
+            },
+            {
+              "value":"600",
+              "label":"Semi Bold"
+            },
+            {
+              "value":"700",
+              "label":"Bold"
+            }
+          ]
+        },
+        {
+          "type":"range",
+          "id":"lh",
+          "label":"Line Height",
+          "default":1.2,
+          "min":0.7,
+          "max":2.0,
+          "step":0.1,
+          "info":"Space between text lines. Default is set to 1.2"
+        },
+        {
+          "type":"range",
+          "id":"mb",
+          "label":"Margin Bottom",
+          "default":25,
+          "min":0,
+          "max":50,
+          "step":5,
+          "unit":"px"
+        },
+        {
+          "type":"range",
+          "id":"mbm",
+          "label":"Margin Bottom (mobile)",
+          "default":15,
+          "min":0,
+          "max":50,
+          "step":5,
+          "unit":"px"
+        },
+        {
+          "type":"select",
+          "id":"txtpos",
+          "label":"Text OverlayPosition",
+          "default":"f-aic-md f-jcs-md",
+          "options":[
+            {
+              "label":"Top Left",
+              "value":"f-ais-md f-jcs-md"
+            },
+            {
+              "label":"Top Center",
+              "value":"f-jcc-md f-ais-md"
+            },
+            {
+              "label":"Top Right",
+              "value":"f-jce-md f-ais-md"
+            },
+            {
+              "label":"Left",
+              "value":"f-aic-md f-jcs-md"
+            },
+            {
+              "label":"Center",
+              "value":"f-jcc-md f-aic-md"
+            },
+            {
+              "label":"Right",
+              "value":"f-jce-md f-aic-md"
+            },
+            {
+              "label":"Bottom Left",
+              "value":"f-aie-md f-jcs-md"
+            },
+            {
+              "label":"Bottom Center",
+              "value":"f-jcc-md f-aie-md"
+            },
+            {
+              "label":"Bottom Right",
+              "value":"f-jce-md f-aie-md"
+            }
+          ]
+        },
+        {
+          "type":"select",
+          "id":"width",
+          "label":"Column width",
+          "default":"w_100",
+          "options":[
+            {
+              "value":"w_100",
+              "label":"100%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type":"image",
+      "name":"Image",
+      "settings":[
+        {
+          "type":"checkbox",
+          "id":"hidem",
+          "label":"Hide in mobile?",
+          "default":false
+        },
+        {
+          "type":"image_picker",
+          "id":"image",
+          "label":"Image"
+        },
+        {
+          "type":"checkbox",
+          "id":"adjust_img",
+          "label":"Change Image Width?",
+          "default":false
+        },
+        {
+          "type":"range",
+          "id":"image_width",
+          "label":"Image Width",
+          "default":660,
+          "min":50,
+          "max":960,
+          "step":10,
+          "unit":"px"
+        },
+        {
+          "type":"select",
+          "id":"image_crop",
+          "label":"Image Crop",
+          "default":"default",
+          "info":"This works best and only if images are at least 800px W and/or 1200px H. For example, 800x1200 or 1200x1200",
+          "options":[
+            {
+              "value":"default",
+              "label":"Default"
+            },
+            {
+              "value":"square",
+              "label":"Square"
+            },
+            {
+              "value":"portrait",
+              "label":"Portrait"
+            }
+          ]
+        },
+        {
+          "type":"select",
+          "id":"image_crop_location",
+          "label":"Image Crop Location",
+          "default":"center",
+          "info":"Crops image from top, bottom, or the center",
+          "options":[
+            {
+              "value":"center",
+              "label":"Center"
+            },
+            {
+              "value":"top",
+              "label":"Top"
+            },
+            {
+              "value":"bottom",
+              "label":"Bottom"
+            }
+          ]
+        },
+        {
+          "type":"url",
+          "id":"imgurl",
+          "label":"Image Url"
+        },
+        {
+          "type":"select",
+          "id":"alignment",
+          "label":"Vertical Alignment",
+          "default":"f-ass",
+          "options":[
+            {
+              "value":"f-ass",
+              "label":"Top"
+            },
+            {
+              "value":"f-asc",
+              "label":"Middle"
+            },
+            {
+              "value":"f-ase",
+              "label":"Bottom"
+            }
+          ]
+        },
+        {
+          "type":"range",
+          "id":"brad",
+          "label":"Border Radius",
+          "default":0,
+          "min":0,
+          "max":100,
+          "step":1,
+          "unit":"px"
+        },
+        {
+          "type":"select",
+          "id":"width",
+          "label":"Column width",
+          "default":"wd50",
+          "options":[
+            {
+              "value":"wd20",
+              "label":"20%"
+            },
+            {
+              "value":"wd25",
+              "label":"25%"
+            },
+            {
+              "value":"wd33",
+              "label":"33%"
+            },
+            {
+              "value":"wd50",
+              "label":"50%"
+            },
+            {
+              "value":"wd66",
+              "label":"66%"
+            },
+            {
+              "value":"wd75",
+              "label":"75%"
+            },
+            {
+              "value":"w_100",
+              "label":"100%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type":"text",
+      "name":"Text (with Images)",
+      "settings":[
+        {
+          "type":"checkbox",
+          "id":"hidem",
+          "label":"Hide in mobile?",
+          "default":false
+        },
+        {
+          "type":"checkbox",
+          "id":"dis_img",
+          "label":"Show Image?",
+          "default":true
+        },
+        {
+          "type":"image_picker",
+          "id":"image",
+          "label":"Image"
+        },
+        {
+          "type":"checkbox",
+          "id":"adjust_img",
+          "label":"Change Image Width?",
+          "default":false
+        },
+        {
+          "type":"range",
+          "id":"image_width",
+          "label":"Image Width",
+          "default":660,
+          "min":50,
+          "max":960,
+          "step":10,
+          "unit":"px"
+        },
+        {
+          "type":"select",
+          "id":"img_position",
+          "label":"Image Position",
+          "info":"Places image above or below the text of this block.",
+          "default":"above",
+          "options":[
+            {
+              "value":"above",
+              "label":"Above Text"
+            },
+            {
+              "value":"below",
+              "label":"Below Text"
+            }
+          ]
+        },
+        {
+          "type":"select",
+          "id":"image_crop",
+          "label":"Image Crop",
+          "default":"default",
+          "info":"This works best and only if images are at least 800px W and/or 1200px H. For example, 800x1200 or 1200x1200",
+          "options":[
+            {
+              "value":"default",
+              "label":"Default"
+            },
+            {
+              "value":"square",
+              "label":"Square"
+            },
+            {
+              "value":"portrait",
+              "label":"Portrait"
+            }
+          ]
+        },
+        {
+          "type":"select",
+          "id":"image_crop_location",
+          "label":"Image Crop Location",
+          "default":"center",
+          "info":"Crops image from top, bottom, or the center",
+          "options":[
+            {
+              "value":"center",
+              "label":"Center"
+            },
+            {
+              "value":"top",
+              "label":"Top"
+            },
+            {
+              "value":"bottom",
+              "label":"Bottom"
+            }
+          ]
+        },
+        {
+          "type":"textarea",
+          "id":"title",
+          "label":"Heading",
+          "default":"HEADING TEXT"
+        },
+        {
+          "type":"checkbox",
+          "id":"all_caps_heading",
+          "label":"Heading in All Caps?",
+          "default":false
+        },
+        {
+          "type":"range",
+          "id":"fs",
+          "label":"Font Size",
+          "default":17,
+          "min":10,
+          "max":100,
+          "step":1,
+          "unit":"px"
+        },
+        {
+          "type":"range",
+          "id":"fsm",
+          "label":"Font Size (mobile)",
+          "default":17,
+          "min":10,
+          "max":60,
+          "step":1,
+          "unit":"px"
+        },
+        
+        {
+          "type":"range",
+          "id":"lh",
+          "label":"Line Height",
+          "default":1.2,
+          "min":0.7,
+          "max":2.0,
+          "step":0.1,
+          "info":"Space between text lines. Default is set to 1.3"
+        },
+        {
+          "type":"checkbox",
+          "id":"adjust_text_ls",
+          "label":"Adjust Letter Spacing?",
+          "default":true
+        },
+        {
+          "type":"range",
+          "id":"text_ls",
+          "label":"Heading Letter Spacing",
+          "default":2,
+          "min":0.2,
+          "max":2.5,
+          "step":0.1,
+          "info":"Space between letters. Default is set to 2 for Headings"
+        },
+        {
+          "type":"range",
+          "id":"tbm",
+          "label":"Margin Bottom",
+          "default":14,
+          "min":0,
+          "max":30,
+          "step":1
+        },
+        {
+          "type":"richtext",
+          "id":"text",
+          "label":"Text",
+          "default":"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>"
+        },
+        {
+          "type":"checkbox",
+          "id":"text_override",
+          "label":"Text Styles Override",
+          "default":false,
+          "info":"Overrides theme settings for headings, paragraph, or any other format included in editor. Use multiple text blocks for varying styles if needed."
+        },
+        {
+          "type":"range",
+          "id":"text_fs",
+          "label":"Text Font Size",
+          "default":16,
+          "min":10,
+          "max":100,
+          "step":1,
+          "unit":"px"
+        },
+        {
+          "type":"range",
+          "id":"text_fsm",
+          "label":"Text Font Size (mobile)",
+          "default":12,
+          "min":10,
+          "max":60,
+          "step":1,
+          "unit":"px"
+        },
+        {
+          "type":"range",
+          "id":"text_lh",
+          "label":"Text Line Height",
+          "default":1.6,
+          "min":1.0,
+          "max":2.0,
+          "step":0.1,
+          "info":"Space between text lines."
+        },
+        {
+          "type":"text",
+          "id":"btntxt",
+          "label":"Button Text",
+          "default":"Shop Now"
+        },
+        {
+          "type":"url",
+          "id":"btnurl",
+          "label":"Button Link"
+        },
+        {
+          "type":"select",
+          "id":"btn-style",
+          "label":"Select Button",
+          "default":"btn1",
+          "options":[
+            {
+              "label":"Button 1",
+              "value":"btn1"
+            },
+            {
+              "label":"Button 2",
+              "value":"btn2"
+            },
+            {
+              "label":"Button 3",
+              "value":"btn3"
+            },
+            {
+              "label":"Button 4",
+              "value":"btn4"
+            },
+            {
+              "label":"Button 5",
+              "value":"btn5"
+            },
+            {
+              "label":"Button 6",
+              "value":"btn6"
+            },
+            {
+              "label":"Button 7 Gradient",
+              "value":"btn7"
+            },
+            {
+              "label":"Button 8 Gradient",
+              "value":"btn8"
+            },
+            {
+              "label":"Link",
+              "value":"btnLink"
+            }
+          ]
+        },
+        {
+          "type":"select",
+          "id":"btn-size",
+          "label":"Button Size",
+          "default":"btn-md",
+          "options":[
+            {
+              "label":"Small",
+              "value":"btn-sm"
+            },
+            {
+              "label":"Medium",
+              "value":"btn-md"
+            },
+            {
+              "label":"Large",
+              "value":"btn-lg"
+            }
+          ]
+        },
+        {
+          "type":"checkbox",
+          "id":"adjust_maxwd",
+          "label":"Adjust Text Content Width?",
+          "default":false
+        },
+        {
+          "type":"range",
+          "id":"maxwd",
+          "label":"Content Width for Desktop",
+          "default":50,
+          "min":20,
+          "max":100,
+          "step":5,
+          "unit":"%"
+        },
+        {
+          "type":"checkbox",
+          "id":"bg",
+          "label":"Add Background?",
+          "default":false
+        },
+        {
+          "type":"color",
+          "id":"clbg",
+          "label":"Background",
+          "default":"#f3f2ee"
+        },
+        {
+          "type":"color",
+          "id":"cl",
+          "label":"Text",
+          "default":"#626950"
+        },
+        {
+          "type":"range",
+          "id":"boxrad",
+          "label":"Box Border Radius",
+          "default":0,
+          "min":0,
+          "max":100,
+          "step":1,
+          "unit":"px"
+        },
+        {
+          "type":"range",
+          "id":"brad",
+          "label":"Image Border Radius",
+          "default":0,
+          "min":0,
+          "max":100,
+          "step":1,
+          "unit":"px"
+        },
+        {
+          "type":"checkbox",
+          "id":"add_divider",
+          "label":"Add Divider?",
+          "default":false
+        },
+        {
+          "type":"select",
+          "id":"divider_location",
+          "label":"Divider Location",
+          "default":"below",
+          "options":[
+            {
+              "value":"below",
+              "label":"Below"
+            },
+            {
+              "value":"above",
+              "label":"Above"
+            },
+            {
+              "value":"both",
+              "label":"Both"
+            }
+          ]
+        },
+        {
+          "type":"color",
+          "id":"divider_color",
+          "label":"Divider Color",
+          "default":"#626950"
+        },
+        {
+          "type":"select",
+          "id":"align_text",
+          "label":"Text Alignment",
+          "default":"tc",
+          "options":[
+            {
+              "value":"tl",
+              "label":"Left"
+            },
+            {
+              "value":"tc",
+              "label":"Center"
+            },
+            {
+              "value":"tr",
+              "label":"Right"
+            }
+          ]
+        },
+        {
+          "type":"select",
+          "id":"alignment",
+          "label":"Vertical Alignment",
+          "default":"f-ass",
+          "options":[
+            {
+              "value":"f-ass",
+              "label":"Top"
+            },
+            {
+              "value":"f-asc",
+              "label":"Middle"
+            },
+            {
+              "value":"f-ase",
+              "label":"Bottom"
+            }
+          ]
+        },
+        {
+          "type":"select",
+          "id":"width",
+          "label":"Column width",
+          "default":"wd50",
+          "options":[
+            {
+              "value":"wd20",
+              "label":"20%"
+            },
+            {
+              "value":"wd25",
+              "label":"25%"
+            },
+            {
+              "value":"wd33",
+              "label":"33%"
+            },
+            {
+              "value":"wd50",
+              "label":"50%"
+            },
+            {
+              "value":"wd66",
+              "label":"66%"
+            },
+            {
+              "value":"wd75",
+              "label":"75%"
+            },
+            {
+              "value":"w_100",
+              "label":"100%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type":"product",
+      "name":"Product",
+      "settings":[
+        {
+          "type":"checkbox",
+          "id":"hidem",
+          "label":"Hide in mobile?",
+          "default":false
+        },
+        {
+          "type":"paragraph",
+          "content":"Images ===="
+        },
+        {
+          "type":"image_picker",
+          "id":"image",
+          "label":"Image"
+        },
+        {
+          "type":"url",
+          "id":"imgurl",
+          "label":"Image Url"
+        },
+        {
+          "type":"select",
+          "id":"image_location",
+          "label":"Image Location",
+          "default":"left",
+          "info":"Determines which side the large image appears on desktop. Large image will always appear first on mobile",
+          "options":[
+            {
+              "value":"left",
+              "label":"Left"
+            },
+            {
+              "value":"right",
+              "label":"Right"
+            }
+          ]
+        },
+        {
+          "type":"paragraph",
+          "content":"Products Grid ===="
+        },
+        {
+          "type": "collection",
+          "id": "collection_handle",
+          "label": "Collection",
+          "info": "Select a collection to display products from."
+        },
+        {
+          "type":"checkbox",
+          "id":"hide_volume",
+          "label":"Hide Product Info and Volume?",
+          "default":true,
+          "info":"This hides product info like EDP and size, usually displayed below product title."
+        },
+        {
+          "type":"checkbox",
+          "id":"hide_details",
+          "label":"Hide Product Details Link?",
+          "default":true,
+          "info":"Hides Details link on hover for product"
+        },
+        {
+          "type":"select",
+          "id":"alignment",
+          "label":"Vertical Alignment",
+          "default":"f-ass",
+          "options":[
+            {
+              "value":"f-ass",
+              "label":"Top"
+            },
+            {
+              "value":"f-asc",
+              "label":"Middle"
+            },
+            {
+              "value":"f-ase",
+              "label":"Bottom"
+            }
+          ]
+        },
+        {
+            "type": "select",
+            "id": "link_position",
+            "label": "Link Position",
+            "default": "center",
+            "options": [
+                {
+                    "value": "left",
+                    "label": "Left"
+                },
+                {
+                    "value": "center",
+                    "label": "Center"
+                },
+                {
+                    "value": "right",
+                    "label": "Right"
+                }
+            ]
+        },
+        {
+            "type": "text",
+            "id": "link_text",
+            "label": "Link Text",
+            "default": "View More"
+        },
+        {
+            "type": "url",
+            "id": "link_url",
+            "label": "Link URL"
+        },
+        {
+          "type":"select",
+          "id":"width",
+          "label":"Column width",
+          "default":"w_100",
+          "options":[
+
+            {
+              "value":"w_100",
+              "label":"100%"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type":"collection",
+      "name":"Collection",
+      "settings":[
+        {
+          "type":"checkbox",
+          "id":"hidem",
+          "label":"Hide in mobile?",
+          "default":false
+        },
+        {
+          "type":"collection",
+          "id":"collection",
+          "label":"Collection"
+        },
+        {
+          "type":"select",
+          "id":"collect_count",
+          "label":"Product Count",
+          "default":"4",
+          "options":[
+            {
+              "value":"4",
+              "label":"4"
+            },
+            {
+              "value":"6",
+              "label":"6"
+            },
+            {
+              "value":"8",
+              "label":"8"
+            }
+          ]
+        },
+        {
+          "type":"select",
+          "id":"alignment",
+          "label":"Vertical Alignment",
+          "default":"f-ass",
+          "options":[
+            {
+              "value":"f-ass",
+              "label":"Top"
+            },
+            {
+              "value":"f-asc",
+              "label":"Middle"
+            },
+            {
+              "value":"f-ase",
+              "label":"Bottom"
+            }
+          ]
+        },
+        {
+          "type":"color",
+          "id":"button_background",
+          "label":"Button Background",
+          "default":"#626950"
+        },
+        {
+          "type":"color",
+          "id":"button_text",
+          "label":"Button Text",
+          "default":"#fff"
+        },
+        {
+          "type":"color",
+          "id":"button_border",
+          "label":"Button Border",
+          "default":"#626950"
+        },
+        {
+          "type":"select",
+          "id":"width",
+          "label":"Column width",
+          "default":"wd50",
+          "options":[
+            {
+              "value":"wd20",
+              "label":"20%"
+            },
+            {
+              "value":"wd25",
+              "label":"25%"
+            },
+            {
+              "value":"wd33",
+              "label":"33%"
+            },
+            {
+              "value":"wd50",
+              "label":"50%"
+            },
+            {
+              "value":"wd66",
+              "label":"66%"
+            },
+            {
+              "value":"wd75",
+              "label":"75%"
+            },
+            {
+              "value":"w_100",
+              "label":"100%"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

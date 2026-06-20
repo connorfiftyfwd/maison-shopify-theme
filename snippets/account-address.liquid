@@ -1,0 +1,16 @@
+<li class="address">
+  {% if address == customer.default_address %}
+    <em>Default</em>
+  {% endif %}
+  {{ address.name }}<br />
+  {{ address.street }}<br />
+  {{ address.zip }} {{ address.city }}, {{ address.province }} <br />
+  {{ address.country }}<br />
+  
+  <div class="address__actions">
+    <button class="button-link js-addressEdit" data-form-id="{{ address.id }}" data-scroll="true">edit</button>
+    {%- if customer.addresses.size > 1 -%}
+      <button class="button-link js-addressDelete" data-form-id="{{ address.id }}">delete</button>
+    {%- endif -%}
+  </div>
+</li>

@@ -1,0 +1,28 @@
+<div class="journal-slider__item js-slide">
+  <div class="journal-slider-item">
+    <div class="journal-slider-item__image">
+      <picture>
+        <source media="(max-width: 1023px)"
+                srcset="{{ article.image | image_url: width: 243, height: 360 }} 1x, {{ article.image | image_url: width: 486, height: 720 }} 2x"/>
+        <source media="(min-width: 1024px)"
+                srcset="{{ article.image | image_url: width: 243, height: 360 }} 1x, {{ article.image | image_url: width: 486, height: 720 }} 2x"/>
+
+        <img src="{{ article.image | image_url: width: 243, height: 360 }}" alt="" class="is-loading" loading="lazy" width="1200" height="1440">
+      </picture>
+    </div>
+    <div class="journal-slider-item__content">
+      <div class="journal-slider-item__title">
+         {{ article.title }}
+      </div>
+      <div class="journal-slider-item__excerpt">
+       <p>
+         {{ article.excerpt }}
+       </p>
+        <a href="{{ article.url }}">
+          Read more
+        </a>
+      </div>
+
+    </div>
+  </div>
+</div>

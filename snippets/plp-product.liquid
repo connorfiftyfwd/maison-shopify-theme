@@ -1,0 +1,91 @@
+<div class="plp-product js-scroll js-scroll--fade">
+  <a
+    href="{{ product.url }}"
+    data-no-history="1"
+    data-item_position="{{ rx_position }}"
+    data-item_id="{{ product.id }}"
+    data-item_name="{{ product.title | escape }}"
+    data-item_brand="{{ product.vendor | escape }}"
+    data-item_category="{{ product.type | escape }}"
+    data-item_variant="{{ product.selected_variant }}"
+    data-price="{{ product.price | money_without_currency }}"
+    onclick="rxTrackProductClick(this)"
+  >
+    <div class="plp-product__image">
+      {% unless product.image != blank %}
+        {% comment %} {% render 'image-half', img: product.images[1] %} {% endcomment %}
+        {% assign img = product.images[1] %}
+        {% assign alt = product.images[1].alt %}
+        <picture>
+          <source media="(max-width: 375px)"
+                  srcset="{{ img | image_url: width: 375, height: 451 }} 1x, {{ img | image_url: width: 750, height: 902 }}"/>
+          <source media="(min-width: 376px)"
+                  srcset="{{ img | image_url: width: 700, height: 850 }} 1x, {{ img | image_url: width: 1400, height: 1700 }}"/>
+          <source media="(min-width: 1024px)"
+                  srcset="{{ img | image_url: width: 830, height: 1000 }} 1x, {{ img | image_url: width: 1660, height: 2000 }}"/>
+          <img src="{{ img | image_url: width: 375, height: 451 }}" alt="{{ alt }}" class="is-loading" height="375" width="451" loading="eager">
+        </picture>
+      {% else %}
+        {{ 'image' | placeholder_svg_tag }}
+      {% endunless %}
+      
+    </div>
+    <div class="plp-product__title">
+      {{ product.title }}{% unless block.hide_volume == true %}<br/>
+      {{ product.type }}
+      {% if product.first_available_variant.title != 'Default Title' %}
+        ( {{ product.first_available_variant.title }} )
+      {% endif %}
+      {% endunless %}
+      <div class="price">
+        {{ product.first_available_variant.price | money }}
+      </div>
+    </div>
+    <div class="plp-product__price">
+      {% if product.tags contains "Bundle - Candle" and settings.candle_bundle_price != blank %}
+      {{ settings.candle_bundle_price }}
+      {% elsif product.tags contains "Sample Bundle - Three" and settings.sample_set_three_price != blank %}
+      {{ settings.sample_set_three_price }}
+      {% elsif product.tags contains "Sample Bundle - Five" and settings.sample_set_five_price != blank  %}
+      {{ settings.sample_set_five_price }}
+      {% else %}
+      {{ product.first_available_variant.price | money }}
+      {% endif %}
+    </div>
+    {% unless block.hide_details == true %}
+    <div class="plp-product__links">
+      <span>View Details</span>
+    </div>
+    {% endunless %}
+  </a>
+  <div class="plp-product__links plp-product__add-to-cart{% if block.hide_details == true %} tc{% endif %}">
+    {% if product.tags contains "Bundle - Candle" or product.tags contains "Sample Bundle - Three" or product.tags contains "Sample Bundle - Five" %}
+    <a data-no-history="1" href="{{ product.url }}"><button>
+      Select Items
+    </button></a>
+    {% else %}
+    <button class="js-addToCart" data-id="{{ product.first_available_variant.id }}" data-product-id="{{ product.id }}">Add to cart</button>
+    {% endif %}
+  </div>
+</div>
+
+{% comment %} <style>
+.plp-product__image {
+  position: relative;
+  z-index: 1;
+  object-fit: cover;
+  object-position: center center;
+}
+.plp-product__image img { 
+  width: 100%;
+  object-fit: cover;
+}
+@media (min-width: 1024px){
+  .plp-product__image img{
+    min-height: 75em;
+  }
+  .plp-product {
+    max-height: 68em;
+  }
+}
+</style> {% endcomment %}

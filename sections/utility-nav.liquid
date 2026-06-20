@@ -1,0 +1,31 @@
+{% schema %}
+{
+  "name": "Navigation",
+  "blocks": [
+    {
+      "type": "section",
+      "name": "Navigation",
+      "settings": [
+        {
+          "id": "title",
+          "type": "text",
+          "label": "Title"
+        },
+        {
+          "type": "url",
+          "id": "stockist_link",
+          "label": "Link for stockist page",
+          "info": "ONLY works for Stockist title"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
+
+<ul class="side-nav__navi js-sideNav">
+  {% for block in section.blocks %}
+    {%- assign hash = block.settings.title | downcase | handleize -%}
+    {% render 'utility-nav' hash: hash, title: block.settings.title, stockist_link: block.settings.stockist_link %}
+  {% endfor %}
+</ul>

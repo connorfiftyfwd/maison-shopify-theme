@@ -1,0 +1,75 @@
+{% schema %}
+{
+  "name": "About",
+  "settings": [
+    {
+      "id": "heading",
+      "type": "text",
+      "label": "Heading"
+    },
+    {
+      "id": "image",
+      "type": "image_picker",
+      "label": "Image"
+    },
+    {
+      "id": "title",
+      "type": "textarea",
+      "label": "Title"
+    },
+    {
+      "id": "contentLeft",
+      "type": "richtext",
+      "label": "Content left side"
+    },
+    {
+      "id": "contentRight",
+      "type": "richtext",
+      "label": "Content right side"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable",
+      "label": "Enable",
+      "default": true
+    }
+  ]
+}
+{% endschema %}
+
+{% if section.settings.enable %}
+  <div class="utility__content js-toggleContent js-toggleContentTablet" id="{{ section.settings.heading | downcase | handleize }}">
+    <h3 class="utility-content__header js-sideNavTabMobile" data-hash="{{ section.settings.heading | downcase | handleize }}">
+      {{ section.settings.heading }}
+      <span class="utility__arrow utility__arrow--padding"></span>
+    </h3>
+    <div class="utility-content js-sectionNav js-sideNavPanelMobile">
+      <div class="about-content__wrapper">
+        <div class="about-content__part">
+          <div class="about-content__part-wrap">
+            <div class="about-content__image">
+              <picture>
+                <source media="(max-width: 1023px)"
+                        srcset="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="/>
+                <source media="(min-width: 1024px) and (max-width: 1280px)"
+                        srcset="{{ section.settings.image | image_url: width: 364, height: 694 }} 1x, {{ section.settings.image | image_url: width: 728, height: 1388 }} 2x"/>
+                <source media="(min-width: 1281px)"
+                        srcset="{{ section.settings.image | image_url: width: 456, height: 867 }} 1x, {{ section.settings.image | image_url: width: 912, height: 1734 }} 2x"/>
+                <img src="{{ section.settings.image | image_url: width: 364, height: 694 }}" alt="{{ section.settings.title }}" class="is-loading" loading="lazy" height="1920" width="950">
+              </picture>
+            </div>
+          </div>
+        </div>
+        <div class="about-content__part">
+          <h3 class="utility-content__title utility-content__title--center utility-content__title--no-dots">
+            {{ section.settings.title | newline_to_br }}
+          </h3>
+          <div class="about-content--copy utility-content--columns">
+            <div class="utility-content-column--left">{{ section.settings.contentLeft }}</div>
+            <div class="utility-content-column--right">{{ section.settings.contentRight }}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endif %}

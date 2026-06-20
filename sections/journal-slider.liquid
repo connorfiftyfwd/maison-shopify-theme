@@ -1,0 +1,19 @@
+{% schema %}
+{
+  "name": "Journal Slider",
+  "settings": [
+    {
+      "id": "section_title",
+      "type": "text",
+      "label": "Section title"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Journal Slider",
+      "category": "Content"
+    }
+  ]
+}
+{% endschema %}
+{% render 'journal-slider', title: section.settings.section_title %}

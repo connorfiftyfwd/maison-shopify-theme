@@ -1,0 +1,40 @@
+{% schema %}
+{
+  "name": "Terms",
+  "settings": [
+    {
+      "id": "heading",
+      "type": "text",
+      "label": "Heading for Desktop"
+    },
+    {
+      "id": "headingMobile",
+      "type": "text",
+      "label": "Heading for Mobile",
+      "info": "If different from the desktop"
+    },
+    {
+      "id": "content",
+      "type": "richtext",
+      "label": "Content"
+    },
+    {
+      "type": "checkbox",
+      "id": "isTermsEnable",
+      "label": "Enable",
+      "default": true
+    }
+  ]
+}
+{% endschema %}
+
+{% if section.settings.isTermsEnable %}
+  {%- assign hash = section.settings.heading | downcase | handleize -%}
+  {% render 'utility-content'
+    content: section.settings.content
+    hash: hash
+    heading: section.settings.heading
+    headingMobile: section.settings.headingMobile
+    type: 'legal'
+  %}
+{% endif %}

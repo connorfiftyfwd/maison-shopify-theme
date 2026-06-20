@@ -1,0 +1,102 @@
+{% schema %}
+{
+  "name": "As seen in",
+  "settings": [
+    {
+      "id": "heading",
+      "type": "text",
+      "label": "Heading"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable",
+      "label": "Enable",
+      "default": true
+    }
+  ],
+  "blocks": [
+    {
+      "type": "section",
+      "name": "Posts",
+      "settings": [
+        {
+          "id": "image",
+          "type": "image_picker",
+          "label": "Image"
+        },
+        {
+          "id": "title",
+          "type": "text",
+          "label": "Title"
+        },
+        {
+          "id": "description",
+          "type": "text",
+          "label": "Description"
+        },
+        {
+          "id": "url",
+          "type": "url",
+          "label": "Url"
+        },
+        {
+          "id": "isExternal",
+          "type": "checkbox",
+          "label": "External Link",
+          "default": false
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
+
+{% assign containerImageHeight = 130 %}
+
+{% if section.settings.enable %}
+  <div class="utility__content js-toggleContent js-toggleContentTablet" id="{{ section.settings.heading | downcase | handleize }}">
+    <h3 class="utility-content__header js-sideNavTabMobile" data-hash="{{ section.settings.heading | downcase | handleize }}">
+        {{ section.settings.heading }}
+      <span class="utility__arrow utility__arrow--padding"></span>
+    </h3>
+    <div class="utility-content js-sectionNav js-sideNavPanelMobile">
+      <div class="about-content__wrapper">
+        <h3 class="utility-content__title utility-content__title--no-dots utility-content__title--center">
+          {{ section.settings.heading }}
+        </h3>
+
+        <div class="about-content__seen about-content--extra-space">
+          <ul class="about-seen__items js-slider js-mobileSlider slider" data-slider="about">
+            {% for block in section.blocks %}
+
+              {% assign width = block.settings.image.width | times: 1.0 %}
+              {% assign height = block.settings.image.height | times: 1.0 %}
+              {% assign ratio = width | divided_by: height %}
+
+              {% assign ratioWidth = containerImageHeight | times: ratio | round %}
+              {% assign size = ratioWidth | append: 'x' | append: containerImageHeight %}
+
+              <li>
+                <a href="{{ block.settings.url }}" class="about-seen__item" {% if block.settings.isExternal %}target="_blank" rel="noopener noreferrer"{% endif %}>
+                  <div class="about-seen__image">
+                    <picture>
+                      <source srcset="{{ block.settings.image | img_url: size, crop: 'top' }} 1x,
+                                      {{ block.settings.image | img_url: size, scale: 2, crop: 'top' }} 2x"/>
+                      <img src="{{ block.settings.image | img_url: size, crop: 'top' }}" alt="{{ block.settings.title }}" class="is-loading" loading="lazy" height="auto" width="2400">
+                    </picture>
+                  </div>
+                  <h5 class="about-seen__name">
+                    {{ block.settings.title }}
+                  </h5>
+                  <p class="about-seen__description">
+                    {{ block.settings.description }}
+                  </p>
+                </a>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endif %}

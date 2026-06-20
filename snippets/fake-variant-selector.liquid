@@ -1,0 +1,33 @@
+{%- assign collectionHandle = '' -%}
+{%- for tag in product.tags -%}
+  {%- if tag contains 'product_' -%}
+    {%- assign collectionHandle = tag | replace: 'product_', '' -%}
+    {%- assign collectionHandle = collectionHandle | handleize -%}
+  {%- endif -%}
+{%- endfor -%}
+{%- assign collection = collections[collectionHandle] -%}
+{%- assign title = product.variants[0].title -%}
+{% if collection.products.size > 1 %}
+<div class="add-to-cart__variant js-variantSelector">
+  <div class="select {% if collection.products.size > 1 %} js-select {% endif %}">
+    <button class="select__value">
+      <span class="visually-hidden">Select option</span>
+      {{ title }}
+    </button>
+    <ul class="select__options js-selectOpts">
+      {% for variant in collection.products %}
+        {% unless variant.variants[0].title == title %}
+          <li class="select__option">
+            <a href="/products/{{ variant.handle }}">{{ variant.variants[0].title }}</a>
+          </li>
+        {% endunless %}
+      {% endfor %}
+    </ul>
+    {% if collection.products.size > 1 %}
+      <svg class="icon-select-arrow" viewBox="0 0 8 6">
+        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-select-arrow"></use>
+      </svg>
+    {% endif %}
+  </div>
+</div>
+{% endif %}

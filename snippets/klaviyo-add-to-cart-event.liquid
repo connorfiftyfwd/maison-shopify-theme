@@ -1,0 +1,10 @@
+<script type="text/javascript">
+  var _learnq = _learnq || [];
+  var classname = document.getElementsByClassName("js-addToCart add-to-cart__btn button");
+  var addToCart = function() {
+    _learnq.push(['track', 'Added to Cart', item]);
+  };
+  for (var i = 0; i < classname.length; i++) {
+    classname[i].addEventListener('click', addToCart, false);
+  }
+</script>

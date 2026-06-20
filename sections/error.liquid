@@ -1,0 +1,45 @@
+{% schema %}
+{
+  "name": "404",
+  "settings": [
+    {
+      "id": "image",
+      "type": "image_picker",
+      "label": "Image"
+    },
+    {
+      "id": "heading",
+      "type": "richtext",
+      "label": "Heading"
+    },
+    {
+      "id": "linkCopy",
+      "type": "text",
+      "label": "Link Copy"
+    },
+    {
+      "id": "link",
+      "type": "url",
+      "label": "Link"
+    }
+  ]
+}
+{% endschema %}
+
+<div class="error" data-view="error">
+  <div class="error__wrapper">
+    <div class="error-content__image">
+      <img src="{{ section.settings.image | image_url: width: 81, height: 102, crop: 'top' }}"
+        srcset="{{ section.settings.image | image_url: width: 81, height: 102, crop: 'top' }} 1x,
+                {{ section.settings.image | image_url: width: 162, height: 204, crop: 'top' }} 2x"
+        alt="{{ section.settings.heading | strip_html }}" class="is-loading" loading="lazy" height="450" width="180"
+      >
+    </div>
+    <h1 class="error-content__heading">
+      {{ section.settings.heading }}
+    </h1>
+    <a href="{{ section.settings.link }}" class="button button-link error-content__link">
+      {{ section.settings.linkCopy }}
+    </a>
+  </div>
+</div>

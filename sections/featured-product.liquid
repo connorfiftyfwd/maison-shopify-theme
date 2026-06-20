@@ -1,0 +1,53 @@
+{% schema %}
+{
+  "name": "Featured Product",
+  "settings": [
+    {
+      "type": "product",
+      "id": "product",
+      "label": "Product"
+    },
+    {
+      "type": "image_picker",
+      "id": "featured_product_image",
+      "label": "Featured product image"
+    },
+    {
+      "type": "richtext",
+      "id": "featured_product_copy",
+      "label": "Featured product copy"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Featured Product",
+      "category": "Content"
+    }
+  ]
+}
+{% endschema %}
+{% assign product = all_products[section.settings.product] %}
+<div class="product-hero js-scroll js-scroll--fade">
+  <a href="{{ product.url }}" class="product-hero__image">
+    {% render 'image-half', img: section.settings.featured_product_image, alt: product.title %}
+  </a>
+  <div class="product-hero__content">
+    <div class="product-hero__content-inner">
+      <a href="{{ product.url }}" class="product-hero__title">
+        {{ product.title }}
+      </a>
+      <div class="product-hero__copy">
+        {{ section.settings.featured_product_copy }}
+      </div>
+      <div class="product-hero__details">
+        {{ product.description | replace: '<p>', '' | replace: '</p>', '' }}
+        <div class="product-hero__price">
+          {{ product.price | money_without_trailing_zeros }}
+        </div>
+      </div>
+      <button class="button js-addToCart" data-id="{{ product.first_available_variant.id }}" data-product-id="{{ product.id }}">
+        Add to cart
+      </button>
+    </div>
+  </div>
+</div>

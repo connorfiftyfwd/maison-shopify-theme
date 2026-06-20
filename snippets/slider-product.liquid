@@ -1,0 +1,43 @@
+<div class="slider-product">
+  <a data-no-history="1" href="{{ product.url }}">
+    <div class="slider-product__image">
+      <div class="img-wrapper">
+        {{ product.featured_image | image_url: width: 486 | image_tag: alt: product.featured_image.alt, class: 'is-loading' }}
+        {% comment %} <img src="{{ product.featured_image | image_url: width: 243, height: 297 }}"
+             srcset="{{ product.featured_image | image_url: width: 243, height: 297 }} 1x, {{ product.featured_image | image_url: width: 486, height: 594 }} 2x"
+             alt="" class="is-loading" loading="lazy" width="900" height="1440"> {% endcomment %}
+      </div>
+    </div>
+    <div class="slider-product__info">
+      <div class="slider-product__title">
+        {{ product.title }}
+      </div>
+      <div class="slider-product__description">
+        {{ product.type }}
+      </div>
+      <div class="slider-product__price">
+        {% if product.tags contains "Bundle - Candle" and settings.candle_bundle_price != blank %}
+        {{ settings.candle_bundle_price }}
+        {% elsif product.tags contains "Sample Bundle - Three" and settings.sample_set_three_price != blank %}
+        {{ settings.sample_set_three_price }}
+        {% elsif product.tags contains "Sample Bundle - Five" and settings.sample_set_five_price != blank  %}
+        {{ settings.sample_set_five_price }}
+        {% else %}
+        {{ product.price | money }}
+        {% endif %}
+        
+      </div>
+    </div>
+  </a>
+  {% if product.tags contains "Bundle - Candle" or product.tags contains "Sample Bundle - Three" or product.tags contains "Sample Bundle - Five" %}
+  <a data-no-history="1" class="button" href="{{ product.url }}">
+    Select Items
+  </a>
+  {% else %}
+  <button class="button js-addToCart" data-id="{{ product.first_available_variant.id }}"
+          data-product-id="{{ product.id }}">
+    Add to cart
+  </button>
+  {% endif %}
+</div>
+

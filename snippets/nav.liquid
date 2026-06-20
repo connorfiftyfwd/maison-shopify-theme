@@ -1,0 +1,149 @@
+<div class="announcement-bar" id="announcementBar">
+  <a href="{{ settings.announcement_link | default: '/collections/all' }}" class="announcement-bar__link">
+    <span class="announcement-bar__text">
+      {{ settings.announcement_text }}
+      <span class="announcement-bar__highlight">{{ settings.announcement_highlight }}</span>
+    </span>
+  </a>
+</div>
+
+<nav class="main-nav">
+  <div class="main-nav__topbar">
+    <div class="main-nav__menu js-nav-list">
+      <button class="main-nav__toggle js-nav-toggle">
+        <div class="icon-toggle">
+          <span class="visually-hidden">Toggle navigation</span>
+          <i></i><i></i><i></i>
+        </div>
+      </button>
+      <ul class="main-nav__list">
+        {% for link in linklists['main-menu'].links %}
+          {% if link.links != blank %}
+            <li class="main-nav__item has-dropdown js-shop-dropdown">
+              <a href="#" class="js-shop-dropdown-toggle">
+                {{ link.title }}
+                <svg class="icon-arrow-small" viewBox="0 0 13 17">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-arrow-small"></use>
+                </svg>
+              </a>
+              <ul class="shop-dropdown">
+                {% for child_link in link.links %}
+                  <li class="shop-dropdown__item">
+                    <a href="{{ child_link.url }}">
+                      {% assign thumbnailImage = settings.default_collection_thumbnail %}
+                      {% if child_link.object.image.src %}
+                        {% assign thumbnailImage = child_link.object.image.src %}
+                      {% endif %}
+                      {% render 'thumbnail', img: thumbnailImage, hideForMobile: true, fromMetafields: false %}
+                      <span>{{ child_link.title }}</span>
+                    </a>
+                  </li>
+                {% endfor %}
+              </ul>
+            </li>
+          {% else %}
+            <li class="main-nav__item {% if forloop.last %} main-nav__item--last {% endif %}">
+              <a href="{{ link.url }}">{{ link.title }}</a>
+            </li>
+          {% endif %}
+        {% endfor %}
+        <li class="main-nav__item main-nav__item--login">
+          {% if customer %}
+            <a href="/account">Account</a>
+          {% else %}
+            <a href="/account/login">Login</a>
+          {% endif %}
+        </li>
+      </ul>
+    </div>
+    <a class="main-nav__logo" href="/">
+      <span class="visually-hidden">Maison d'Etto</span>
+      {% render 'logo' %}
+    </a>
+    <div class="main-nav__right">
+      {% comment %}
+        <button class="main-nav__search main-nav__icon main-nav__item">
+          <span class="visually-hidden">Search</span>
+          <svg class="icon-search" viewBox="0 0 16 16">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-search"></use>
+          </svg>
+        </button>
+      {% endcomment %}
+      {% if customer %}
+        <div class="main-nav__login main-nav__item">
+          <a href="/account">Account</a>
+        </div>
+      {% else %}
+        <div class="main-nav__login main-nav__item">
+          <a href="/account/login">Login</a>
+        </div>
+      {% endif %}
+      <a href="/cart" data-no-history="1" class="main-nav__cart  main-nav__icon js-cartToggle">
+        <span class="visually-hidden">Cart</span>
+        <svg class="icon-cart" viewBox="0 0 16 16">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-cart"></use>
+        </svg>
+        <span class="cart-count">(<span class="cart-count__amount js-cartCount">0</span>)</span>
+      </a>
+    </div>
+  </div>
+</nav>
+
+<style>
+  
+/* Base styles */
+.announcement-bar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background: transparent;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Full clickable area */
+.announcement-bar__link {
+  display: block;
+  text-decoration: none;
+}
+
+/* Text */
+.announcement-bar__text {
+  display: block;
+  text-align: center;
+  font-size: 12px;
+  letter-spacing: 1px;
+  font-weight: bolder;
+}
+
+/* Highlight part */
+.announcement-bar__highlight {
+  margin-left: 6px;
+}
+
+/* Mobile - highlight on next line */
+@media (max-width: 767px) {
+  .announcement-bar__highlight {
+    display: block;
+    margin-left: 0;
+    margin-top: 2px;
+  }
+}
+
+/* Desktop */
+@media (min-width: 768px) {
+  .announcement-bar__text {
+    font-size: 12px;
+  }
+}
+
+/* Scrolled state */
+.announcement-bar.scrolled {
+  background: #1c1a17;
+  padding: 12px 0px;
+}
+
+.announcement-bar.scrolled .announcement-bar__text {
+  color: #f0ece4;
+}
+</style>

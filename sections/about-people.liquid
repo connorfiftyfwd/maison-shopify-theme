@@ -1,0 +1,140 @@
+{% schema %}
+{
+  "name": "People",
+  "settings": [
+    {
+      "id": "heading",
+      "type": "text",
+      "label": "Heading"
+    },
+    {
+      "id": "content",
+      "type": "textarea",
+      "label": "Content"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable",
+      "label": "Enable",
+      "default": true
+    }
+  ],
+  "blocks": [
+    {
+      "type": "section",
+      "name": "Person",
+      "settings": [
+        {
+          "type": "text",
+          "id": "name",
+          "label": "Name"
+        },
+        {
+          "type": "text",
+          "id": "position",
+          "label": "Position"
+        },
+        {
+          "id": "image",
+          "type": "image_picker",
+          "label": "Image"
+        },
+        {
+          "id": "description",
+          "type": "textarea",
+          "label": "Description"
+        },
+        {
+          "id": "extraInformation",
+          "type": "text",
+          "label": "Products by - label"
+        },
+        {
+          "id": "coworking",
+          "type": "richtext",
+          "label": "Product by the person"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
+
+{% if section.settings.enable %}
+  <div class="utility__content js-setToggleContentTablet" id="{{ section.settings.heading | downcase | handleize }}">
+    <h3 class="utility-content__header js-sideNavTabMobile" data-hash="{{ section.settings.heading | downcase | handleize }}">
+      {{ section.settings.heading }}
+      <span class="utility__arrow utility__arrow--padding"></span>
+    </h3>
+    <div class="utility-content js-sectionNav js-sideNavPanelMobile">
+      <div class="about-content__wrapper">
+        <div class="about-content__people-header">
+
+          <div class="about-content__part">
+            <div class="about-content__part-wrap about-content__part--extra-space">
+              <h3 class="utility-content__title utility-content__title--no-dots">
+                {{ section.settings.heading }}
+              </h3>
+            </div>
+          </div>
+          <div class="about-content__part">
+            <p class="about-content--copy about-people--copy utility-content--no-padding-desktop">
+              {{ section.settings.content }}
+            </p>
+          </div>
+        </div>
+
+        <div class="about-content__people about-content--extra-space">
+          <div class="utility-content--tabs utility-content--no-space" role="tablist">
+            {% for block in section.blocks %}
+              <div class="utility-tab js-toggleContent {% if forloop.first == true %}js-toggleContent--showing{% else %}js-toggleContent--hiding{% endif %}">
+                <div class="about-tab__heading utility-tab__heading {% if forloop.first == true %}js-toggleContent--showing{% else %}js-toggleContent--hiding{% endif %}" role="tab" aria-expanded="{% if forloop.first == true %}true{% else %}false{% endif %}">
+                <h5 class="about-tab__name">
+                  {{ block.settings.name }}
+                </h5>
+                <p class="about-tab__position">
+                  {{ block.settings.position }}
+                </p>
+                    <span class="utility__arrow"></span>
+                </div>
+                <div class="{% if forloop.first == true %}js-toggleContent--showing{% else %}js-toggleContent--hiding{% endif %}" role="tabpanel" aria-hidden="{% if forloop.first == true %}false{% else %}true{% endif %}">
+                  <div class="about-tab">
+                    <div class="about-tab__wrapper">
+                      <div class="about-tab__image-wrap">
+                        <div class="about-tab__image">
+                          <picture>
+                            <source srcset="{{ block.settings.image | image_url: width: 150, height: 225 }} 1x,
+                                            {{ block.settings.image | image_url: width: 300, height: 450 }} 2x"/>
+                            <img src="{{ block.settings.image | image_url: width: 150, height: 225 }}" alt="{{ block.settings.name }}" class="is-loading" loading="lazy" height="500" width="400">
+                          </picture>
+                        </div>
+                      </div>
+
+                      <div class="about-tab__information">
+                        <div class="about-tab__copy">
+                          {{ block.settings.description }}
+                        </div>
+
+                        {% if block.settings.extraInformation %}
+                          <div class="about-tab__description">
+                            <p>
+                              {{ block.settings.extraInformation }}
+                            </p>
+                            <div class="about-tab__names">
+                              {{ block.settings.coworking }}
+                            </div>
+                          </div>
+                        {% endif %}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+{% endif %}

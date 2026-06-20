@@ -1,0 +1,7 @@
+{% if title != 'Stockists' %}
+<li><a href="#{{ hash }}">{{ title }}</a></li>
+{%  endif %}
+
+{% if title == 'Stockists' %}
+  <li><a href="{{ stockist_link }}">{{ title }}</a></li>
+{% endif %}

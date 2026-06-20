@@ -1,0 +1,76 @@
+{% schema %}
+{
+  "name": "Contact",
+  "settings": [
+    {
+      "id": "heading",
+      "type": "text",
+      "label": "Header for Desktop"
+    },
+    {
+      "id": "headingMobile",
+      "type": "text",
+      "label": "Heading for Mobile",
+      "info": "If different from the desktop"
+    },
+    {
+      "type": "checkbox",
+      "id": "isContactEnable",
+      "label": "Enable",
+      "default": true
+    }
+  ],
+  "blocks": [
+    {
+      "type": "section",
+      "name": "Contact Infromation",
+      "settings": [
+        {
+          "id": "contactName",
+          "type": "text",
+          "label": "Name"
+        },
+        {
+          "id": "contactDetails",
+          "type": "text",
+          "label": "Contact Details",
+          "info": "Can be email or phone number"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
+
+{% if section.settings.isContactEnable %}
+  <div class="utility__content js-toggleContent js-toggleContentTablet" id="{{ section.settings.heading | downcase | handleize }}">
+    <h3 class="utility-content__header js-sideNavTabMobile" data-hash="{{ section.settings.heading | downcase | handleize }}">
+      {% if section.settings.headingMobile != blank %}
+        {{ section.settings.headingMobile }}
+      {% else %}
+        {{ section.settings.heading }}
+      {% endif %}
+      <span class="utility__arrow utility__arrow--padding"></span>
+    </h3>
+    <div class="utility-content js-sectionNav js-sideNavPanelMobile">
+      <div class="utility-content__wrapper">
+        <h3 class="utility-content__title">
+          {{ section.settings.heading }}
+        </h3>
+
+        <div class="utility-content--conatct">
+          {% for block in section.blocks %}
+            <div class="utility-contact">
+              <div class="utility-contact__name">{{ block.settings.contactName }}</div>
+              {% if block.settings.contactDetails contains "@" %}
+                <a href="mailto:{{ block.settings.contactDetails }}" class="utility-contact__communication">{{ block.settings.contactDetails }}</a>
+              {% else %}
+                <a href="tel:{{ block.settings.contactDetails }}" class="utility-contact__communication">{{ block.settings.contactDetails }}</a>
+              {% endif %}
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+{% endif %}

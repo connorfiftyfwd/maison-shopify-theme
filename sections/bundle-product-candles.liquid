@@ -1,0 +1,132 @@
+<div class="bundle-selection">
+  <h2>{{ section.settings.select_heading }}</h2>
+  <div class="bundle-select-wrap candle-bundle-select-wrap">
+  {% if section.settings.candle_collection %}
+    {% assign candle_collection = section.settings.candle_collection %}
+    {% assign candle = collections[candle_collection] %}
+    {% if candle.products.size > 0 %}
+      <!-- Dropdown 1 -->
+      <div class="select-option-wrap">
+        <label for="candle1" class="visually-hidden">Candle 1:</label>
+        <select id="candle1" name="bundle_candle_1" aria-label="Candle 1">
+          <option value="">Select Candle 1</option>
+          {% for product in candle.products %}
+            {% for variant in product.variants %}
+              <option value="{{ variant.id }}">{{ product.title }} - {{ variant.title }}</option>
+            {% endfor %}
+          {% endfor %}
+        </select>
+      </div>
+      <!-- Dropdown 2 -->
+      <div class="select-option-wrap">
+        <label for="candle2" class="visually-hidden">Candle 2:</label>
+        <select id="candle2" name="bundle_candle_2" aria-label="Candle 2">
+          <option value="">Select Candle 2</option>
+          {% for product in candle.products %}
+            {% for variant in product.variants %}
+              <option value="{{ variant.id }}">{{ product.title }} - {{ variant.title }}</option>
+            {% endfor %}
+          {% endfor %}
+        </select>
+      </div>
+      <!-- Dropdown 3 -->
+      <div class="select-option-wrap">
+        <label for="candle3" class="visually-hidden">Candle 3:</label>
+        <select id="candle3" name="bundle_candle_3" aria-label="Candle 3">
+          <option value="">Select Candle 3</option>
+          {% for product in candle.products %}
+            {% for variant in product.variants %}
+              <option value="{{ variant.id }}">{{ product.title }} - {{ variant.title }}</option>
+            {% endfor %}
+          {% endfor %}
+        </select>
+      </div>
+      {% comment %} {% if section.settings.enable_add_on_product %}
+        {% assign addOnProduct = section.settings.add_on_product | product %}
+        {% if addOnProduct %}
+          <div class="add-on-product">
+            <input 
+              type="checkbox" 
+              id="addOnCheckbox" 
+              value="{{ addOnProduct.variants.first.id }}">
+            <label for="addOnCheckbox">{{ section.settings.add_on_product_label }}</label>
+            <p>{{ section.settings.add_on_product_text }}</p>
+          </div>
+        {% endif %}
+      {% endif %} {% endcomment %}
+      <!-- Add-On Product Block -->
+      {% if section.settings.enable_add_on_product %}
+        {% assign addOnProduct = section.settings.add_on_product | product %}
+        {% if addOnProduct %}
+          <div class="add-on-product">
+            <p>{{ section.settings.add_on_product_label }}</p>
+            <p>{{ section.settings.add_on_product_text }}</p>
+            <!-- Add hidden input for the add-on product -->
+            <input type="hidden" id="hidden-add-on-product" value="{{ addOnProduct.variants.first.id }}">
+          </div>
+        {% endif %}
+      {% endif %}
+    {% else %}
+      <p>No products found in the selected collection.</p>
+    {% endif %}
+  {% else %}
+    <p>Please select a collection in the section settings.</p>
+  {% endif %}
+  </div>
+</div>
+{% schema %}
+{
+  "name": "Bundle Settings",
+  "settings": [
+    {
+      "type": "collection",
+      "id": "candle_collection",
+      "label": "Select Collection",
+      "info": "Select the collection to populate the drop down options."
+    },
+    {
+      "type": "checkbox",
+      "id": "add_bundle_price",
+      "label": "Set Bundle Price",
+      "default": true,
+      "info":"This overrides the default product price which is set from the product admin page."
+    },
+    {
+      "type": "text",
+      "id": "bundle_price",
+      "label": "Bundle Price",
+      "default": "*** Please add price ***"
+    },
+    {
+      "type": "text",
+      "id": "select_heading",
+      "label": "Select Heading",
+      "default": "Please Make Your Selection"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_add_on_product",
+      "label": "Enable Add-On Product",
+      "default": false
+    },
+    {
+      "type": "product",
+      "id": "add_on_product",
+      "label": "Add-On Product",
+      "info": "Select the product for the optional add-on."
+    },
+    {
+      "type": "text",
+      "id": "add_on_product_label",
+      "label": "Add-On Product Label",
+      "default": "Would you like to add this product?"
+    },
+    {
+      "type": "textarea",
+      "id": "add_on_product_text",
+      "label": "Add-On Product Description",
+      "info": "Options text to describe add on product"
+    }
+  ]
+}
+{% endschema %}

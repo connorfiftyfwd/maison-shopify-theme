@@ -1,0 +1,38 @@
+{%- render 'rx-merchandise' -%}
+{%- render 'rx-track-collection-view' -%}
+
+<div class="plp" data-view="plp">
+  {% if linklists.collections.links.size > 1 %}
+    <div class="plp__nav js-plpNav">
+      <a class="plp__nav-item" href="#">View All</a>
+      {% for link in linklists.collections.links %}
+        <a class="plp__nav-item" href="{{ link.url }}">{{ link.title }}</a>
+      {% endfor %}
+      <button class="plp__nav-toggle js-plpNavToggle">
+        <span class="visually-hidden">Toggle collections</span>
+        <svg class="icon-arrow-small" viewBox="0 0 13 17">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-arrow-small"></use>
+        </svg>
+      </button>
+    </div>
+  {% else %}
+    <div class="plp__spacer"></div>
+  {% endif %}
+  {% if collection.products.size > 0 %}
+    <div class="plp__items">
+      {%- for product in collection.products -%}
+      {% unless product.template_suffix == 'catalog-product' %}
+        {%- assign rx_position = forloop.index -%}
+        <div class="plp__item">
+          {% render 'plp-product', product: product, rx_position: rx_position %}
+        </div>
+      {% endunless %}  
+      {% endfor %}
+    </div>
+  {% else %}
+    <div class="plp__none">
+      No products found.
+    </div>
+  {% endif %}
+
+</div>

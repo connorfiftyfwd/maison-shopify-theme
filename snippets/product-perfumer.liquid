@@ -1,0 +1,43 @@
+<div class="perfumer" id="perfumer">
+  <div class="perfumer__content js-scroll js-scroll--fade">
+    <div class="perfumer__title">
+      Perfumer: <br/> {{ perfumer.title }}
+    </div>
+    <div class="perfumer__thumbnails">
+      {% for i in (1..2) %}
+        {% assign key = "perfumer-thumbnail-" | append: i %}
+        {% assign thumbImg = perfumer.metafields["global"][key] %}
+        {% unless thumbImg == blank %}
+          <div class="perfumer__thumbnail">
+            {% render 'thumbnail',
+              img: thumbImg,
+              hideForMobile: false,
+              fromMetafields: true %}
+            <span>0{{ i }}</span>
+          </div>
+        {% endunless %}
+      {% endfor %}
+    </div>
+    <div class="perfumer__text">
+      {{ perfumer.content }}
+      {% unless perfumer.metafields["global"]["perfumer-creations"] == blank %}
+        <div class="perfumer__creations">
+          <span>Also created by {{ perfumer.title }}</span>
+          <ul>
+            {% assign creations = perfumer.metafields["global"]["perfumer-creations"] | split: ',' %}
+            {%- for handle in creations -%}
+              {%- assign perfume = all_products[handle] -%}
+              {%- if perfume != blank -%}
+                {%- unless product.handle contains perfume.handle -%}
+                  <li>
+                    <a href="{{ perfume.url }}">{{ perfume.title }}</a>
+                  </li>
+                {%- endunless -%}
+              {%- endif -%}
+            {%- endfor -%}
+          </ul>
+        </div>
+      {% endunless %}
+    </div>
+  </div>
+</div>

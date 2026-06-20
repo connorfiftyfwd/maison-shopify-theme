@@ -1,0 +1,70 @@
+{% schema %}
+{
+  "name": "Hero",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image_1",
+      "label": "Image 1"
+    },
+    {
+      "id": "copy_1",
+      "type": "text",
+      "label": "Copy 1"
+    },
+    {
+      "id": "url_1",
+      "type": "url",
+      "label": "Url 1"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_2",
+      "label": "Image 2"
+    },
+    {
+      "id": "copy_2",
+      "type": "text",
+      "label": "Copy 2"
+    },
+    {
+      "id": "url_2",
+      "type": "url",
+      "label": "Url 2"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Hero",
+      "category": "Content"
+    }
+  ]
+}
+{% endschema %}
+
+<div class="hero js-mobileSlider slider js-scroll js-scroll--fade" data-slider="hero">
+  <div class="hero__panel slide js-slide">
+    {% if section.settings.url_2 %}<a href="{{ section.settings.url_2 }}">{% endif %}
+    <div class="hero__content">
+      <div class="hero__image first_image">
+        {{ section.settings.image_2 | image_url: width: 650 | image_tag: alt: section.settings.image_2.alt }}
+      </div>
+      <div class="hero__copy">
+        <span>{{ section.settings.copy_2 }}</span>
+      </div>
+    </div>
+    {% if section.settings.url_2 %}</a>{% endif %}
+  </div>
+  <div class="hero__panel slide js-slide">
+    {% if section.settings.url_1 %}<a href="{{ section.settings.url_1 }}">{% endif %}
+    <div class="hero__content">
+      <div class="hero__image">
+        {{ section.settings.image_1 | image_url: width: 650 | image_tag: alt: section.settings.image_1.alt }}
+      </div>
+      <div class="hero__copy">
+        <span>{{ section.settings.copy_1 }}</span>
+      </div>
+    </div>
+    {% if section.settings.url_1 %}</a>{% endif %}
+  </div>
+</div>

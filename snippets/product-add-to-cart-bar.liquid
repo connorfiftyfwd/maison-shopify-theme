@@ -1,0 +1,11 @@
+<div class="add-to-cart-bar">
+  <div class="add-to-cart-bar__content">
+    <div class="add-to-cart-bar__title">
+      {{ product.title }}, {{ product.type }}
+    </div>
+    <div class="add-to-cart-bar__price">
+      <span class="js-price">{{ product.selected_or_first_available_variant.price | money }}</span>
+    </div>
+    {% render 'product-add-to-cart', product: product %}
+  </div>
+</div>

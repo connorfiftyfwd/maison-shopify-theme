@@ -1,0 +1,45 @@
+{% schema %}
+{
+  "name": "Shipping & returns",
+  "settings": [
+    {
+      "type": "richtext",
+      "id": "copy",
+      "label": "Copy"
+    },
+    {
+      "type": "richtext",
+      "id": "text",
+      "label": "Text"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Shipping & returns",
+      "category": "Content"
+    }
+  ]
+}
+{% endschema %}
+<div class="shipping-drawer js-shippingDrawer">
+  <div class="js-toggleShipping shipping-drawer__overlay">
+  </div>
+  <div class="shipping-drawer__pane">
+    <button class="shipping-drawer__close js-toggleShipping">
+        <span class="visually-hidden">
+          Close shipping
+        </span>
+      <svg viewBox="0 0 22 22" class="icon-close">
+        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-close"></use>
+      </svg>
+    </button>
+    <div class="shipping-drawer__content">
+      <div class="shipping-drawer__copy">
+       {{ section.settings.copy }}
+      </div>
+      <div class="shipping-drawer__info">
+        {{ section.settings.text }}
+      </div>
+    </div>
+  </div>
+</div>

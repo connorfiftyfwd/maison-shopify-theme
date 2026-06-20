@@ -1,0 +1,40 @@
+<div class="story-drawer js-storyDrawer">
+  <div class="js-toggleStory story-drawer__overlay">
+  </div>
+  <div class="story-drawer__pane">
+    <button class="story-drawer__close js-toggleStory">
+    <span class="visually-hidden">
+      Close story
+    </span>
+      <svg viewBox="0 0 22 22" class="icon-close">
+        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-close"></use>
+      </svg>
+    </button>
+    <div class="story-drawer__content">
+      <div class="story-drawer__title">
+        {{ product.metafields["global"]["story-title"] }}
+      </div>
+      <div class="story-drawer__thumbnail">
+        {% render 'thumbnail',
+          img: product.metafields["global"]["story-thumbnail"],
+          hideForMobile: false,
+          fromMetafields: true %}
+      </div>
+      <div class="story-drawer__lead">
+        {{ product.metafields["global"]["story-lead"] }}
+      </div>
+      <div class="story-drawer__text">
+        {{ product.metafields["global"]["story-text"] }}
+      </div>
+      {% assign handle = product.metafields["global"]["collection-handle"] %}
+      {% if handle != blank %}
+          {% assign collection = collections[handle] %}
+          {% if collection != blank and collection.url != blank %}
+            <a class="story-drawer__link" href="{{ collection.url }}">
+              Read more about {{ collection.title }}
+            </a>
+          {% endif %}
+      {% endif %}
+    </div>
+  </div>
+</div>

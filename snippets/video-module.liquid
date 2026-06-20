@@ -1,0 +1,41 @@
+<div class="video-module{% if video != blank %} js-videoModule is-not-playing{% endif %}">
+  <div class="video-module__image js-scroll js-scroll--fade">
+    {%- if video != blank -%}
+
+      {%- comment -%}
+      Removed the play icon overlay so autoplay video doesn’t show any controls or clickable UI
+       <div class="video__icon">
+        <span class="visually-hidden">Play</span>
+        <svg viewBox="0 0 20 20">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-play"></use>
+        </svg>
+      </div>
+      {%- endcomment -%}
+    
+      {% render 'video-cover',
+        image: image,
+        imageMobile: imageMobile,
+        fromMetafields: fromMetafields
+      %}
+      <video 
+  class="homepage-video js-autoplay-video"
+  loop 
+  muted 
+  autoplay 
+  playsinline 
+  preload="auto"
+
+>
+  <source src="{{ video }}" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+    {%- else -%}
+      {% render 'video-cover',
+        image: image,
+        imageMobile: imageMobile,
+        fromMetafields: fromMetafields
+      %}
+    {%- endif -%}
+  </div>
+</div>

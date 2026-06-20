@@ -1,0 +1,41 @@
+<div class="login js-login" data-view="login">
+  <div class="login__content">
+    <h1 class="form__title">
+      Activate Account
+    </h1>
+    <div class="login__form login__form--register js-formValidation">
+      {% form 'activate_customer_password' %}
+        <div class="form form--darker">
+          <div class="login__errors">
+            {{ form.errors | default_errors }}
+          </div>
+          <div class="form__cell">
+            <label for="ResetPassword" class="visually-hidden">Password</label>
+            <input type="password"
+                   name="customer[password]"
+                   id="ResetPassword"
+                   class=""
+                   placeholder="Password"
+                   required>
+          </div>
+          <div class="form__cell">
+            <label for="PasswordConfirmation" class="visually-hidden">Password Confirmation</label>
+            <input type="password"
+                   name="customer[password_confirmation]"
+                   id="PasswordConfirmation"
+                   class=""
+                   placeholder="Password Confirmation"
+                   data-validate-match="ResetPassword"
+                   required>
+          </div>
+          <hr class="form__space"/>
+          <div class="form__cell">
+            <button type="submit" name="commit" class="button button--wide">
+              Activate
+            </button>
+          </div>
+        </div>
+      {% endform %}
+    </div>
+  </div>
+</div>

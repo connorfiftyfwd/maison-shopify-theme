@@ -1,0 +1,84 @@
+{% schema %}
+{
+  "name": "A modern fragrance house",
+  "settings": [
+    {
+      "type": "richtext",
+      "id": "copy",
+      "label": "Copy"
+    },
+    {
+      "type": "text",
+      "id": "link",
+      "label": "Link"
+    },
+    {
+      "type": "image_picker",
+      "id": "main_thumbnail",
+      "label": "Main thumbnail"
+    },
+    {
+      "type": "richtext",
+      "id": "main_thumbnail_caption",
+      "label": "Main thumbnail caption"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "section",
+      "name": "Thumbnail",
+      "settings": [
+        {
+          "id": "thumbnail",
+          "type": "image_picker",
+          "label": "Thumbnail"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "About",
+      "category": "Content"
+    }
+  ]
+}
+{% endschema %}
+<div class="fragrance-house">
+  <div class="fragrance-house__wrapper wrapper js-scroll js-scroll--fade">
+    <div class="fragrance-house__title">
+      A modern <br/>fragrance house:
+    </div>
+    <div class="fragrance-house__thumbnails">
+      {% for block in section.blocks %}
+        <div class="fragrance-house__thumbnail">
+          {% render 'thumbnail', img: block.settings.thumbnail, hideForMobile: false %}
+          <span>0{{ forloop.index }}</span>
+        </div>
+      {% endfor %}
+    </div>
+    <div class="fragrance-house__image">
+      <div class="fragrance-house__illustration">
+        {% assign img = section.settings.main_thumbnail %}
+        <picture>
+          <source media="(max-width: 1023px)"
+                  srcset="{%- render 'blank-pixel' -%}"/>
+          <source media="(min-width: 1024px)"
+                  srcset="{{ img | image_url: width: 243, height: 361 }} 1x, {{ img | image_url: width: 486, height: 722 }} 2x"/>
+
+          <img src="{%- render 'blank-pixel' -%}" alt="" class="is-loading" loading="lazy" width="950" height="1440">
+        </picture>
+      </div>
+      <div class="fragrance-house__caption">
+        {{ section.settings.main_thumbnail_caption }}
+      </div>
+    </div>
+    <div class="fragrance-house__copy">
+      {{ section.settings.copy }}
+
+      {% if section.settings.link %}
+        <a href="{{ section.settings.link }}">Read more</a>
+      {% endif %}
+    </div>
+  </div>
+</div>

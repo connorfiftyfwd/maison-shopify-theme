@@ -1,0 +1,53 @@
+{% assign blog = blogs.journal %}
+{% assign current_tag = current_tags | first %}
+<div class="journal" data-view="journal">
+  <div class="journal__wrapper">
+    <h1 class="journal__title">Editorial</h1>
+    <div class="journal__categories">
+      <div class="category-select js-categorySelect">
+       <ul class="category-select__list">
+        <li><a href="{{ blog.url }}">All</a></li>
+        {% for tag in blog.tags %}
+        {% unless tag == 'pinned' %}
+        <li><a href="{{ blog.url }}/tagged/{{ tag | handleize }}">{{ tag | capitalize }}</a></li>
+    {% endunless %}
+  {% endfor %}
+</ul>
+        <button class="js-categorySelectToggle category-select__button">
+          <span class="visually-hidden">Toggle Categories</span>
+          <svg class="icon-arrow-small category-select__arrow" viewBox="0 0 13 17">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-arrow-small"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+{% assign articles = blog.articles %}
+<div class="journal__entries">
+  {% comment %} First, loop over all articles {% endcomment %}
+  {% for article in blog.articles %}
+    {% comment %} Display articles tagged as 'pinned' at the top of the page {% endcomment %}
+    {% if article.tags contains 'pinned' %}
+      <div class="journal__entry js-scroll--fade js-scroll">
+        <div class="journal-item journal-item--list journal-item--{% cycle 'odd', 'even' %}">
+          {% render 'journal-item', article: article, slider: false %}
+        </div>
+      </div>
+    {% endif %}
+  {% endfor %}
+
+  {% comment %} Next, loop over all articles again {% endcomment %}
+  {% for article in blog.articles %}
+    {% comment %} Display all articles that are NOT tagged as 'pinned' {% endcomment %}
+    {% unless article.tags contains 'pinned' %}
+      <div class="journal__entry js-scroll--fade js-scroll">
+        <div class="journal-item journal-item--list journal-item--{% cycle 'odd', 'even' %}">
+          {% render 'journal-item', article: article, slider: false %}
+        </div>
+      </div>
+    {% endunless %}
+  {% endfor %}
+</div>
+</div>
+    </div>
+  </div>
+</div>

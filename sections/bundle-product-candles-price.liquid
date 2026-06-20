@@ -1,0 +1,21 @@
+<span class="js-price">{% if section.settings.add_bundle_price == true %}{{ section.settings.bundle_price }}{% else %}{{ product.selected_or_first_available_variant.price | money }}{% endif %}</span>
+{% schema %}
+{
+  "name": "Bundle Price",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "add_bundle_price",
+      "label": "Set Bundle Price",
+      "default": true,
+      "info":"This overrides the default product price which is set from the product admin page."
+    },
+    {
+      "type": "text",
+      "id": "bundle_price",
+      "label": "Bundle Price",
+      "default": "*** Please add price ***"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,20 @@
+<a class="journal-item__wrapper js-scroll js-scroll--fade" href="{{ article.url }}" {% if slider %} data-no-history="1" {% endif %}>
+  <div style="display: flex; flex-direction: left; align-items: flex-start;">
+    <div class="journal-item__image" style="width: 350px; height: 500px; overflow: hidden;">
+      <picture>
+        <img src="{{  article.image | img_url: '243x450' }}" alt="" class="is-loading" style="width: auto; height: auto; object-fit: cover;">
+      </picture>
+    </div>
+    <div class="journal-item__content" style="display: block; max-width: 100%; overflow: auto;">
+      <div class="journal-item__title" style="display: block; margin-top: 10px; margin-bottom: 15px; word-break: break-word;">
+        {{ article.title }}
+      </div>
+      <div class="journal-item__excerpt" style="display: block; margin-bottom: 15px; word-break: break-word;">
+        <p>
+          {{ article.excerpt }}
+        </p>
+        <span class="journal-item__more">Read more</span>
+      </div>
+    </div>
+  </div>
+</a>

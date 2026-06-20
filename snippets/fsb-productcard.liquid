@@ -1,0 +1,234 @@
+{% comment %}
+  This file is controlled by Foxsell Bundles - https://foxsell.app
+  Used by bundle builder template. Refrain from editing unless you know exactly what you're doing.
+{% endcomment %}
+
+{% liquid
+  if card_product.has_only_default_variant
+    assign current_variant = card_product.variants.first
+  else
+    for variant in card_product.variants
+      for bundle_variant in bundle_variants
+        if bundle_variant.first contains variant.id and variant.available
+          assign current_variant = variant
+          break
+        endif
+      endfor
+      if current_variant
+        break
+      endif
+    endfor
+  endif
+
+  assign variant_count = 0
+
+  if card_product.options_with_values.size <= 1 and variants.size == 1 or bundle_variants.size == 1
+    assign show_quantity = true
+  endif
+
+  assign featured_image = current_variant.featured_image | default: card_product.featured_image
+%}
+
+{%- capture sizes -%}
+  (max-width: 699px) calc(100vw / {{ section.settings.columns_mobile }}), (max-width: 999px) calc(100vw / {{ 3 | at_most: section.settings.columns_desktop | default: 3 }} - 64px), calc((100vw - 96px) / {{ section.settings.columns_desktop | default: 3 }} - (24px / {{ section.settings.columns_desktop | default: 3 }} * {{ section.settings.columns_desktop | default: 3 | minus: 1 }}))
+{%- endcapture -%}
+<fsb-productcard
+  class="fsb__category-grid__product-card"
+  {% if category == 'add-ons' %}
+    is="fsb-productaddon"
+  {% else %}
+    is="fsb-productcard"
+  {% endif %}
+  title="{{ card_product.title }}"
+  data-category="{{ category }}"
+  {% if show_quantity %}
+    data-show-quantity="true"
+  {% endif %}
+  {% if split_product %}
+    data-split-option="{{ split_option }}"
+    data-split-value="{{ split_value }}"
+  {% endif %}
+  data-product="{{- card_product | json | escape -}}"
+>
+{% if featured_image %}  
+  {{-
+    featured_image | image_url: width: featured_media.width | image_tag: loading: image_loading, sizes: sizes, widths: '200,300,400,500,600,700,800,1000,1200,1400,1600,1800', class: 'fsb__product-card__image', tabindex: 0
+  -}}
+{% endif %}
+
+  <div class="fsb__category-grid__product-card-info">
+    <div class="fsb__category-grid__product-card-info--inner">
+      {% if split_product %}
+        <p class="fsb__category-grid__product-card__title">
+          <span>{{ card_product.title }}</span>
+          <span>-</span>
+          <span>{{ split_value }}</span>
+        </p>
+      {% else %}
+        <p class="fsb__category-grid__product-card__title">{{ card_product.title }}</p>
+      {% endif %}
+      <p id="product-price" class="fsb__category-grid__product-card__price"></p>
+    </div>
+
+    {% capture variants_json %}
+      [
+        {%- assign valid_variant_size = valid_variant_size | plus: 1 -%}
+        {%- for variant in variants -%}
+          {%- liquid
+            assign variant_media = variant.featured_image
+            assign variant_media_link = variant_media | image_url: width: 450
+            assign variant_media_alt = variant_media.alt | json
+            assign variant_id = variant.id | append: ''
+            assign variant_id_addons = variant.id | append: '' | prepend: 'gid://shopify/ProductVariant/' 
+            assign valid_variant_size = valid_variant_size | plus: 1
+            if variant.available == false
+              continue
+            endif
+            unless bundle_variants[variant_id] or bundle_variants[variant_id_addons]
+              continue
+            endunless
+          -%}
+          {
+            "id": {{ variant.id | json }},
+            "available": {{ variant.available }},
+            "title": {{ variant.title | json }},
+            "is_default": {{ card_product.has_only_default_variant | json }},
+            "media_link": {{ variant_media_link | json }},
+            "media_alt": {{  variant_media_alt }},
+            "inventory_policy": {{ variant.inventory_policy | json }},
+            "inventory_quantity": {{ variant.inventory_quantity | json }},
+            "inventory_management": {{ variant.inventory_management | json }},
+            "price": {{ variant.price | json }},
+            "bundlePrice": {{ bundle_variants[variant_id] | default: bundle_variants[variant_id_addons] | times: 100  }},
+            "compare_at_price": {{ variant.compare_at_price | json }},
+            "options": [
+              {%- liquid
+                for variant_option in variant.options
+                  echo variant_option.name | json
+                  unless forloop.last
+                    echo ','
+                  endunless
+                endfor
+              -%}
+            ]
+          }
+          {%- liquid
+            assign variant_media = null
+            assign variant_media_link = null
+            assign variant_media_alt = null
+            assign variant_count = variant_count | plus: 1
+          -%}
+          {%- if forloop.last == false %},{% endif -%}
+        {%- endfor -%}
+      ]
+    {%- endcapture -%}
+    <fsb-variantselector id="variant-selects-{{ section_id }}-{{ product_form_id }}" data-section="{{ section_id }}" class="{% if variant_count == 1 and section.settings.hide_single_variant_selector %}hidden{% endif %}">
+      {%- unless card_product.has_only_default_variant -%}
+        {% for option in card_product.options_with_values %}
+          <div class="fsb-dropdown{% if option.name == split_option %} hidden{% endif %} {% if swatch_options contains option.name %}fsb-swatches{% endif %}">
+            <label class="fsb__label" for="Option-{{ section_id }}-{{ product_form_id }}-{{ forloop.index0 }}">
+              {{ section.settings.variant_selector_label | replace: '[option]', option.name }}
+            </label>
+            {% if swatch_options contains option.name %}
+              <div class="swatch-wrapper">
+                {% for option_value in option.values %}
+                  {% assign downcase_label = option_value | downcase | strip %}
+                  {% assign swatch_style = '--swatch-background: ' | append: downcase_label %}
+                  {% for swatch_item in swatch_config %}
+                    {% assign swatch_parts = swatch_item | split: ':' %}
+                    {% assign swatch_name = swatch_parts.first | downcase | strip %}
+                    {% if downcase_label == swatch_name %}
+                      {% assign swatch_value = swatch_parts.last | strip %}
+                      {% assign swatch_style = '--swatch-background: ' | append: swatch_value %}
+                      {% break %}
+                    {% endif %}
+                  {% endfor %}
+                  <input
+                    type="radio"
+                    data-option-index="{{ forloop.parentloop.index0 }}"
+                    data-option-name="{{ option.name | escape }}"
+                    name="{{ product_form_id }}-{{ option.name | escape }}"
+                    id="Option-{{ section_id }}-{{ product_form_id }}-{{ forloop.index0 }}-{{ forloop.index }}"
+                    value="{{ option_value | escape }}"
+                    {% if current_variant.options[forloop.parentloop.index0] == option_value %}
+                      checked
+                    {% endif %}
+                    class="sr-only"
+                    form="{{ product_form_id }}"
+                  >
+                  <label
+                    class="color-swatch {{ option_value | handleize }}"
+                    data-color-name="{{ option_value | handleize }}"
+                    style="{{ swatch_style }}"
+                    for="Option-{{ section_id }}-{{ product_form_id }}-{{ forloop.index0 }}-{{ forloop.index }}"
+                  >
+                    <span class="sr-only">{{ option_value }}</span>
+                  </label>
+                {% endfor %}
+              </div>
+            {% endif %}
+            <div class="fsb_select-wrapper">
+              <select
+                id="Option-{{ section_id }}-{{ product_form_id }}-{{ forloop.index0 }}"
+                class="fsb-select"
+                data-option-index="{{ forloop.index0 }}"
+                data-option-name="{{ option.name | escape }}"
+                name="{{ product_form_id }}-{{ option.name | escape }}"
+                form="{{ product_form_id }}"
+              >
+                {% for value in option.values %}
+                  {% capture input_id %}
+                    {{ section_id }}-{{ option.position }}-{{ forloop.index0 }}
+                  {% endcapture %}
+                  <option
+                    {% if current_variant.options[forloop.parentloop.index0] == value %}
+                      selected
+                    {% endif %}
+                    id="{{ input_id }}"
+                    value="{{ value | escape }}"
+                    data-option-swatch-value="{{ value.swatch }}"
+                    data-option-value-id="{{ value.id }}"
+                  >
+                    {{ value }}
+                  </option>
+                {% endfor %}
+              </select>
+            </div>
+          </div>
+        {% endfor %}
+      {%- endunless -%}
+
+      <script
+        type="application/json"
+        data-all-variants
+        id="{{ section_id }}--variant_data"
+      >
+      {{- variants_json -}}
+      </script>
+    </fsb-variantselector>
+    {% if variant_count == 1 and variants.first.available and category != 'add-ons' %}
+      <fsb-quantityselector data-variant-id="{{ variants[0].id }}" class="fsb__quantity-selector hidden">
+        <button type="button" class="fsb__quantity-selector-button fsb__quantity-selector-decrease" aria-label="Decrease quantity">
+          <span>-</span>
+        </button>
+        <input
+          type="number"
+          class="fsb__quantity-selector-input"
+          value="0"
+          min="0"
+          aria-label="Product quantity"
+        >
+        <button type="button" class="fsb__quantity-selector-button fsb__quantity-selector-increase" aria-label="Increase quantity">
+          <span>+</span>
+        </button>
+      </fsb-quantityselector>
+    {% endif %}
+
+    <button id="add-to-kit-button" class="fsb__atk-button fsb__atk-button--add {{ custom_button_class }}">
+      {{ section.settings.atk_label }}
+    </button>
+    <button disabled class="fsb__button fsb__atk-button fsb__atk-button--info {{ custom_button_class }}">
+      {{ section.settings.blank_button_label }}
+    </button>
+  </div>
+</fsb-productcard>

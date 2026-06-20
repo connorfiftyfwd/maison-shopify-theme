@@ -1,0 +1,225 @@
+<div class="product" data-view="product">
+  <div class="product__slider product__panel js-slider slider js-mobileSlider js-productSlider" data-slider="pdp">
+    {% for img in product.images %}
+      {% if forloop.index > 1 %}
+        <div class="product__image slide js-slide">
+          {% assign alt = img.alt %}
+          <picture>
+            <source media="(max-width: 375px)"
+                    srcset="{{ img | image_url: width: 375, height: 451 }} 1x, {{ img | image_url: width: 750, height: 902 }}"/>
+            <source media="(min-width: 376px)"
+                    srcset="{{ img | image_url: width: 700, height: 850 }} 1x, {{ img | image_url: width: 1400, height: 1700 }}"/>
+            <source media="(min-width: 1024px)"
+                    srcset="{{ img | image_url: width: 830, height: 1000 }} 1x, {{ img | image_url: width: 1660, height: 2000 }}"/>
+            <img src="{{ img | image_url: width: 375, height: 451 }}" alt="{{ alt }}" class="is-loading" height="375" width="451" loading="eager">
+          </picture>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+  <div class="product__details product__panel" itemscope itemtype="http://schema.org/Product">
+    <h1 class="product__title" itemprop="name">
+      {{ product.title }}
+    </h1>
+    <div class="product__price" itemscope itemtype="http://schema.org/Offer">
+      <meta itemprop="priceCurrency" content="USD"/>
+      <meta itemprop="price" content="{{ product.price | money_without_currency }}"/>
+      <link itemprop="availability"
+            href="{% if product.available %}http://schema.org/InStock{% else %}http://schema.org/OutOfStock{% endif %}"/>
+      {% section 'bundle-product-candles-price' %}
+    </div>
+    <div class="product__type">
+      {{ product.type }}
+      {% unless product.has_only_default_variant %}
+        (&nbsp;℮&nbsp;<span
+              class="js-variantTitle">{{ product.selected_or_first_available_variant.title }}</span>&nbsp;)
+      {% endunless %}
+    </div>
+    <div class="product__description">
+      {{ product.description }}
+    </div>
+    
+    <!-- Include the Bundle Product Candles Section -->
+    <div class="bundle-section-wrap">
+      {% section 'bundle-product-candles' %}
+    </div>
+
+    {% render 'product-add-to-cart-bundles', product: product %}
+    <span class="js-scroll visually-hidden" data-callback="addToCart"></span>
+    <div class="product__links">
+      <button class="js-toggleShipping">Shipping & Returns</button>
+    </div>
+  </div>
+  {% section 'product-shipping' %}
+
+</div>
+
+{% render 'products-slider',
+  list: product.metafields["global"]["related-products"],
+  title: 'You might also like:'
+%}
+
+{% comment %} {% render 'product-add-to-cart-bar', product: product %} {% endcomment %}
+{% render 'product-arrow' %}
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const addToCartButton = document.querySelector("#bundle-add-to-cart-button");
+  const qtyInput = document.querySelector("#qtyInput");
+  const qtyMinus = document.querySelector(".js-qtyMinus");
+  const qtyPlus = document.querySelector(".js-qtyPlus");
+  let quantity = 1; // Default quantity
+
+  // Dropdowns and hidden inputs for syncing values
+  const dropdowns = {
+    candle1: document.getElementById("candle1"),
+    candle2: document.getElementById("candle2"),
+    candle3: document.getElementById("candle3"),
+  };
+  const hiddenInputs = {
+    candle1: document.getElementById("hidden-candle1"),
+    candle2: document.getElementById("hidden-candle2"),
+    candle3: document.getElementById("hidden-candle3"),
+  };
+  const addOnProductId = document.getElementById("hidden-add-on-product")?.value;
+
+  // Function to check if all dropdowns have valid selections
+  const areAllSelectionsMade = () => {
+    return Object.values(dropdowns).every((dropdown) => dropdown && dropdown.value !== "");
+  };
+
+  // Function to toggle the Add to Cart button state
+  const toggleAddToCartButton = () => {
+    const allSelectionsMade = areAllSelectionsMade();
+    addToCartButton.disabled = !allSelectionsMade;
+    addToCartButton.textContent = allSelectionsMade ? "Add Bundle to Cart" : "Select All Items to Add";
+  };
+
+  // Reset bundle inputs after adding to cart
+  const resetBundleInputs = () => {
+    quantity = 1; // Reset quantity
+    qtyInput.value = quantity;
+    qtyMinus.disabled = true; // Disable minus button on reset
+
+    // Reset dropdowns to default state
+    Object.values(dropdowns).forEach((dropdown) => {
+      if (dropdown) dropdown.value = "";
+    });
+
+    // Update hidden inputs
+    Object.values(hiddenInputs).forEach((input) => {
+      if (input) input.value = "";
+    });
+
+    // Ensure Add to Cart button is disabled after reset
+    addToCartButton.disabled = true; // Explicitly disable the button
+    addToCartButton.textContent = "Select All Items to Add"; // Update button text
+  };
+
+  // Sync dropdown values with hidden inputs and toggle button state
+  Object.keys(dropdowns).forEach((key) => {
+    if (dropdowns[key]) {
+      dropdowns[key].addEventListener("change", () => {
+        hiddenInputs[key].value = dropdowns[key].value;
+        toggleAddToCartButton();
+      });
+    }
+  });
+
+  // Initialize button state
+  toggleAddToCartButton();
+
+  // Handle quantity adjustments for the bundle area only
+  if (qtyMinus && qtyPlus && qtyInput) {
+    const updateQuantityDisplay = () => {
+      qtyInput.value = quantity;
+      qtyMinus.disabled = quantity <= 1;
+    };
+
+    qtyPlus.addEventListener("click", (e) => {
+      e.preventDefault();
+      quantity++;
+      updateQuantityDisplay();
+    });
+
+    qtyMinus.addEventListener("click", (e) => {
+      e.preventDefault();
+      if (quantity > 1) {
+        quantity--;
+        updateQuantityDisplay();
+      }
+    });
+
+    // Ensure correct quantity state on page load
+    updateQuantityDisplay();
+  }
+
+  if (addToCartButton) {
+    addToCartButton.addEventListener("click", async (event) => {
+      event.preventDefault();
+
+      // Main product and bundle items
+      const mainProductId = document.getElementById("main-product-id").value;
+      const candle1 = hiddenInputs.candle1.value;
+      const candle2 = hiddenInputs.candle2.value;
+      const candle3 = hiddenInputs.candle3.value;
+
+      // Generate a unique bundle ID
+      const bundleId = `bundle-${Date.now()}`;
+
+      // Create an array of items to add to the cart
+      const items = [
+        { id: mainProductId, quantity: quantity, properties: { bundle_id: bundleId, bundle_label: "Candle Bundle" } },
+        { id: candle1, quantity: quantity, properties: { bundle_id: bundleId, bundle_label: "Candle Bundle" } },
+        { id: candle2, quantity: quantity, properties: { bundle_id: bundleId, bundle_label: "Candle Bundle" } },
+        { id: candle3, quantity: quantity, properties: { bundle_id: bundleId, bundle_label: "Candle Bundle" } },
+      ];
+
+      // Automatically include the add-on product if enabled
+      if (addOnProductId) {
+        items.push({
+          id: addOnProductId,
+          quantity: quantity * 2, // Default to 2x the main quantity for the add-on product
+          properties: { bundle_id: bundleId, bundle_label: "Candle Bundle" },
+        });
+      }
+
+      try {
+        addToCartButton.disabled = true;
+        addToCartButton.textContent = "Adding...";
+
+        const response = await fetch("/cart/add.js", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ items }),
+        });
+
+        if (!response.ok) {
+          const errorDetails = await response.json();
+          console.error("Shopify Error Response:", errorDetails);
+          throw new Error("Failed to add items to the cart");
+        }
+
+        // Open the cart drawer
+        setTimeout(() => {
+          if (typeof Rt !== "undefined" && typeof Rt.open === "function") {
+            Rt.open();
+          }
+        }, 50);
+
+        // Reset bundle inputs only after successfully adding to the cart
+        resetBundleInputs();
+
+        addToCartButton.disabled = true; // Explicitly disable the button after resetting
+      } catch (error) {
+        console.error("Error adding items to the cart:", error);
+        alert("Sorry, something went wrong while adding items to the cart.");
+        addToCartButton.disabled = false;
+        addToCartButton.textContent = "Add Bundle to Cart";
+      }
+    });
+  }
+});
+</script>
