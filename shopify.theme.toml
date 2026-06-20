@@ -1,0 +1,4 @@
+[environments.dev]
+store = "maisondetto.myshopify.com"
+ignore = ["assets/styles.css"]
+
