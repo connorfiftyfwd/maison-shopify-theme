@@ -8,32 +8,6 @@
     "theme_support_url": "https:\/\/github.com\/praesensco\/maison-d-etto"
   },
   {
-    "name": "Announcement Bar",
-    "settings": [
-      {
-        "type": "header",
-        "content": "Announcement Bar"
-      },
-      {
-        "type": "text",
-        "id": "announcement_text",
-        "label": "Announcement Text",
-        "default": "Receive a curated trio of samples with every order over $95"
-      },
-      {
-        "type": "text",
-        "id": "announcement_highlight",
-        "label": "Highlight Text",
-        "default": "— THROUGH MOTHER'S DAY →"
-      },
-      {
-        "type": "url",
-        "id": "announcement_link",
-        "label": "Announcement Link"
-      }
-    ]
-  },
-  {
     "name": "Ecommerce",
     "settings": [
       {

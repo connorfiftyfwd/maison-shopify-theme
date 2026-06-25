@@ -1,12 +1,3 @@
-<div class="announcement-bar" id="announcementBar">
-  <a href="{{ settings.announcement_link | default: '/collections/all' }}" class="announcement-bar__link">
-    <span class="announcement-bar__text">
-      {{ settings.announcement_text }}
-      <span class="announcement-bar__highlight">{{ settings.announcement_highlight }}</span>
-    </span>
-  </a>
-</div>
-
 <nav class="main-nav">
   <div class="main-nav__topbar">
     <div class="main-nav__menu js-nav-list">
@@ -34,7 +25,10 @@
                       {% if child_link.object.image.src %}
                         {% assign thumbnailImage = child_link.object.image.src %}
                       {% endif %}
-                      {% render 'thumbnail', img: thumbnailImage, hideForMobile: true, fromMetafields: false %}
+                      {% render 'thumbnail',
+                        img: thumbnailImage,
+                        hideForMobile: true,
+                        fromMetafields: false %}
                       <span>{{ child_link.title }}</span>
                     </a>
                   </li>
@@ -88,62 +82,3 @@
     </div>
   </div>
 </nav>
-
-<style>
-  
-/* Base styles */
-.announcement-bar {
-  position: sticky;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
-  background: transparent;
-  transition: background 0.3s ease, color 0.3s ease;
-}
-
-/* Full clickable area */
-.announcement-bar__link {
-  display: block;
-  text-decoration: none;
-}
-
-/* Text */
-.announcement-bar__text {
-  display: block;
-  text-align: center;
-  font-size: 12px;
-  letter-spacing: 1px;
-  font-weight: bolder;
-}
-
-/* Highlight part */
-.announcement-bar__highlight {
-  margin-left: 6px;
-}
-
-/* Mobile - highlight on next line */
-@media (max-width: 767px) {
-  .announcement-bar__highlight {
-    display: block;
-    margin-left: 0;
-    margin-top: 2px;
-  }
-}
-
-/* Desktop */
-@media (min-width: 768px) {
-  .announcement-bar__text {
-    font-size: 12px;
-  }
-}
-
-/* Scrolled state */
-.announcement-bar.scrolled {
-  background: #1c1a17;
-  padding: 12px 0px;
-}
-
-.announcement-bar.scrolled .announcement-bar__text {
-  color: #f0ece4;
-}
-</style>

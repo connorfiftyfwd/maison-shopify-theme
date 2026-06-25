@@ -9,9 +9,6 @@
  */
 {
   "current": {
-    "announcement_text": "Receive a curated trio of samples with every order over $95",
-    "announcement_highlight": "—  THROUGH FATHER'S DAY",
-    "announcement_link": "/collections/shop-all",
     "continue_shopping_link": "",
     "mailchimp": "https://maisondetto.us20.list-manage.com/subscribe/post-json?u=127c2f134b0233f6532c47967&id=3eebea79dd",
     "enable_checkout": true,
@@ -73,10 +70,10 @@
         "settings": {
           "image_1": "shopify://shop_images/Screenshot_2025-11-09_at_3.58.42_PM.png",
           "copy_1": "",
-          "url_1": "shopify://products/discovery-set-new0",
+          "url_1": "shopify://products/discovery-set-copy",
           "image_2": "shopify://shop_images/MDE_DISCOVERY_SET-18.jpg",
-          "copy_2": "NOW THROUGH MOTHER’S DAY. <br> A SELECTION OF THREE SIGNATURE 2.5ML SCENTS IS OUR GIFT TO YOU WITH EVERY PURCHASE OF $95 OR MORE. <br>",
-          "url_2": "shopify://products/discovery-set-new0"
+          "copy_2": "EACH DISCOVERY SET INCLUDES A $50 CREDIT TOWARD THE PURCHASE OF ANY FULL-SIZE FRAGRANCE.",
+          "url_2": "shopify://products/discovery-set-copy"
         }
       },
       "1569425852619": {
@@ -117,7 +114,7 @@
       "1569427951573": {
         "type": "featured-product",
         "settings": {
-          "product": "discovery-set-new0",
+          "product": "discovery-set-collection-i",
           "featured_product_image": "shopify://shop_images/6U1A0060_copy.jpg",
           "featured_product_copy": "<p>We invite you to experience all seven fragrances in our collection—each inspired by the horses that have taken me on deeply personal journeys, connecting me to myself, others, nature, and the world through unspoken, invisible languages. May these scents become meaningful metaphors in your own story.</p>"
         }
@@ -345,7 +342,7 @@
         "settings": {
           "heading": "Shipping & Returns",
           "headingMobile": "Shipping & Returns",
-          "content": "<p>Maison d'Etto ships to the continental United States (excludes Puerto Rico, Guam, American Samoa, Alaska, and Hawaii). We are currently not able to deliver shipments to P.O boxes or APO/FPO addresses, military states, U.S territories, or International locations. </p><p>We ship orders within 3 business days of the day the order is placed. We must ship perfume via ground transport according to the law, so shipping time can take 1-7 days with our carrier, USPS or UPS (usually 1-2 days within NY-Tristate area).</p><p>DELIVERY DELAYS & LOST PACKAGES<br/>All purchase orders come with the opportunity for you to protect your purchase at checkout with Route shipping insurance. We are not responsible for carrier delivery delays and lost packages. If a package is lost by the carrier, and you have not opted in Route insurance, we will do our best to assist you and the carrier to find it but cannot make any guarantees. Please email <a href=\"mailto:info@maisondetto.com\">info@maisondetto.com</a> with any additional questions regarding shipping and delivery.</p><p>RETURNS & EXCHANGES<br/>If you are interested in returning an eligible, unopened, unused product with packaging fully intact within 14 days of receipt of your order, you may initiate a return request by emailing <a href=\"mailto:info@maisondetto.com\">info@maisondetto.com</a> and referencing your order number. </p><p>The customer is responsible for the costs of return shipping. Once the product is received back to our warehouse, we will refund the purchase amount minus a restocking fee of $15. Returns will only be accepted the original packaging and labeling are fully intact and the product is in salable condition. Refunds for returned merchandise will be made within two weeks of the return of the product to the original credit card. </p><p>If you have a quality concern such as breakage during transportation or malfunction within a 14-day period following delivery, please take a photo of the issue in question and send it with your order number and description to <a href=\"mailto:info@maisondetto.com\">info@maisondetto.com</a> and we will happily proceed to resolve the issue. </p><p>Items purchased online at <a href=\"http://www.maisondetto.com\">www.maisondetto.com</a> will not be accepted in retail store or pop-up locations or any third-party locations carrying Maison d'Etto merchandise.</p><p>Items purchased in a retail store, pop-up location, or third party location are not available for return directly to Maison d'Etto.</p><p>The Discovery Set and customized sample sets are final sale, and not eligible for return.</p><p>ADDITIONAL QUESTIONS<br/>For any other questions, please contact us via email at <a href=\"mailto:info@maisondetto.com\">info@maisondetto.com</a>. Please reference your order number within your email to help facilitate the process. We are available Monday through Friday, between 10:00AM and 3:00PM Eastern standard time.</p>",
+          "content": "<p>Maison d'Etto ships to the continental United States (excludes Puerto Rico, Guam, American Samoa, Alaska, and Hawaii). We are currently not able to deliver shipments to P.O boxes or APO/FPO addresses, military states, U.S territories, or International locations. </p><p>We ship orders within 3 business days of the day the order is placed. We must ship perfume via ground transport according to the law, so shipping time can take 1-7 days with our carrier, USPS or UPS (usually 1-2 days within NY-Tristate area).</p><p>DELIVERY DELAYS & LOST PACKAGES<br/>All purchase orders come with the opportunity for you to protect your purchase at checkout with Route shipping insurance. We are not responsible for carrier delivery delays and lost packages. If a package is lost by the carrier, and you have not opted in Route insurance, we will do our best to assist you and the carrier to find it but cannot make any guarantees. Please email <a href=\"mailto:info@maisondetto.com\">info@maisondetto.com</a> with any additional questions regarding shipping and delivery.</p><p>RETURNS & EXCHANGES<br/>If you are interested in returning an unopened, unused product with packaging fully intact within 14 days of receipt of your order, you may initiate a return request by emailing <a href=\"mailto:info@maisondetto.com\">info@maisondetto.com</a> and referencing your order number. </p><p>The customer is responsible for the costs of return shipping. Once the product is received back to our warehouse, we will refund the purchase amount minus a restocking fee of $15. Returns will only be accepted the original packaging and labeling are fully intact and the product is in salable condition. Refunds for returned merchandise will be made within two weeks of the return of the product to the original credit card. </p><p>If you have a quality concern such as breakage during transportation or malfunction within a 14-day period following delivery, please take a photo of the issue in question and send it with your order number and description to <a href=\"mailto:info@maisondetto.com\">info@maisondetto.com</a> and we will happily proceed to resolve the issue. </p><p>Items purchased online at <a href=\"http://www.maisondetto.com\">www.maisondetto.com</a> will not be accepted in retail store or pop-up locations or any third-party locations carrying Maison d'Etto merchandise.</p><p>Items purchased in a retail store, pop-up location, or third party location are not available for return directly to Maison d'Etto.</p><p>ADDITIONAL QUESTIONS<br/>For any other questions, please contact us via email at <a href=\"mailto:info@maisondetto.com\">info@maisondetto.com</a>. Please reference your order number within your email to help facilitate the process. We are available Monday through Friday, between 10:00AM and 3:00PM Eastern standard time.</p>",
           "isShippingEnable": true
         }
       },
@@ -926,6 +923,7 @@
       },
       "1573226106221": {
         "type": "index-video-module",
+        "disabled": true,
         "settings": {
           "image": "shopify://shop_images/97720008.jpg",
           "imageMobile": "shopify://shop_images/97720008.jpg",
@@ -1501,6 +1499,12 @@
               "content": "<h2>SAINT BERNARD - AUSTIN</h2><p>3201 Bee Caves Road, STE 142</p><p>Austin, TX 78746</p>"
             }
           },
+          "content_jPxdEL": {
+            "type": "content",
+            "settings": {
+              "content": "<h2>SAINT BERNARD - DALLAS</h2><p>5570 West Lovers Land, U388 </p><p>Dallas, TX 75209</p>"
+            }
+          },
           "content_rxVE9C": {
             "type": "content",
             "settings": {
@@ -1544,6 +1548,7 @@
           "content_PLYEaY",
           "a4e0e4d3-47b1-4453-8766-dbef2051e9ab",
           "content_iaam3T",
+          "content_jPxdEL",
           "content_rxVE9C",
           "content_xBeQDC",
           "content_XVQtah",
@@ -2821,17 +2826,17 @@
               "image_crop": "default",
               "image_crop_location": "center",
               "title": "Fragrance is the invisible bridge between who we are and who we are becoming.",
-              "all_caps_heading": false,
-              "fs": 16,
-              "fsm": 16,
+              "all_caps_heading": true,
+              "fs": 27,
+              "fsm": 21,
               "lh": 1.2,
               "adjust_text_ls": true,
               "text_ls": 1.2,
               "tbm": 30,
-              "text": "<p>There is a red thread that runs through the dust of the arena, the damp morning air, and the silence of the stable. It is the pulse of the horse—a life force that mirrors our own.</p><p>I have always found that horses bring a profound understanding to our lives without the need for words. They do not speak, yet they tell us everything. They are the ultimate mirrors; they see us before we see ourselves, reflecting our energy back to us with startling clarity.</p><p>At Maison d’Etto, this connection is my source. I do not paint with colors; I paint memories and lived experiences with these animals into our fragrances. We do not simply compose scents; we transcribe moments of profound connection into olfactive storytelling.</p><p>As we enter the Year of the Horse, we are returning to this source.</p>",
+              "text": "<h5>There is a red thread that runs through the dust of the arena, the damp morning air, and the silence of the stable. It is the pulse of the horse—a life force that mirrors our own.</h5><h5>I have always found that horses bring a profound understanding to our lives without the need for words. They do not speak, yet they tell us everything. They are the ultimate mirrors; they see us before we see ourselves, reflecting our energy back to us with startling clarity.</h5><h5>At Maison d’Etto, this connection is my source. I do not paint with colors; I paint memories and lived experiences with these animals into our fragrances. We do not simply compose scents; we transcribe moments of profound connection into olfactive storytelling.</h5><h5>As we enter the Year of the Horse, we are returning to this source.</h5>",
               "text_override": true,
-              "text_fs": 12,
-              "text_fsm": 12,
+              "text_fs": 21,
+              "text_fsm": 15,
               "text_lh": 1.6,
               "btntxt": "",
               "btnurl": "",
@@ -3603,8 +3608,8 @@
           "title_ts": 24,
           "title_ts_mb": 18,
           "change_subtitle_size": true,
-          "subtitle_ts": 16,
-          "subtitle_ts_mb": 14,
+          "subtitle_ts": 18,
+          "subtitle_ts_mb": 18,
           "section_title_align": "default",
           "gspace": 0,
           "gspacem": 0,
@@ -3640,6 +3645,11 @@
       },
       "8605505498557855500": {
         "type": "shopify://apps/bogos-io-free-gift/blocks/app-embed/0432bba6-720a-4e95-be5a-b868386f7aa6",
+        "disabled": false,
+        "settings": {}
+      },
+      "2567389343055140935": {
+        "type": "shopify://apps/microsoft-clarity/blocks/clarity_js/31c3d126-8116-4b4a-8ba1-baeda7c4aeea",
         "disabled": false,
         "settings": {}
       }
